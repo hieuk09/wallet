@@ -1,10 +1,10 @@
-<%= form_for(@transaction) do |f| %>
-  <% if @transaction.errors.any? %>
+<%= form_for([@transaction, @sub_transaction]) do |f| %>
+  <% if @sub_transaction.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@transaction.errors.count, "error") %> prohibited this transaction from being saved:</h2>
+      <h2><%= pluralize(@sub_transaction.errors.count, "error") %> prohibited this sub_transaction from being saved:</h2>
 
       <ul>
-      <% @transaction.errors.full_messages.each do |message| %>
+      <% @sub_transaction.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -12,12 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :category_id %><br>
-    <%= f.select :category_id, Category.all_categories %>
+    Transaction: <%= link_to @transaction.description, transaction_path(id: @transaction.id) %>
   </div>
   <div class="field">
-    <%= f.label :account_id %><br>
-    <%= f.select :account_id, Account.pluck(:name, :id) %>
+    <%= f.label :category_id %><br>
+    <%= f.select :category_id, Category.all_categories %>
   </div>
   <div class="field">
     <%= f.label :amount_cents %><br>
@@ -26,10 +25,6 @@
   <div class="field">
     <%= f.label :amount_currency %><br>
     <%= f.select :amount_currency, all_currencies %>
-  </div>
-  <div class="field">
-    <%= f.label :paid_at %><br>
-    <%= f.datetime_select :paid_at %>
   </div>
   <div class="field">
     <%= f.label :description %><br>

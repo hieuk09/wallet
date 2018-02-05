@@ -3,6 +3,7 @@ class AccountsController < ApplicationController
 
   # GET /accounts
   def index
+    @summary = AccountSummaryDecorator.new
     @accounts = Account.all
   end
 

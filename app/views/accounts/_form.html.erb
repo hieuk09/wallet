@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :initial_balance_currency %><br>
-    <%= f.select :initial_balance_currency, Money::Currency.all %>
+    <%= f.select :initial_balance_currency, all_currencies %>
   </div>
   <div class="field">
     <%= f.label :name %><br>

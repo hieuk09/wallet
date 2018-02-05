@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180202143651) do
+ActiveRecord::Schema.define(version: 20180205113930) do
 
   create_table "accounts", force: :cascade do |t|
     t.integer  "initial_balance_cents",    default: 0,     null: false
@@ -27,6 +27,27 @@ ActiveRecord::Schema.define(version: 20180202143651) do
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
   end
+
+  create_table "exchange_rates", force: :cascade do |t|
+    t.string   "from_code"
+    t.string   "to_code"
+    t.float    "rate"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sub_transactions", force: :cascade do |t|
+    t.integer  "transaction_id"
+    t.integer  "amount_cents",    default: 0,     null: false
+    t.string   "amount_currency", default: "VND", null: false
+    t.text     "description"
+    t.integer  "category_id"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+  end
+
+  add_index "sub_transactions", ["category_id"], name: "index_sub_transactions_on_category_id"
+  add_index "sub_transactions", ["transaction_id"], name: "index_sub_transactions_on_transaction_id"
 
   create_table "transactions", force: :cascade do |t|
     t.integer  "category_id"

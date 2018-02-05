@@ -3,11 +3,12 @@ class TransactionsController < ApplicationController
 
   # GET /transactions
   def index
-    @transactions = Transaction.all
+    @transactions = Transaction.order(:paid_at)
   end
 
   # GET /transactions/1
   def show
+    @sub_transactions = @transaction.sub_transactions
   end
 
   # GET /transactions/new
