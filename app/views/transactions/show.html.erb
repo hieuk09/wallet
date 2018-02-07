@@ -46,8 +46,8 @@
         <td><%= sub_transaction.description %></td>
         <td><%= sub_transaction.amount.format %></td>
         <td><%= sub_transaction.category.name %></td>
-        <td><%= link_to 'Edit', edit_transaction_sub_transaction_path(23, sub_transaction) %></td>
-        <td><%= link_to 'Destroy', transaction_sub_transaction_path(23, sub_transaction), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_transaction_sub_transaction_path(@transaction, sub_transaction) %></td>
+        <td><%= link_to 'Destroy', transaction_sub_transaction_path(@transaction, sub_transaction), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -55,4 +55,4 @@
 
 <br>
 
-<%= link_to 'New Sub transaction', new_transaction_sub_transaction_path(23) %>
+<%= link_to 'New Sub transaction', new_transaction_sub_transaction_path(@transaction) %>

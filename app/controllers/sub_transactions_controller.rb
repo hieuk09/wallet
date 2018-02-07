@@ -42,7 +42,8 @@ class SubTransactionsController < ApplicationController
   # DELETE /sub_transactions/1
   def destroy
     @sub_transaction.destroy
-    redirect_to transaction_path(@transaction)
+    @sub_transaction.parent_transaction.recalculate_amount
+    redirect_to transaction_path(@sub_transaction.parent_transaction)
   end
 
   private
