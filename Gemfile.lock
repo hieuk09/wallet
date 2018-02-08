@@ -63,6 +63,9 @@ GEM
       money (~> 6.9)
     money (6.10.1)
       i18n (>= 0.6.4, < 1.0)
+    money-open-exchange-rates (0.7.0)
+      monetize (~> 1.4)
+      money (~> 6.7)
     money-rails (1.10.0)
       activesupport (>= 3.0)
       monetize (~> 1.7.0)
@@ -134,6 +137,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   jquery-rails
+  money-open-exchange-rates
   money-rails
   rails (= 4.2.8)
   sass-rails (~> 5.0)

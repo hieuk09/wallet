@@ -8,6 +8,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 
 gem 'money-rails'
+gem 'money-open-exchange-rates'
 gem 'sqlite3'
 
 group :development, :test do
