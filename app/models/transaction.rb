@@ -7,7 +7,19 @@ class Transaction < ActiveRecord::Base
   monetize :amount_cents
 
   def recalculate_amount
-    self.amount = sub_transactions.map(&:amount).sum
+    expense = sub_transactions.joins(:category)
+      .where('categories.category_type' => Category::EXPENSE)
+      .to_a.sum(&:amount)
+    income = sub_transactions.joins(:category)
+      .where('categories.category_type' => Category::INCOME)
+      .to_a.sum(&:amount)
+
+    self.amount = if category.category_type == Category::EXPENSE
+      expense - income
+    else
+      income - expense
+    end
+
     self.save
   end
 end
