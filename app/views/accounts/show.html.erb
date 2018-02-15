@@ -12,3 +12,10 @@
 
 <%= link_to 'Edit', edit_account_path(@account) %> |
 <%= link_to 'Back', accounts_path %>
+
+<br/>
+<h2> Transactions </h2>
+
+<div>
+  <%= render partial: 'transactions/list', locals: { transactions: @account.transactions } %>
+</div>

@@ -1,5 +1,5 @@
 class AccountsController < ApplicationController
-  before_action :set_account, only: [:show, :edit, :update, :destroy]
+  before_action :set_account, only: [:edit, :update, :destroy]
 
   # GET /accounts
   def index
@@ -9,6 +9,8 @@ class AccountsController < ApplicationController
 
   # GET /accounts/1
   def show
+    account = Account.find(params[:id])
+    @account = AccountDecorator.new(account)
   end
 
   # GET /accounts/new
