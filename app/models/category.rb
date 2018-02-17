@@ -3,9 +3,19 @@ class Category < ActiveRecord::Base
   EXPENSE = 'expense'.freeze
   ALL = [INCOME, EXPENSE].freeze
 
+  has_many :transactions
+
   def self.all_categories
     all.map do |category|
       ["#{category.category_type} - #{category.name}", category.id]
+    end
+  end
+
+  def total
+    if transactions.exists?
+      transactions.to_a.sum(&:amount)
+    else
+      Money.new(0, :vnd)
     end
   end
 end

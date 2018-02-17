@@ -2,20 +2,22 @@
 
 <h1>Listing Categories</h1>
 
-<table>
+<table class='transaction-list'>
   <thead>
     <tr>
       <th>Category type</th>
       <th>Name</th>
+      <th>Total</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @categories.each do |category| %>
-      <tr>
+      <tr class='<%= category.category_type %>'>
         <td><%= category.category_type %></td>
         <td><%= category.name %></td>
+        <td><%= category.total.format %></td>
         <td><%= link_to 'Show', category %></td>
         <td><%= link_to 'Edit', edit_category_path(category) %></td>
         <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
