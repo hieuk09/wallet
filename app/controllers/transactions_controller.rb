@@ -3,9 +3,8 @@ class TransactionsController < ApplicationController
 
   # GET /transactions
   def index
-    @transactions = Transaction.order(:paid_at).map do |transaction|
-      TransactionDecorator.new(transaction)
-    end
+    scope = Transaction.all.order(:paid_at)
+    @transactions = TransactionsByDateDecorator.new(scope).decorate
   end
 
   # GET /transactions/1

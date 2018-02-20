@@ -10,14 +10,18 @@ RSpec.describe AccountDecorator do
   end
 
   describe '#transactions' do
+    let(:transaction_decorators) { [double('TransactionDecorator')] }
+    let(:list_decorator) { double('TransactionsByDateDecorator', decorate: transaction_decorators) }
     let(:transactions) { [double('Transaction')] }
     let(:account) { double('Account', transactions: transactions) }
     let(:decorator) { described_class.new(account) }
     subject { decorator.transactions }
 
-    it 'returns a list of transaction decorators' do
-      expect(subject.count).to eq 1
-      expect(subject.first).to be_a(TransactionDecorator)
+    before do
+      expect(TransactionsByDateDecorator).to receive(:new)
+        .with(transactions).and_return(list_decorator)
     end
+
+    it { is_expected.to eq transaction_decorators }
   end
 end

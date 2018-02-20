@@ -10,4 +10,14 @@
   .expense {
     color: red;
   }
+
+  tr.date-line {
+    font-weight: bold;
+    font-size: 20px;
+
+    td {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
 }

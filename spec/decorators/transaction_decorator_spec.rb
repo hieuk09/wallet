@@ -1,11 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe TransactionDecorator do
-  describe '#amount' do
+  describe '#amount_format' do
     let(:amount) { Money.new(100000, :vnd) }
     let(:transaction) { double('Transaction', amount: amount) }
     let(:decorator) { described_class.new(transaction) }
-    subject { decorator.amount }
+    subject { decorator.amount_format }
     it { is_expected.to eq '100,000 ₫' }
   end
 

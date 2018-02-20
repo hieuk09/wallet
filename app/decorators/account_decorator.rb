@@ -10,9 +10,7 @@ class AccountDecorator
   end
 
   def transactions
-    account.transactions.map do |transaction|
-      TransactionDecorator.new(transaction)
-    end
+    TransactionsByDateDecorator.new(account.transactions).decorate
   end
 
   private
