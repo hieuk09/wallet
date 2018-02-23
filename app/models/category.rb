@@ -12,10 +12,7 @@ class Category < ActiveRecord::Base
   end
 
   def total
-    if transactions.exists?
-      transactions.to_a.sum(&:amount)
-    else
-      Money.new(0, :vnd)
-    end
+    amounts = transactions.to_a.map(&:amount)
+    BalanceCalculator.new(amounts).sum
   end
 end

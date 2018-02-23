@@ -18,15 +18,10 @@ class TransactionsByDateDecorator
     private
 
     def total_amount(category_type)
-      amount = transactions.select do |transaction|
+      amounts = transactions.select do |transaction|
         transaction.category_type == category_type
-      end.sum(&:amount)
-
-      if amount == 0
-        Money.new(0, :vnd)
-      else
-        amount
-      end
+      end.map(&:amount)
+      BalanceCalculator.new(amounts).sum
     end
   end
 

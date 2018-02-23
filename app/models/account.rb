@@ -1,13 +1,15 @@
 class Account < ActiveRecord::Base
   monetize :initial_balance_cents
-  has_many :transactions
+  has_many :transactions, dependent: :destroy
 
   def self.assets
-    where('initial_balance_cents > 0').to_a.sum(&:current_balance)
+    balances = all.map(&:current_balance).select(&:positive?)
+    BalanceCalculator.new(balances).sum
   end
 
   def self.liabilities
-    where('initial_balance_cents < 0').to_a.sum(&:current_balance)
+    balances = all.map(&:current_balance).select(&:negative?)
+    BalanceCalculator.new(balances).sum
   end
 
   def current_balance

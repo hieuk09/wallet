@@ -12,7 +12,7 @@ RSpec.describe Category do
 
       before do
         expect(category).to receive(:transactions)
-          .and_return(transactions).at_least(2).times
+          .and_return(transactions)
       end
 
       it { is_expected.to eq amount }
