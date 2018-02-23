@@ -10,5 +10,17 @@
   <%= @category.name %>
 </p>
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
+<p>
+  <strong>Total:</strong>
+  <%= @category.total %>
+</p>
+
+<%= link_to 'Edit', edit_category_path(@category.id) %> |
 <%= link_to 'Back', categories_path %>
+
+<br/>
+<h2> Transactions </h2>
+
+<div>
+  <%= render partial: 'transactions/list', locals: { transactions: @category.transactions } %>
+</div>

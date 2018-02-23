@@ -1,5 +1,5 @@
 class AccountDecorator
-  delegate :name, to: :account
+  delegate :name, :id, to: :account
 
   def initialize(account)
     @account = account

@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: [:show, :edit, :update, :destroy]
+  before_action :set_category, only: [:edit, :update, :destroy]
 
   # GET /categories
   def index
@@ -8,6 +8,8 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1
   def show
+    category = Category.find(params[:id])
+    @category = CategoryDecorator.new(category)
   end
 
   # GET /categories/new
