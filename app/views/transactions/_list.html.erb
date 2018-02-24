@@ -25,7 +25,7 @@
           <td><%= link_to 'Show', transaction_path(id: transaction.id) %></td>
           <td><%= link_to 'Edit', edit_transaction_path(id: transaction.id) %></td>
           <td><%= link_to 'Destroy', transaction_path(id: transaction.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          <td><%= link_to 'Add sub-transaction', new_transaction_sub_transaction_path(transaction_id: transaction.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Add sub-transaction', new_transaction_sub_transaction_path(transaction_id: transaction.id) %></td>
         </tr>
       <% end %>
     <% end %>
