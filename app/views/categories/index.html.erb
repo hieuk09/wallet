@@ -1,6 +1,11 @@
+<%= javascript_include_tag 'categories' %>
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Categories</h1>
+
+<%= pie_chart @income_data, prefix: '$' %>
+<%= pie_chart @expense_data, prefix: '$'%>
 
 <table class='transaction-list'>
   <thead>
