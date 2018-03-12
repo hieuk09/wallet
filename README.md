@@ -2,6 +2,7 @@
 
 [![Depfu](https://badges.depfu.com/badges/e14f8a02ff6e4dd1d3b54689fd3cc5fe/overview.svg)](https://depfu.com/github/hieuk09/wallet)
 [![Build Status](https://travis-ci.org/hieuk09/wallet.svg?branch=master)](https://travis-ci.org/hieuk09/wallet)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0b3fc614dbd5106f18da/maintainability)](https://codeclimate.com/github/hieuk09/wallet/maintainability)
 
 This is my personal note of my finance
 
