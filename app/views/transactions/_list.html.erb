@@ -19,7 +19,7 @@
       <% decorator.transactions.each do |transaction| %>
         <tr class="<%= transaction.category_type %>">
           <td><%= transaction.category_name %></td>
-          <td><%= transaction.account_name %></td>
+          <td><%= link_to(transaction.account_name, account_path(id: transaction.account_id)) %></td>
           <td><%= transaction.amount_format %></td>
           <td><%= transaction.description %></td>
           <td><%= link_to 'Show', transaction_path(id: transaction.id) %></td>

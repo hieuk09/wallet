@@ -2,7 +2,7 @@ class TransactionDecorator
   delegate :name, to: :account, prefix: true
   delegate :name, to: :category, prefix: true
   delegate :category_type, to: :category
-  delegate :description, :id, :amount, to: :transaction
+  delegate :description, :id, :amount, :account_id, to: :transaction
 
   def initialize(transaction)
     @transaction = transaction
