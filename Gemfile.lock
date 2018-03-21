@@ -37,7 +37,7 @@ GEM
       tzinfo (~> 1.1)
     arel (6.0.4)
     builder (3.2.3)
-    byebug (10.0.0)
+    byebug (10.0.1)
     chartkick (2.3.2)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
