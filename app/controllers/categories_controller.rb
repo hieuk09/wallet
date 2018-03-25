@@ -3,9 +3,7 @@ class CategoriesController < ApplicationController
 
   # GET /categories
   def index
-    @categories = Category.order(:category_type)
-    @expense_data = Category.expense_data
-    @income_data = Category.income_data
+    @decorator = Categories::SummaryDecorator.new(Category.all)
   end
 
   # GET /categories/1

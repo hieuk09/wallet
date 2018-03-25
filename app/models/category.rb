@@ -13,18 +13,6 @@ class Category < ActiveRecord::Base
     end
   end
 
-  def self.expense_data
-    expense.inject({}) do |result, category|
-      result.merge(category.name => category.total.exchange_to(:usd).to_f)
-    end
-  end
-
-  def self.income_data
-    income.inject({}) do |result, category|
-      result.merge(category.name => category.total.exchange_to(:usd).to_f)
-    end
-  end
-
   def total
     amounts = transactions.to_a.map(&:amount)
     BalanceCalculator.new(amounts).sum

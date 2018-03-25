@@ -4,8 +4,8 @@
 
 <h1>Listing Categories</h1>
 
-<%= pie_chart @income_data, prefix: '$' %>
-<%= pie_chart @expense_data, prefix: '$'%>
+<%= pie_chart @decorator.income_data, prefix: '$' %>
+<%= pie_chart @decorator.expense_data, prefix: '$'%>
 
 <table class='transaction-list'>
   <thead>
@@ -18,14 +18,14 @@
   </thead>
 
   <tbody>
-    <% @categories.each do |category| %>
+    <% @decorator.all_categories.each do |category| %>
       <tr class='<%= category.category_type %>'>
         <td><%= category.category_type %></td>
         <td><%= category.name %></td>
         <td><%= category.total.format %></td>
-        <td><%= link_to 'Show', category %></td>
-        <td><%= link_to 'Edit', edit_category_path(category) %></td>
-        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', category_path(id: category.id) %></td>
+        <td><%= link_to 'Edit', edit_category_path(id: category.id) %></td>
+        <td><%= link_to 'Destroy', category_path(id: category.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
