@@ -70,7 +70,7 @@ GEM
       money (~> 6.9)
     money (6.10.1)
       i18n (>= 0.6.4, < 1.0)
-    money-open-exchange-rates (1.0.1)
+    money-open-exchange-rates (1.0.2)
       monetize (~> 1.5)
       money (~> 6.8)
     money-rails (1.10.0)
