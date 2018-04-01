@@ -5,7 +5,7 @@
       <th>Account</th>
       <th>Amount</th>
       <th>Description</th>
-      <th colspan="4"></th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
@@ -26,6 +26,7 @@
           <td><%= link_to 'Edit', edit_transaction_path(id: transaction.id) %></td>
           <td><%= link_to 'Destroy', transaction_path(id: transaction.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
           <td><%= link_to 'Add sub-transaction', new_transaction_sub_transaction_path(transaction_id: transaction.id) %></td>
+          <td><%= link_to 'Ignore', ignore_transaction_path(id: transaction.id), method: :post %></td>
         </tr>
       <% end %>
     <% end %>

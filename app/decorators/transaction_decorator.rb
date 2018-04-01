@@ -1,7 +1,6 @@
 class TransactionDecorator
   delegate :name, to: :account, prefix: true
   delegate :name, to: :category, prefix: true
-  delegate :category_type, to: :category
   delegate :description, :id, :amount, :account_id, to: :transaction
 
   def initialize(transaction)
@@ -14,6 +13,14 @@ class TransactionDecorator
 
   def paid_at
     transaction.paid_at.strftime('%F')
+  end
+
+  def category_type
+    if transaction.ignored?
+      'ignored'
+    else
+      category.category_type
+    end
   end
 
   private

@@ -16,4 +16,26 @@ RSpec.describe TransactionDecorator do
     subject { decorator.paid_at }
     it { is_expected.to eq '2017-03-04' }
   end
+
+  describe '#category_type' do
+    let(:decorator) { described_class.new(transaction) }
+    subject { decorator.category_type }
+
+    context 'when transaction is ignored' do
+      let(:transaction) { double('Transaction', ignored?: true) }
+      it { is_expected.to eq 'ignored' }
+    end
+
+    context 'when transaction is not ignored' do
+      let(:category_type) { 'category_type' }
+      let(:transaction) do
+        double(
+          'Transaction',
+          ignored?: false,
+          category: double('Category', category_type: category_type)
+        )
+      end
+      it { is_expected.to eq category_type }
+    end
+  end
 end

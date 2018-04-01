@@ -14,7 +14,7 @@ class Category < ActiveRecord::Base
   end
 
   def total
-    amounts = transactions.to_a.map(&:amount)
+    amounts = transactions.where(ignored: false).to_a.map(&:amount)
     BalanceCalculator.new(amounts).sum
   end
 end

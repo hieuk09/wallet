@@ -22,4 +22,8 @@ class Transaction < ActiveRecord::Base
 
     self.save
   end
+
+  def ignore
+    update(ignored: true)
+  end
 end

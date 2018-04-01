@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180205113930) do
+ActiveRecord::Schema.define(version: 20180401185250) do
 
   create_table "accounts", force: :cascade do |t|
     t.integer  "initial_balance_cents",    default: 0,     null: false
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 20180205113930) do
     t.string   "description"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
+    t.boolean  "ignored",         default: false, null: false
   end
 
   add_index "transactions", ["account_id"], name: "index_transactions_on_account_id"

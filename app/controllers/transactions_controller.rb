@@ -47,21 +47,29 @@ class TransactionsController < ApplicationController
     redirect_to transactions_url, notice: 'Transaction was successfully destroyed.'
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_transaction
-      @transaction = Transaction.find(params[:id])
+  def ignore
+    transaction = Transaction.find(params[:id])
+    if transaction.ignore
+      redirect_to transactions_url, notice: 'Transaction was successfully ignored.'
+    else
+      redirect_to transactions_url, alert: transaction.errors.full_messages.join('. ')
     end
+  end
 
-    # Only allow a trusted parameter "white list" through.
-    def transaction_params
-      params.require(:transaction).permit(
-        :category_id,
-        :account_id,
-        :amount_cents,
-        :amount_currency,
-        :paid_at,
-        :description
-      )
-    end
+  private
+
+  def set_transaction
+    @transaction = Transaction.find(params[:id])
+  end
+
+  def transaction_params
+    params.require(:transaction).permit(
+      :category_id,
+      :account_id,
+      :amount_cents,
+      :amount_currency,
+      :paid_at,
+      :description
+    )
+  end
 end
