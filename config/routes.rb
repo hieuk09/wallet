@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   end
   resources :categories
   resources :accounts
+  resources :exports, only: [:new, :create]
   root to: 'accounts#index'
 end
