@@ -1,0 +1,6 @@
+<h1>Export to CSV</h1>
+
+<%= form_for :export, url: exports_path do |f| %>
+  <%= f.date_select :date, { discard_day: true } %>
+  <%= f.submit %>
+<%- end %>
