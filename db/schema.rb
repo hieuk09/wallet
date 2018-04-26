@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_04_01_185250) do
+ActiveRecord::Schema.define(version: 2018_04_26_103822) do
 
   create_table "accounts", force: :cascade do |t|
     t.integer "initial_balance_cents", default: 0, null: false
