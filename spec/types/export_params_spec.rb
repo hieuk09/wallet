@@ -34,22 +34,22 @@ RSpec.describe ExportParams do
 
     context 'when params has month' do
       let(:params) { { 'date(2i)' => '2' } }
-      it { is_expected.to eq DateTime.new(2018, 2, 28, 23, 59, 59) }
+      it { is_expected.to eq DateTime.new(2018, 2, 28).end_of_day }
     end
 
     context 'when params has year' do
       let(:params) { { 'date(1i)' => '2017' } }
-      it { is_expected.to eq DateTime.new(2017, 3, 31, 23, 59, 59) }
+      it { is_expected.to eq DateTime.new(2017, 3, 31).end_of_day }
     end
 
     context 'when params has both' do
       let(:params) { { 'date(1i)' => '2017', 'date(2i)' => '2' } }
-      it { is_expected.to eq DateTime.new(2017, 2, 28, 23, 59, 59) }
+      it { is_expected.to eq DateTime.new(2017, 2, 28).end_of_day }
     end
 
     context 'when params has none' do
       let(:params) { {} }
-      it { is_expected.to eq DateTime.new(2018, 3, 31, 23, 59, 59) }
+      it { is_expected.to eq DateTime.new(2018, 3, 31).end_of_day }
     end
   end
 
