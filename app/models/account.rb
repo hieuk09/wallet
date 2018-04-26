@@ -1,4 +1,4 @@
-class Account < ActiveRecord::Base
+class Account < ApplicationRecord
   monetize :initial_balance_cents
   has_many :transactions, dependent: :destroy
 

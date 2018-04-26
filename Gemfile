@@ -16,8 +16,6 @@ group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
-end
-
-group :development do
+  gem 'bootsnap', require: false
 end
 

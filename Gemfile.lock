@@ -43,6 +43,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (9.0.0)
+    bootsnap (1.3.0)
+      msgpack (~> 1.0)
     builder (3.2.3)
     byebug (10.0.2)
     chartkick (2.3.4)
@@ -88,6 +90,7 @@ GEM
       monetize (~> 1.7.0)
       money (~> 6.11.0)
       railties (>= 3.0)
+    msgpack (1.2.4)
     nio4r (2.3.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
@@ -173,6 +176,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootsnap
   byebug
   chartkick
   factory_bot_rails
