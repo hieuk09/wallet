@@ -4,7 +4,7 @@ RSpec.describe ExportsController do
   describe 'GET new' do
     it 'responses successfully' do
       get :new
-      expect(response).to be_success
+      expect(response).to be_successful
     end
   end
 
@@ -15,7 +15,7 @@ RSpec.describe ExportsController do
     it 'returns the file' do
       expect(Transactions::MonthlyExporter).to receive(:new)
         .with(anything).and_return(exporter)
-      post :create, export: {}
+      post :create, params: { export: { 'date(2i)' => '12' } }
       expect(response.body).to eq data
     end
   end

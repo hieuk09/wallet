@@ -5,8 +5,8 @@ RSpec.describe AccountsController do
     let(:account) { create(:account) }
 
     it 'renders account page' do
-      get :show, id: account.id
-      expect(response).to be_success
+      get :show, params: { id: account.id }
+      expect(response).to be_successful
     end
   end
 end

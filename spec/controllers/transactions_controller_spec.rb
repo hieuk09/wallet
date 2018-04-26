@@ -16,7 +16,7 @@ RSpec.describe TransactionsController do
       let(:can_ignore) { true }
 
       it 'redirects and renders notice' do
-        post :ignore, id: id
+        post :ignore, params: { id: id }
         expect(response).to redirect_to(transactions_url)
         expect(flash[:notice]).to eq 'Transaction was successfully ignored.'
       end
@@ -28,7 +28,7 @@ RSpec.describe TransactionsController do
       it 'redirects and renders error' do
         expect(transaction).to receive_message_chain(:errors, :full_messages)
           .and_return(['error'])
-        post :ignore, id: id
+        post :ignore, params: { id: id }
         expect(response).to redirect_to(transactions_url)
         expect(flash[:alert]).to eq 'error'
       end
