@@ -1,4 +1,4 @@
-class Category < ActiveRecord::Base
+class Category < ApplicationRecord
   INCOME = 'income'.freeze
   EXPENSE = 'expense'.freeze
   ALL = [INCOME, EXPENSE].freeze
