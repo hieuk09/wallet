@@ -13,11 +13,13 @@ RSpec.describe AccountDecorator do
     let(:transaction_decorators) { [double('TransactionDecorator')] }
     let(:list_decorator) { double('TransactionsByDateDecorator', decorate: transaction_decorators) }
     let(:transactions) { [double('Transaction')] }
-    let(:account) { double('Account', transactions: transactions) }
+    let(:account) { double('Account') }
     let(:decorator) { described_class.new(account) }
     subject { decorator.transactions }
 
     before do
+      expect(account).to receive_message_chain(transactions: [], order: [:paid_at])
+        .and_return(transactions)
       expect(TransactionsByDateDecorator).to receive(:new)
         .with(transactions).and_return(list_decorator)
     end
