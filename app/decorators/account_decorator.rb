@@ -10,7 +10,7 @@ class AccountDecorator
   end
 
   def transactions
-    TransactionsByDateDecorator.new(account.transactions).decorate
+    TransactionsByDateDecorator.new(account.transactions.order(:paid_at)).decorate
   end
 
   private
