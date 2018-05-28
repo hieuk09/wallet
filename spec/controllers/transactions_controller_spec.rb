@@ -34,4 +34,22 @@ RSpec.describe TransactionsController do
       end
     end
   end
+
+  describe 'POST new' do
+    context 'when id is specified' do
+      let(:transaction) { create(:transaction) }
+
+      it 'renders copied transaction' do
+        get :new, params: { id: transaction.id }
+        expect(response).to be_successful
+      end
+    end
+
+    context 'when id is not specified' do
+      it 'renders new transaction' do
+        get :new
+        expect(response).to be_successful
+      end
+    end
+  end
 end

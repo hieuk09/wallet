@@ -14,7 +14,11 @@ class TransactionsController < ApplicationController
 
   # GET /transactions/new
   def new
-    @transaction = Transaction.new
+    if id = params[:id]
+      @transaction = Transaction.find(id).dup
+    else
+      @transaction = Transaction.new
+    end
   end
 
   # GET /transactions/1/edit

@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Create Transaction', new_transaction_path %>
+<p><%= link_to 'Create Transaction', new_transaction_path %></p>
+<p><%= link_to 'Create Similar Transaction', new_transaction_path(id: @transaction.id) %></p>
 
 <p>
   <strong>Category:</strong>
