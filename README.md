@@ -25,4 +25,10 @@ test:
   secret_key_base: <some_key>
 ```
 
-- Start the server and start using!
+- Start the server and start using:
+
+```shell
+rails server
+```
+
+- Now, the application can be used in [localhost:3000](http://localhost:3000).
