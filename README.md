@@ -1,4 +1,4 @@
-## Wallet
+# ![Wallet Logo](app/assets/images/wallet-logo.png) Wallet
 
 [![Depfu](https://badges.depfu.com/badges/e14f8a02ff6e4dd1d3b54689fd3cc5fe/overview.svg)](https://depfu.com/github/hieuk09/wallet)
 [![Build Status](https://travis-ci.org/hieuk09/wallet.svg?branch=master)](https://travis-ci.org/hieuk09/wallet)
@@ -32,3 +32,8 @@ rails server
 ```
 
 - Now, the application can be used in [localhost:3000](http://localhost:3000).
+
+### Credit
+
+- Big thanks for [@zuuritaly](https://github.com/zuuritaly) to design
+[the logo](https://github.com/hieuk09/wallet/issues/37#issuecomment-399676126) for this app.
