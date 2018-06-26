@@ -4,6 +4,7 @@ class TransactionsController < ApplicationController
   # GET /transactions
   def index
     scope = Transaction.all.order(paid_at: :desc)
+      .includes(:account, :category)
     @transactions = TransactionsByDateDecorator.new(scope).decorate
   end
 
