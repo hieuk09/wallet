@@ -2,8 +2,7 @@
 
 <h1>Listing Transactions</h1>
 
-<%= link_to 'New Transaction', new_transaction_path %>
-
-<br>
+<p><%= link_to 'New Transaction', new_transaction_path %></p>
+<p><b>Total transactions:</b> <%= @total_count %></p>
 
 <%= render partial: 'transactions/list', locals: { transactions: @transactions } %>

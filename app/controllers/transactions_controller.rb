@@ -5,6 +5,7 @@ class TransactionsController < ApplicationController
   def index
     scope = Transaction.all.order(paid_at: :desc)
       .includes(:account, :category)
+    @total_count = scope.count
     @transactions = TransactionsByDateDecorator.new(scope).decorate
   end
 

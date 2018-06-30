@@ -1,6 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe TransactionsController do
+  describe 'GET index' do
+    it 'gets all transactions' do
+      get :index
+      expect(response).to be_successful
+    end
+  end
+
   describe 'POST ignore' do
     let(:id) { 1 }
     let(:transaction) { double }
@@ -35,7 +42,7 @@ RSpec.describe TransactionsController do
     end
   end
 
-  describe 'POST new' do
+  describe 'GET new' do
     context 'when id is specified' do
       let(:transaction) { create(:transaction) }
 
