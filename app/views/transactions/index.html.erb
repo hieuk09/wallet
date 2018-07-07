@@ -3,6 +3,7 @@
 <h1>Listing Transactions</h1>
 
 <p><%= link_to 'New Transaction', new_transaction_path %></p>
+<p><%= link_to 'Transfer', new_transfer_transaction_path %></p>
 <p><b>Total transactions:</b> <%= @total_count %></p>
 
 <%= render partial: 'transactions/list', locals: { transactions: @transactions } %>

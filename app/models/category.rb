@@ -13,6 +13,14 @@ class Category < ApplicationRecord
     end
   end
 
+  def self.expense_transfer_category
+    expense.find_by(name: 'Transfer')
+  end
+
+  def self.income_transfer_category
+    income.find_by(name: 'Transfer')
+  end
+
   def total
     amounts = transactions.where(ignored: false).to_a.map(&:amount)
     BalanceCalculator.new(amounts).sum

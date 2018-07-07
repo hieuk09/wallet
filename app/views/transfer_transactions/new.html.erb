@@ -1,0 +1,34 @@
+<h1>Transfer</h1>
+
+<%= form_tag transfer_transactions_path do %>
+  <div class="field">
+    <%= label_tag :from_account_id %><br>
+    <%= select :transaction, :from_account_id, options_for_select(Account.pluck(:name, :id)) %>
+  </div>
+  <div class="field">
+    <%= label_tag :to_account_id %><br>
+    <%= select :transaction, :to_account_id, options_for_select(Account.pluck(:name, :id)) %>
+  </div>
+  <div class="field">
+    <%= label_tag :amount_cents %><br>
+    <%= text_field :transaction, :amount_cents %>
+  </div>
+  <div class="field">
+    <%= label_tag :amount_currency %><br>
+    <%= select :transaction, :amount_currency, options_for_select(all_currencies) %>
+  </div>
+  <div class="field">
+    <%= label_tag :paid_at %><br>
+    <%= datetime_select :transaction, :paid_at  %>
+  </div>
+  <div class="field">
+    <%= label_tag :description %><br>
+    <%= text_field :transaction, :description %>
+  </div>
+  <div class="actions">
+    <%= submit_tag %>
+  </div>
+
+<% end %>
+
+<%= link_to 'Back', transactions_path %>
