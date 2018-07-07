@@ -1,6 +1,7 @@
 class Category < ApplicationRecord
   INCOME = 'income'.freeze
   EXPENSE = 'expense'.freeze
+  TRANSFER = 'Transfer'.freeze
   ALL = [INCOME, EXPENSE].freeze
 
   has_many :transactions
@@ -14,11 +15,11 @@ class Category < ApplicationRecord
   end
 
   def self.expense_transfer_category
-    expense.find_by(name: 'Transfer')
+    expense.find_or_create_by(name: TRANSFER)
   end
 
   def self.income_transfer_category
-    income.find_by(name: 'Transfer')
+    income.find_or_create_by(name: TRANSFER)
   end
 
   def total

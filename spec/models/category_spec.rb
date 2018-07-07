@@ -1,6 +1,22 @@
 require 'rails_helper'
 
 RSpec.describe Category do
+  describe '.expense_transfer_category' do
+    it 'returns correct category' do
+      category = described_class.expense_transfer_category
+      expect(category.name).to eq described_class::TRANSFER
+      expect(category.category_type).to eq described_class::EXPENSE
+    end
+  end
+
+  describe '.income_transfer_category' do
+    it 'returns correct category' do
+      category = described_class.income_transfer_category
+      expect(category.name).to eq described_class::TRANSFER
+      expect(category.category_type).to eq described_class::INCOME
+    end
+  end
+
   describe '#total' do
     let(:category) { create(:category) }
     subject { category.total }
