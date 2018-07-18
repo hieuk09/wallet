@@ -1,0 +1,25 @@
+<h1>Invoices</h1>
+
+<p><%= link_to 'New invoice', new_invoice_path %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name </th>
+      <th>Rate </th>
+      <th>Time </th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @invoices.each do |invoice| %>
+      <tr>
+        <td><%= invoice.name %></td>
+        <td><%= invoice.rate.format %></td>
+        <td><%= invoice.time %></td>
+        <td></td>
+      </tr>
+    <%- end %>
+  </tbody>
+</table>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_04_26_103822) do
+ActiveRecord::Schema.define(version: 2018_07_18_162701) do
 
   create_table "accounts", force: :cascade do |t|
     t.integer "initial_balance_cents", default: 0, null: false
@@ -31,6 +31,15 @@ ActiveRecord::Schema.define(version: 2018_04_26_103822) do
     t.string "from_code"
     t.string "to_code"
     t.float "rate"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "invoices", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "rate_cents", default: 0, null: false
+    t.string "rate_currency", default: "VND", null: false
+    t.integer "time", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
