@@ -11,6 +11,8 @@ gem 'chartkick'
 gem 'money-rails'
 gem 'money-open-exchange-rates'
 gem 'sqlite3'
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
 
 group :development, :test do
   gem 'byebug'
