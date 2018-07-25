@@ -8,11 +8,11 @@ class TransactionsByDateDecorator
     end
 
     def income
-      total_amount(Category::INCOME).format
+      total_amount(Category::INCOME)
     end
 
     def expense
-      total_amount(Category::EXPENSE).format
+      total_amount(Category::EXPENSE)
     end
 
     private

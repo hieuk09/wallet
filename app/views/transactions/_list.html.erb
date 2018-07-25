@@ -13,8 +13,8 @@
     <% transactions.each do |decorator| %>
       <tr class="date-line">
         <td><%= decorator.paid_at %></td>
-        <td class="income"><%= decorator.income %></td>
-        <td class="expense"><%= decorator.expense %></td>
+        <td class="income"><%= decorator.income.format %></td>
+        <td class="expense"><%= decorator.expense.format %></td>
       </tr>
       <% decorator.transactions.each do |transaction| %>
         <tr class="<%= transaction.category_type %>">
