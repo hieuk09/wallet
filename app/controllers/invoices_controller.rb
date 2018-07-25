@@ -18,4 +18,12 @@ class InvoicesController < ApplicationController
       render :new
     end
   end
+
+  def show
+    respond_to do |format|
+      format.pdf do
+        render pdf: 'show', template: 'invoices/show.html.erb'
+      end
+    end
+  end
 end

@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   resources :accounts
   resources :exports, only: [:new, :create]
   resources :transfer_transactions, only: [:new, :create]
-  resources :invoices, only: [:index, :new, :create]
+  resources :invoices, only: [:index, :new, :create, :show]
   root to: 'accounts#index'
 end
