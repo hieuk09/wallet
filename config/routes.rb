@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   resources :reports, only: [] do
     get :transactions, on: :collection
+    get :categories, on: :collection
   end
 
   root to: 'accounts#index'

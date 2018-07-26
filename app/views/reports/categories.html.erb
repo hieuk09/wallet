@@ -1,0 +1,12 @@
+<%= javascript_include_tag 'categories' %>
+
+<h1>Categories Report</h1>
+
+<%= render partial: 'reports/links' %>
+
+<%= form_for :report, url: categories_reports_path, method: :get, html: { id: 'filter_form' } do |f| %>
+  <%= f.date_select :date, { discard_day: true, selected: @date } %>
+  <%= f.submit 'Filter' %>
+<%- end %>
+
+<%= column_chart @categories_data, stacked: true, prefix: '$', library: { type: 'bar' } %>
