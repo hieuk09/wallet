@@ -3,8 +3,11 @@ class TransactionsController < ApplicationController
 
   # GET /transactions
   def index
-    scope = Transaction.all.order(paid_at: :desc)
-      .includes(:account, :category)
+    report_params = params[:report] || {}
+    report_params = ExportParams.new(report_params)
+    scope = Reports::TransactionQuery.new.execute(report_params)
+      .order(paid_at: :desc).includes(:account, :category)
+    @date = report_params.from
     @total_count = scope.count
     @transactions = TransactionsByDateDecorator.new(scope).decorate
   end

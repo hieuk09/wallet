@@ -4,6 +4,10 @@
 
 <p><%= link_to 'New Transaction', new_transaction_path %></p>
 <p><%= link_to 'Transfer', new_transfer_transaction_path %></p>
+<%= form_for :report, url: transactions_path, method: :get do |f| %>
+  <%= f.date_select :date, { discard_day: true, selected: @date } %>
+  <%= f.submit 'Filter' %>
+<%- end %>
 <p><b>Total transactions:</b> <%= @total_count %></p>
 
 <%= render partial: 'transactions/list', locals: { transactions: @transactions } %>
