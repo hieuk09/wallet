@@ -16,6 +16,10 @@ class ExportParams
     "#{month}-#{year}.csv"
   end
 
+  def empty?
+    params.empty?
+  end
+
   private
 
   attr_reader :params, :current

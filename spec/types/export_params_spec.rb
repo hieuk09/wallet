@@ -78,4 +78,18 @@ RSpec.describe ExportParams do
       it { is_expected.to eq '3-2018.csv' }
     end
   end
+
+  describe '#empty?' do
+    subject { described_class.new(params).empty? }
+
+    context 'when params is empty' do
+      let(:params) { {} }
+      it { is_expected.to eq true }
+    end
+
+    context 'when params is not empty' do
+      let(:params) { { 'date(2i)' => '2' } }
+      it { is_expected.to eq false }
+    end
+  end
 end

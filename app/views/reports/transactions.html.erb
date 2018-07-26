@@ -2,4 +2,9 @@
 
 <h1>Transactions Report</h1>
 
+<%= form_for :report, url: transactions_reports_path, method: :get do |f| %>
+  <%= f.date_select :date, { discard_day: true, selected: @date } %>
+  <%= f.submit 'Filter' %>
+<%- end %>
+
 <%= line_chart @transactions_data, prefix: '$' %>
