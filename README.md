@@ -12,6 +12,7 @@ This is my personal note of my finance
 
 ```shell
 rake db:create db:schema:load
+rake db:seed
 ```
 
 - Create a OpenExchangeRate account and get the app_id
