@@ -1,6 +1,4 @@
 class SubTransactionsController < ApplicationController
-  before_action :set_sub_transaction, only: [:destroy]
-
   # GET /sub_transactions/new
   def new
     @transaction = Transaction.find(params[:transaction_id])
@@ -19,38 +17,41 @@ class SubTransactionsController < ApplicationController
     @transaction = Transaction.find(params[:transaction_id])
     @sub_transaction = @transaction.sub_transactions.new(sub_transaction_params)
 
-    if @sub_transaction.save
+    Transaction.transaction do
+      @sub_transaction.save!
       @transaction.recalculate_amount
-      redirect_to transaction_path(@transaction)
-    else
-      render :new
     end
+
+    redirect_to transaction_path(@transaction)
+  rescue
+    render :new
   end
 
   # PATCH/PUT /sub_transactions/1
   def update
     @transaction = Transaction.find(params[:transaction_id])
     @sub_transaction = @transaction.sub_transactions.find(params[:id])
-    if @sub_transaction.update(sub_transaction_params)
+
+    Transaction.transaction do
+      @sub_transaction.update!(sub_transaction_params)
       @transaction.recalculate_amount
-      redirect_to transaction_path(@transaction)
-    else
-      render :edit
     end
+  rescue
+    render :edit
   end
 
   # DELETE /sub_transactions/1
   def destroy
-    @sub_transaction.destroy
-    @sub_transaction.parent_transaction.recalculate_amount
-    redirect_to transaction_path(@sub_transaction.parent_transaction)
+    sub_transaction = SubTransaction.find(params[:id])
+    parent_transaction = sub_transaction.parent_transaction
+    Transaction.transaction do
+      sub_transaction.destroy!
+      parent_transaction.recalculate_amount
+    end
+    redirect_to transaction_path(parent_transaction)
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_sub_transaction
-    @sub_transaction = SubTransaction.find(params[:id])
-  end
 
   # Only allow a trusted parameter "white list" through.
   def sub_transaction_params

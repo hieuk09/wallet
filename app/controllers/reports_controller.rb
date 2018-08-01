@@ -23,7 +23,7 @@ class ReportsController < ApplicationController
     @categories_data = scope.map do |transaction|
       TransactionDecorator.new(transaction)
     end.group_by(&:category_name).map do |category_name, transactions|
-      default_data = { income: 0, expense: 0 }
+      default_data = { 'income' => 0, 'expense' => 0 }
       data = transactions.group_by(&:category_type).inject(default_data) do |result, (category_type, trans)|
         default_data.merge(category_type => trans.sum(&:amount).exchange_to(:usd).to_f)
       end

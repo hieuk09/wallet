@@ -20,7 +20,7 @@ class Transaction < ApplicationRecord
       income - expense
     end
 
-    self.save
+    save!
   end
 
   def ignore

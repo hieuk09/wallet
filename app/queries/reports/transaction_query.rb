@@ -8,7 +8,7 @@ module Reports
       if params.empty?
         scope
       else
-        Transaction.where(paid_at: params.from..params.to)
+        scope.where(paid_at: params.from..params.to)
       end.includes(:category)
     end
 
