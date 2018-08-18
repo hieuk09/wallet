@@ -1,14 +1,14 @@
 FactoryBot.define do
   factory :category do
-    name 'name'
-    category_type 'expense'
+    name { 'name' }
+    category_type { 'expense' }
 
     trait :income do
-      category_type Category::INCOME
+      category_type { Category::INCOME }
     end
 
     trait :expense do
-      category_type Category::EXPENSE
+      category_type { Category::EXPENSE }
     end
   end
 end

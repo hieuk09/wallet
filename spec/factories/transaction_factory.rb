@@ -4,7 +4,7 @@ FactoryBot.define do
     category
 
     trait :ignored do
-      ignored true
+      ignored { true }
     end
   end
 end
