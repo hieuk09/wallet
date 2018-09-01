@@ -25,8 +25,9 @@ class ReportsController < ApplicationController
     end.group_by(&:category_name).map do |category_name, transactions|
       default_data = { 'income' => 0, 'expense' => 0 }
       data = transactions.group_by(&:category_type).inject(default_data) do |result, (category_type, trans)|
-        default_data.merge(category_type => trans.sum(&:amount).exchange_to(:usd).to_f)
+        result.merge(category_type => trans.sum(&:amount).exchange_to(:usd).to_f)
       end
+
       {
         name: category_name,
         data: data
