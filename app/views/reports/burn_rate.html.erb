@@ -1,0 +1,11 @@
+<%= javascript_include_tag 'categories' %>
+
+<h1>Burn Rate</h1>
+
+<%= render partial: 'reports/links' %>
+
+<h2>Cash runway: <%= @month_run_way %></h2>
+
+<p>This is the time I have left if I stop having any income.</p>
+
+<%= column_chart @data, prefix: '$' %>

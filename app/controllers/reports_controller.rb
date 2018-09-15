@@ -34,4 +34,39 @@ class ReportsController < ApplicationController
       }
     end
   end
+
+  def burn_rate
+    start_of_month = Time.current.beginning_of_month
+
+    scope = Transaction.all.joins(:category)
+      .where(ignored: false).merge(Category.expense)
+    query = Reports::TransactionQuery.new(scope)
+
+    monthly_data = []
+
+    6.downto(1) do |x|
+      start_date = start_of_month - x.months
+      end_date = start_date.end_of_month
+      query_params = OpenStruct.new(empty?: false, from: start_date, to: end_date)
+      monthly_data << query.execute(query_params).sum(&:amount)
+    end
+
+    average = monthly_data.sum / monthly_data.count
+
+    summary = AccountSummaryDecorator.new
+    total = summary.total
+
+    @data = []
+    @month_run_way = if average.positive?
+      "#{(total / average).ceil} months"
+    else
+      'Infinite'
+    end
+
+    while total > 0 || start_of_month >= 1.years.from_now
+      @data << [start_of_month.strftime('%b %Y'), total.exchange_to(:usd).to_f]
+      start_of_month += 1.month
+      total -= average
+    end
+  end
 end
