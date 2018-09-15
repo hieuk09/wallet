@@ -12,9 +12,12 @@ Rails.application.routes.draw do
   resources :transfer_transactions, only: [:new, :create]
 
   resources :reports, only: [] do
-    get :transactions, on: :collection
-    get :categories, on: :collection
-    get :burn_rate, on: :collection
+    collection do
+      get :transactions
+      get :categories
+      get :burn_rate
+      get :runway
+    end
   end
 
   root to: 'accounts#index'

@@ -15,6 +15,10 @@ class TransactionDecorator
     transaction.paid_at.strftime('%F')
   end
 
+  def paid_month
+    transaction.paid_at.strftime('%b %Y')
+  end
+
   def category_type
     if transaction.ignored?
       'ignored'

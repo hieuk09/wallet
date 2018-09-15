@@ -69,4 +69,25 @@ class ReportsController < ApplicationController
       total -= average
     end
   end
+
+  def runway
+    start_of_month = Time.current.beginning_of_month
+
+    scope = Transaction.all.joins(:category)
+      .where(ignored: false)
+
+    @data = {
+      paid_month: [],
+      income: [],
+      expense: [],
+      balance: []
+    }
+
+    TransactionsByMonthDecorator.new(scope).decorate.each do |decorator|
+      @data[:paid_month] << decorator.paid_at
+      @data[:income] << decorator.income.exchange_to(:usd).to_f
+      @data[:expense] << -decorator.expense.exchange_to(:usd).to_f
+      @data[:balance] << decorator.total.exchange_to(:usd).to_f
+    end
+  end
 end

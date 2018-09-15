@@ -1,0 +1,70 @@
+<%= javascript_include_tag 'categories' %>
+
+<h1>Runway</h1>
+
+<%= render partial: 'reports/links' %>
+
+<div id="runway-chart" style="min-width: 400px; height: 400px; margin: 0 auto">
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  Highcharts.chart('runway-chart', {
+    chart: {
+      zoomType: 'xy'
+    },
+    title: {
+      text: 'My assets projection'
+    },
+    xAxis: [{
+      categories: <%= @data[:paid_month].to_json.html_safe %>,
+      crosshair: true
+    }],
+    yAxis: [{ // Primary yAxis
+      labels: {
+        format: '${value}',
+        style: {
+          color: Highcharts.getOptions().colors[2]
+        }
+      },
+      opposite: true
+
+    }],
+    tooltip: {
+      shared: true
+    },
+    legend: {
+      layout: 'vertical',
+      align: 'left',
+      x: 80,
+      verticalAlign: 'top',
+      y: 55,
+      floating: true,
+      backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+    },
+    series: [{
+      name: 'Income',
+      type: 'column',
+      data: <%= @data[:income].to_json.html_safe %>,
+      tooltip: {
+        valuePrefix: '$'
+      }
+
+    }, {
+      name: 'Expense',
+      type: 'column',
+      data: <%= @data[:expense].to_json.html_safe %>,
+      color: 'red',
+      tooltip: {
+        valuePrefix: '$'
+      }
+
+    }, {
+      name: 'Balance',
+      type: 'spline',
+      data: <%= @data[:balance].to_json.html_safe %>,
+      tooltip: {
+        valuePrefix: '$'
+      }
+    }]
+  });
+</script>
