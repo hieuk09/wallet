@@ -10,8 +10,8 @@ class TransactionsController < ApplicationController
     @date = report_params.from
     @total_count = scope.count
     @transactions = TransactionsByDateDecorator.new(scope).decorate
-    @total_income = BalanceCalculator.new(@transactions.map(&:income)).sum.format
-    @total_expense = BalanceCalculator.new(@transactions.map(&:expense)).sum.format
+    @total_income = BalanceCalculator.new(@transactions.map(&:income)).sum
+    @total_expense = BalanceCalculator.new(@transactions.map(&:expense)).sum
   end
 
   # GET /transactions/1

@@ -9,7 +9,8 @@
   <%= f.submit 'Filter' %>
 <%- end %>
 <p><b>Total transactions:</b> <%= @total_count %></p>
-<p><b>Total income:</b> <%= @total_income %></p>
-<p><b>Total expense:</b> <%= @total_expense %></p>
+<p><b>Total income:</b> <%= @total_income.format %></p>
+<p><b>Total expense:</b> <%= @total_expense.format %></p>
+<p><b>Balance:</b> <%= (@total_income - @total_expense).format %></p>
 
 <%= render partial: 'transactions/list', locals: { transactions: @transactions } %>
