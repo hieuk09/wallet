@@ -5,7 +5,7 @@ module Reports
     end
 
     def execute(params)
-      if params.empty?
+      if params.all?
         scope
       else
         scope.where(paid_at: params.from..params.to)

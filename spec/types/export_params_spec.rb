@@ -79,16 +79,16 @@ RSpec.describe ExportParams do
     end
   end
 
-  describe '#empty?' do
-    subject { described_class.new(params).empty? }
+  describe '#all?' do
+    subject { described_class.new(params).all? }
 
-    context 'when params is empty' do
-      let(:params) { {} }
+    context 'when params is all' do
+      let(:params) { { 'all' => true } }
       it { is_expected.to eq true }
     end
 
-    context 'when params is not empty' do
-      let(:params) { { 'date(2i)' => '2' } }
+    context 'when params is not all' do
+      let(:params) { { 'all' => false } }
       it { is_expected.to eq false }
     end
   end

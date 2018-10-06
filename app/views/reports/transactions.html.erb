@@ -4,9 +4,14 @@
 
 <%= render partial: 'reports/links' %>
 
-<%= form_for :report, url: transactions_reports_path, method: :get, html: { id: 'filter_form' } do |f| %>
-  <%= f.date_select :date, { discard_day: true, selected: @date } %>
-  <%= f.submit 'Filter' %>
-<%- end %>
+<div id='filter_form'>
+  <%=
+    render partial: 'transactions/filter', locals: {
+      url: transactions_reports_path,
+      all_url: transactions_reports_path('report[all]' => true),
+      date: @date
+    }
+  %>
+</div>
 
 <%= line_chart @transactions_data, prefix: '$' %>

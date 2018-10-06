@@ -1,0 +1,5 @@
+<%= form_for :report, url: url, method: :get do |f| %>
+  <%= f.date_select :date, { discard_day: true, selected: date } %>
+  <%= f.submit 'Filter' %>
+  <%= link_to 'All', all_url %>
+<%- end %>
