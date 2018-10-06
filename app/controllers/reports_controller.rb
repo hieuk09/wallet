@@ -47,7 +47,7 @@ class ReportsController < ApplicationController
     6.downto(1) do |x|
       start_date = start_of_month - x.months
       end_date = start_date.end_of_month
-      query_params = OpenStruct.new(empty?: false, from: start_date, to: end_date)
+      query_params = OpenStruct.new(all?: false, from: start_date, to: end_date)
       monthly_data << query.execute(query_params).sum(&:amount)
     end
 

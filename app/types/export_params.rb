@@ -16,8 +16,8 @@ class ExportParams
     "#{month}-#{year}.csv"
   end
 
-  def empty?
-    params.empty?
+  def all?
+    params['all'].present?
   end
 
   private
