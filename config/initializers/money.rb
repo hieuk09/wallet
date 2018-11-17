@@ -18,3 +18,5 @@ MoneyRails.configure do |config|
   end
   config.default_currency = :vnd
 end
+
+Money.locale_backend = :i18n
