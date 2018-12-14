@@ -8,7 +8,6 @@ Rails.application.routes.draw do
 
   resources :categories
   resources :accounts
-  resources :exports, only: [:new, :create]
   resources :transfer_transactions, only: [:new, :create]
 
   resources :reports, only: [] do
