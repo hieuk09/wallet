@@ -1,6 +1,5 @@
 class ExchangeRate < ApplicationRecord
-  def self.get_rate(from_code, to_code)
-    rate = find_by!(from_code: from_code, to_code: to_code)
-    rate.rate
+  def rate
+    Money.new(100, from_code).exchange_to(to_code)
   end
 end
