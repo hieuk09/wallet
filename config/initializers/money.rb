@@ -17,6 +17,7 @@ MoneyRails.configure do |config|
     config.default_bank = new_bank
   end
   config.default_currency = :vnd
+  config.default_format = { with_currency: true, symbol: false }
 end
 
 Money.locale_backend = :i18n
