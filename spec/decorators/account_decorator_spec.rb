@@ -6,7 +6,7 @@ RSpec.describe AccountDecorator do
     let(:account) { double('Account', initial_balance: amount) }
     let(:decorator) { described_class.new(account) }
     subject { decorator.initial_balance }
-    it { is_expected.to eq '100,000 ₫' }
+    it { is_expected.to eq '100,000 VND' }
   end
 
   describe '#transactions' do

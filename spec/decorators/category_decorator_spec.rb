@@ -6,7 +6,7 @@ RSpec.describe CategoryDecorator do
     let(:category) { double('Category', total: amount) }
     let(:decorator) { described_class.new(category) }
     subject { decorator.total }
-    it { is_expected.to eq '100,000 ₫' }
+    it { is_expected.to eq '100,000 VND' }
   end
 
   describe '#transactions' do

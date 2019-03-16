@@ -6,7 +6,7 @@ RSpec.describe TransactionDecorator do
     let(:transaction) { double('Transaction', amount: amount) }
     let(:decorator) { described_class.new(transaction) }
     subject { decorator.amount_format }
-    it { is_expected.to eq '100,000 ₫' }
+    it { is_expected.to eq '100,000 VND' }
   end
 
   describe '#paid_at' do
