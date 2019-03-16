@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_16_184513) do
+ActiveRecord::Schema.define(version: 2019_03_16_184645) do
 
   create_table "accounts", force: :cascade do |t|
     t.integer "initial_balance_cents", default: 0, null: false
@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 2019_03_16_184513) do
   end
 
   create_table "exchange_rates", force: :cascade do |t|
-    t.string "from_code"
-    t.string "to_code"
+    t.string "from_code", null: false
+    t.string "to_code", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
