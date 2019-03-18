@@ -53,6 +53,6 @@ class ExchangeRatesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def exchange_rate_params
-      params.require(:exchange_rate).permit(:from_code, :to_code, :rate)
+      params.require(:exchange_rate).permit(:from_code, :to_code)
     end
 end
