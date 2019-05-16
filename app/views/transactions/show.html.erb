@@ -10,7 +10,7 @@
 
 <p>
   <strong>Account:</strong>
-  <%= @transaction.account.name %>
+  <%= link_to @transaction.account.name, account_path(@transaction.account_id) %>
 </p>
 
 <p>
