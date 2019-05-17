@@ -56,14 +56,39 @@ RSpec.describe ExportParams do
   describe '#all?' do
     subject { described_class.new(params).all? }
 
-    context 'when params is all' do
-      let(:params) { { 'all' => true } }
+    context 'when params is empty' do
+      let(:params) { {} }
+      it { is_expected.to eq false }
+    end
+
+    context 'when params has only month' do
+      let(:params) { { 'date(2i)' => '2' } }
+      it { is_expected.to eq false }
+    end
+
+    context 'when params has only month' do
+      let(:params) { { 'date(1i)' => '2017' } }
+      it { is_expected.to eq false }
+    end
+
+    context 'when params has both month and year' do
+      let(:params) { { 'date(1i)' => '2017', 'date(2i)' => '2' } }
+      it { is_expected.to eq false }
+    end
+
+    context 'when params has month as empty string' do
+      let(:params) { { 'date(2i)' => '', 'date(1i)' => '2017' } }
       it { is_expected.to eq true }
     end
 
-    context 'when params is not all' do
-      let(:params) { { 'all' => false } }
-      it { is_expected.to eq false }
+    context 'when params has year as empty string' do
+      let(:params) { { 'date(1i)' => '' } }
+      it { is_expected.to eq true }
+    end
+
+    context 'when params has all empty strings' do
+      let(:params) { { 'date(1i)' => '', 'date(2i)' => '' } }
+      it { is_expected.to eq true }
     end
   end
 end

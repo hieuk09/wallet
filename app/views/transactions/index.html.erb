@@ -8,7 +8,7 @@
   render partial: 'transactions/filter', locals: {
     url: transactions_path,
     all_url: transactions_path('report[all]' => true),
-    date: @date
+    options: @report_params
   }
 %>
 <p><b>Total transactions:</b> <%= @total_count %></p>

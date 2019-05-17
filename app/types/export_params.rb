@@ -5,15 +5,19 @@ class ExportParams
   end
 
   def from
-    date_by_month_year.beginning_of_month
+    all? ? nil : date_by_month_year.beginning_of_month
   end
 
   def to
-    date_by_month_year.end_of_month
+    all? ? nil : date_by_month_year.end_of_month
+  end
+
+  def account_id
+    params[:account_id]
   end
 
   def all?
-    params['all'].present?
+    year.zero? || month.zero?
   end
 
   private

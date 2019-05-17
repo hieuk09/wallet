@@ -5,11 +5,17 @@ module Reports
     end
 
     def execute(params)
-      if params.all?
-        scope
-      else
-        scope.where(paid_at: params.from..params.to)
-      end.includes(:category)
+      data = scope
+
+      if !params.all?
+        data = data.where(paid_at: params.from..params.to)
+      end
+
+      if params.account_id.present?
+        data = data.where(account_id: params.account_id)
+      end
+
+      data.includes(:category)
     end
 
     private

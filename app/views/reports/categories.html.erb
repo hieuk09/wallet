@@ -9,7 +9,7 @@
     render partial: 'transactions/filter', locals: {
       url: categories_reports_path,
       all_url: categories_reports_path('report[all]' => true),
-      date: @date
+      options: @report_params
     }
   %>
 </div>
