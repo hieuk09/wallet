@@ -53,32 +53,6 @@ RSpec.describe ExportParams do
     end
   end
 
-  describe '#file_name' do
-    let(:current) { Date.new(2018, 3, 4) }
-    let(:type) { described_class.new(params, current) }
-    subject { type.file_name }
-
-    context 'when params has month' do
-      let(:params) { { 'date(2i)' => '2' } }
-      it { is_expected.to eq '2-2018.csv' }
-    end
-
-    context 'when params has year' do
-      let(:params) { { 'date(1i)' => '2017' } }
-      it { is_expected.to eq '3-2017.csv' }
-    end
-
-    context 'when params has both' do
-      let(:params) { { 'date(1i)' => '2017', 'date(2i)' => '2' } }
-      it { is_expected.to eq '2-2017.csv' }
-    end
-
-    context 'when params has none' do
-      let(:params) { {} }
-      it { is_expected.to eq '3-2018.csv' }
-    end
-  end
-
   describe '#all?' do
     subject { described_class.new(params).all? }
 

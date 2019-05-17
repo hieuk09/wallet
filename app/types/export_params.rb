@@ -12,10 +12,6 @@ class ExportParams
     date_by_month_year.end_of_month
   end
 
-  def file_name
-    "#{month}-#{year}.csv"
-  end
-
   def all?
     params['all'].present?
   end
