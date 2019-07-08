@@ -61,7 +61,7 @@ class ReportsController < ApplicationController
       'Infinite'
     end
 
-    while total > 0 || start_of_month >= 1.years.from_now
+    while total > 0 || start_of_month <= 1.years.from_now
       @data << [start_of_month.strftime('%b %Y'), total.exchange_to(:usd).to_f]
       start_of_month += 1.month
       total -= average
