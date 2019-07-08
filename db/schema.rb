@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_16_184645) do
+ActiveRecord::Schema.define(version: 2019_07_08_231009) do
 
   create_table "accounts", force: :cascade do |t|
     t.integer "initial_balance_cents", default: 0, null: false
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 2019_03_16_184645) do
     t.boolean "ignored", default: false, null: false
     t.index ["account_id"], name: "index_transactions_on_account_id"
     t.index ["category_id"], name: "index_transactions_on_category_id"
+    t.index ["paid_at"], name: "index_transactions_on_paid_at"
   end
 
 end
