@@ -14,7 +14,7 @@ gem 'sqlite3'
 
 group :development, :test do
   gem 'byebug'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '4.0.0.beta2'
   gem 'factory_bot_rails'
   gem 'bootsnap', require: false
 end
