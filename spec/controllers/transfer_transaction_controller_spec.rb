@@ -27,6 +27,21 @@ RSpec.describe TransferTransactionsController do
       }
     end
 
+    context 'when params is invalid' do
+      let(:params) do
+        { transaction: 'transaction' }
+      end
+
+      it 'treats it as empty' do
+        expect {
+          post :create, params: params
+        }.to change { Transaction.count }.by(0)
+
+        expect(response).to redirect_to(new_transfer_transaction_path)
+        expect(flash[:notice]).to eq 'Params is invalid'
+      end
+    end
+
     context 'when transactions are successfully created' do
       let(:from_account_id) { create(:account).id }
       let(:to_account_id) { create(:account).id }
