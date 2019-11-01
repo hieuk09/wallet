@@ -853,6 +853,8 @@ class ActionController::Parameters
   EMPTY_ARRAY = ::T.let(nil, ::T.untyped)
   EMPTY_HASH = ::T.let(nil, ::T.untyped)
   PERMITTED_SCALAR_TYPES = ::T.let(nil, ::T.untyped)
+
+  def permit(*args); end
 end
 
 module ActionController::ParamsWrapper

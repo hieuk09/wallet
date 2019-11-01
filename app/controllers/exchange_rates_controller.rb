@@ -1,4 +1,4 @@
-# typed: false
+# typed: true
 class ExchangeRatesController < ApplicationController
   before_action :set_exchange_rate, only: [:show, :edit, :update, :destroy]
 
@@ -54,6 +54,12 @@ class ExchangeRatesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def exchange_rate_params
-      params.require(:exchange_rate).permit(:from_code, :to_code)
+      input_params = params.require(:exchange_rate)
+
+      if input_params.is_a?(ActionController::Parameters)
+        T.unsafe(input_params).permit(:from_code, :to_code)
+      else
+        {}
+      end
     end
 end
