@@ -7675,6 +7675,9 @@ end
 class ExchangeRate
   include ::ExchangeRate::GeneratedAttributeMethods
   include ::ExchangeRate::GeneratedAssociationMethods
+
+  def from_code; end
+  def to_code; end
 end
 
 module ExchangeRate::GeneratedAssociationMethods
