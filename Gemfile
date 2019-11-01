@@ -11,8 +11,10 @@ gem 'chartkick'
 gem 'money-rails'
 gem 'money-open-exchange-rates'
 gem 'sqlite3'
+gem 'sorbet-runtime'
 
 group :development, :test do
+  gem 'sorbet'
   gem 'byebug'
   gem 'rspec-rails', '4.0.0.beta2'
   gem 'factory_bot_rails'

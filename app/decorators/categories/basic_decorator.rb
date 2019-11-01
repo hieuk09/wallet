@@ -1,3 +1,4 @@
+# typed: true
 module Categories
   class BasicDecorator
     include Comparable

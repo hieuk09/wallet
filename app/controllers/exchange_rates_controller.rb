@@ -1,3 +1,4 @@
+# typed: false
 class ExchangeRatesController < ApplicationController
   before_action :set_exchange_rate, only: [:show, :edit, :update, :destroy]
 

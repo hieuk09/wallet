@@ -1,3 +1,4 @@
+# typed: true
 class BalanceCalculator
   def initialize(array)
     @array = array

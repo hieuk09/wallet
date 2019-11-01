@@ -1,3 +1,4 @@
+# typed: false
 class SubTransactionsController < ApplicationController
   # GET /sub_transactions/new
   def new
