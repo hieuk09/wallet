@@ -1,4 +1,4 @@
-# typed: false
+# typed: true
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:edit, :update, :destroy]
 
@@ -56,6 +56,11 @@ class CategoriesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def category_params
-      params.require(:category).permit(:category_type, :name)
+      input_params = params.require(:category)
+      if input_params.is_a?(ActionController::Parameters)
+        input_params.permit(:category_type, :name)
+      else
+        {}
+      end
     end
 end
