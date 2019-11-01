@@ -147,8 +147,7 @@
 # uninitialized constant Account::CALLBACKS
 # uninitialized constant Account::CALLBACK_FILTER_TYPES
 # uninitialized constant Account::CALL_COMPILABLE_REGEXP
-# wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant Account::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant Account::NAME_COMPILABLE_REGEXP
 # uninitialized constant Account::RESTRICTED_CLASS_METHODS
@@ -172,11 +171,47 @@
 # wrong constant name initial_balance_cents=
 # wrong constant name initial_balance_money_before_type_cast
 # wrong constant name validate_associated_records_for_transactions
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Account::ActiveRecord_Relation has been removed from the module tree but is still active!
 # wrong constant name transaction_ids
 # wrong constant name transaction_ids=
-# wrong constant name transactions
-# wrong constant name transactions=
-# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name after_add_for_transactions
 # wrong constant name after_add_for_transactions=
@@ -2146,6 +2181,7 @@
 # wrong constant name initialize
 # wrong constant name persisted?
 # wrong constant name <static-init>
+# wrong constant name inherited
 # wrong constant name <static-init>
 # wrong constant name dump
 # wrong constant name load
@@ -2162,18 +2198,57 @@
 # uninitialized constant ActiveRecord::ConnectionAdapters::AbstractAdapter::CALLBACK_FILTER_TYPES
 # uninitialized constant ActiveRecord::ConnectionAdapters::SQLite3Adapter::CALLBACK_FILTER_TYPES
 # uninitialized constant ActiveRecord::ConnectionAdapters::SQLite3Adapter::SIMPLE_INT
+# wrong constant name old_enum
 # wrong constant name collect?
 # uninitialized constant ActiveRecord::InternalMetadata::ACTIONS
 # uninitialized constant ActiveRecord::InternalMetadata::CALLBACKS
 # uninitialized constant ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
 # uninitialized constant ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
 # uninitialized constant ActiveRecord::InternalMetadata::RESTRICTED_CLASS_METHODS
 # uninitialized constant ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
-# wrong constant name <static-init>
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::InternalMetadata::ActiveRecord_Relation has been removed from the module tree but is still active!
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name []
@@ -2337,13 +2412,51 @@
 # uninitialized constant ActiveRecord::SchemaMigration::CALLBACK_FILTER_TYPES
 # uninitialized constant ActiveRecord::SchemaMigration::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant ActiveRecord::SchemaMigration::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant ActiveRecord::SchemaMigration::NAME_COMPILABLE_REGEXP
 # uninitialized constant ActiveRecord::SchemaMigration::RESTRICTED_CLASS_METHODS
 # uninitialized constant ActiveRecord::SchemaMigration::UNASSIGNABLE_KEYS
 # wrong constant name version
-# wrong constant name <static-init>
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::SchemaMigration::ActiveRecord_Relation has been removed from the module tree but is still active!
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name all_versions
@@ -2560,6 +2673,11 @@
 # wrong constant name uses_transaction?
 # wrong constant name <static-init>
 # wrong constant name <static-init>
+# wrong constant name enum_calls
+# wrong constant name get_enum_call
+# wrong constant name store_enum_call
+# wrong constant name <static-init>
+# wrong constant name instance
 # wrong constant name attachables
 # wrong constant name attachments
 # wrong constant name blobs
@@ -2979,15 +3097,65 @@
 # wrong constant name connect_internal<defaultArg>1
 # wrong constant name connect_internal
 # uninitialized constant ApplicationRecord::ACTIONS
+# wrong constant name <Class:ActiveRecord_AssociationRelation>
+# wrong constant name <Class:ActiveRecord_Associations_CollectionProxy>
+# wrong constant name <Class:ActiveRecord_Relation>
 # uninitialized constant ApplicationRecord::CALLBACKS
 # uninitialized constant ApplicationRecord::CALLBACK_FILTER_TYPES
 # uninitialized constant ApplicationRecord::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
 # wrong constant name <Class:GeneratedAttributeMethods>
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant ApplicationRecord::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant ApplicationRecord::NAME_COMPILABLE_REGEXP
 # uninitialized constant ApplicationRecord::RESTRICTED_CLASS_METHODS
 # uninitialized constant ApplicationRecord::UNASSIGNABLE_KEYS
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# wrong constant name <static-init>
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# wrong constant name <static-init>
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ApplicationRecord::ActiveRecord_Relation has been removed from the module tree but is still active!
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # undefined method `sum<defaultArg>1' for class `Array'
@@ -3079,6 +3247,15 @@
 # wrong constant name new
 # wrong constant name clone
 # wrong constant name irb
+# uninitialized constant BooleanString::BLANK_RE
+# uninitialized constant BooleanString::ENCODED_BLANKS
+# wrong constant name <static-init>
+# wrong constant name ===
+# wrong constant name _is_a_boolean_string?
+# wrong constant name instance_of?
+# wrong constant name is_a?
+# wrong constant name kind_of?
+# wrong constant name <static-init>
 # wrong constant name <static-init>
 # undefined singleton method `report<defaultArg>1' for `Bundler::Env'
 # wrong constant name <static-init>
@@ -3600,8 +3777,7 @@
 # uninitialized constant Category::CALLBACKS
 # uninitialized constant Category::CALLBACK_FILTER_TYPES
 # uninitialized constant Category::CALL_COMPILABLE_REGEXP
-# wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant Category::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant Category::NAME_COMPILABLE_REGEXP
 # uninitialized constant Category::RESTRICTED_CLASS_METHODS
@@ -3620,14 +3796,47 @@
 # wrong constant name before_remove_for_transactions=
 # wrong constant name before_remove_for_transactions?
 # wrong constant name validate_associated_records_for_transactions
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Category::ActiveRecord_Relation has been removed from the module tree but is still active!
 # wrong constant name transaction_ids
 # wrong constant name transaction_ids=
-# wrong constant name transactions
-# wrong constant name transactions=
-# wrong constant name <static-init>
-# wrong constant name category_type
-# wrong constant name category_type=
-# wrong constant name category_type?
 # wrong constant name category_type_before_last_save
 # wrong constant name category_type_before_type_cast
 # wrong constant name category_type_came_from_user?
@@ -3639,9 +3848,6 @@
 # wrong constant name category_type_previously_changed?
 # wrong constant name category_type_was
 # wrong constant name category_type_will_change!
-# wrong constant name created_at
-# wrong constant name created_at=
-# wrong constant name created_at?
 # wrong constant name created_at_before_last_save
 # wrong constant name created_at_before_type_cast
 # wrong constant name created_at_came_from_user?
@@ -3661,9 +3867,6 @@
 # wrong constant name id_previous_change
 # wrong constant name id_previously_changed?
 # wrong constant name id_will_change!
-# wrong constant name name
-# wrong constant name name=
-# wrong constant name name?
 # wrong constant name name_before_last_save
 # wrong constant name name_before_type_cast
 # wrong constant name name_came_from_user?
@@ -3690,9 +3893,6 @@
 # wrong constant name saved_change_to_name?
 # wrong constant name saved_change_to_updated_at
 # wrong constant name saved_change_to_updated_at?
-# wrong constant name updated_at
-# wrong constant name updated_at=
-# wrong constant name updated_at?
 # wrong constant name updated_at_before_last_save
 # wrong constant name updated_at_before_type_cast
 # wrong constant name updated_at_came_from_user?
@@ -3709,6 +3909,9 @@
 # wrong constant name will_save_change_to_id?
 # wrong constant name will_save_change_to_name?
 # wrong constant name will_save_change_to_updated_at?
+# wrong constant name expense
+# wrong constant name implicit_order_column
+# wrong constant name income
 # wrong constant name <static-init>
 # wrong constant name after_add_for_transactions
 # wrong constant name after_add_for_transactions=
@@ -3722,8 +3925,6 @@
 # wrong constant name before_remove_for_transactions
 # wrong constant name before_remove_for_transactions=
 # wrong constant name before_remove_for_transactions?
-# wrong constant name expense
-# wrong constant name income
 # uninitialized constant Chalk
 # uninitialized constant Chalk
 # uninitialized constant Class::DELEGATION_RESERVED_KEYWORDS
@@ -4014,11 +4215,50 @@
 # uninitialized constant ExchangeRate::CALLBACK_FILTER_TYPES
 # uninitialized constant ExchangeRate::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant ExchangeRate::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant ExchangeRate::NAME_COMPILABLE_REGEXP
 # uninitialized constant ExchangeRate::RESTRICTED_CLASS_METHODS
 # uninitialized constant ExchangeRate::UNASSIGNABLE_KEYS
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ExchangeRate::ActiveRecord_Relation has been removed from the module tree but is still active!
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
@@ -4906,6 +5146,7 @@
 # wrong constant name start<defaultArg>1
 # wrong constant name start
 # wrong constant name version
+# wrong constant name get_type
 # uninitialized constant Integer::EXABYTE
 # uninitialized constant Integer::GIGABYTE
 # uninitialized constant Integer::KILOBYTE
@@ -4920,6 +5161,15 @@
 # wrong constant name to_bn
 # wrong constant name to_d
 # wrong constant name sqrt
+# uninitialized constant IntegerString::BLANK_RE
+# uninitialized constant IntegerString::ENCODED_BLANKS
+# wrong constant name <static-init>
+# wrong constant name ===
+# wrong constant name _is_a_integer_string?
+# wrong constant name instance_of?
+# wrong constant name is_a?
+# wrong constant name kind_of?
+# wrong constant name <static-init>
 # wrong constant name from_state
 # wrong constant name initialize
 # wrong constant name gem
@@ -7003,6 +7253,129 @@
 # wrong constant name fips_mode
 # uninitialized constant Opus
 # uninitialized constant Opus
+# wrong constant name <Class:ConflictResolver>
+# wrong constant name <Class:Debugging>
+# wrong constant name <Class:Plugin>
+# wrong constant name <Class:RbiGenerator>
+# wrong constant name resolve_conflicts
+# wrong constant name <static-init>
+# wrong constant name <Class:Tree>
+# wrong constant name <static-init>
+# wrong constant name begin
+# wrong constant name end
+# wrong constant name here
+# wrong constant name line_prefix
+# wrong constant name text_prefix
+# wrong constant name <static-init>
+# wrong constant name debug_mode=
+# wrong constant name debug_mode?
+# wrong constant name debug_puts
+# wrong constant name name_for_debug_caller
+# wrong constant name generate
+# wrong constant name initialize
+# wrong constant name strictness
+# wrong constant name strictness=
+# wrong constant name <static-init>
+# wrong constant name inherited
+# wrong constant name registered_plugins
+# wrong constant name run_plugins
+# wrong constant name <Class:Arbitrary>
+# wrong constant name <Class:Attribute>
+# wrong constant name <Class:ClassNamespace>
+# wrong constant name <Class:Constant>
+# wrong constant name <Class:Extend>
+# wrong constant name <Class:Include>
+# wrong constant name <Class:Method>
+# wrong constant name <Class:ModuleNamespace>
+# wrong constant name <Class:Namespace>
+# wrong constant name <Class:Options>
+# wrong constant name <Class:Parameter>
+# wrong constant name <Class:RbiObject>
+# wrong constant name current_plugin
+# wrong constant name current_plugin=
+# wrong constant name initialize
+# wrong constant name options
+# wrong constant name rbi
+# wrong constant name root
+# wrong constant name ==
+# wrong constant name code
+# wrong constant name code=
+# wrong constant name <static-init>
+# wrong constant name class_attribute
+# wrong constant name kind
+# wrong constant name <static-init>
+# wrong constant name abstract
+# wrong constant name superclass
+# wrong constant name <static-init>
+# wrong constant name ==
+# wrong constant name value
+# wrong constant name <static-init>
+# wrong constant name ==
+# wrong constant name <static-init>
+# wrong constant name ==
+# wrong constant name <static-init>
+# wrong constant name ==
+# wrong constant name abstract
+# wrong constant name class_method
+# wrong constant name implementation
+# wrong constant name overridable
+# wrong constant name override
+# wrong constant name parameters
+# wrong constant name return_type
+# wrong constant name type_parameters
+# wrong constant name <static-init>
+# wrong constant name interface
+# wrong constant name <static-init>
+# wrong constant name add_comment_to_next_child
+# wrong constant name children
+# wrong constant name constants
+# wrong constant name create_arbitrary
+# wrong constant name create_attr
+# wrong constant name create_attr_accessor
+# wrong constant name create_attr_reader
+# wrong constant name create_attr_writer
+# wrong constant name create_attribute
+# wrong constant name create_class
+# wrong constant name create_constant
+# wrong constant name create_extend
+# wrong constant name create_extends
+# wrong constant name create_include
+# wrong constant name create_includes
+# wrong constant name create_method
+# wrong constant name create_module
+# wrong constant name extends
+# wrong constant name includes
+# wrong constant name path
+# wrong constant name <static-init>
+# wrong constant name break_params
+# wrong constant name indented
+# wrong constant name initialize
+# wrong constant name tab_size
+# wrong constant name <static-init>
+# wrong constant name ==
+# wrong constant name default
+# wrong constant name initialize
+# wrong constant name kind
+# wrong constant name name
+# wrong constant name name_without_kind
+# wrong constant name to_def_param
+# wrong constant name to_sig_param
+# wrong constant name type
+# wrong constant name <static-init>
+# wrong constant name add_comment
+# wrong constant name add_comments
+# wrong constant name comments
+# wrong constant name describe
+# wrong constant name generate_rbi
+# wrong constant name generated_by
+# wrong constant name generator
+# wrong constant name initialize
+# wrong constant name merge_into_self
+# wrong constant name mergeable?
+# wrong constant name name
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # undefined method `children<defaultArg>1' for class `Pathname'
 # undefined method `each_child<defaultArg>1' for class `Pathname'
 # undefined method `find<defaultArg>1' for class `Pathname'
@@ -8187,7 +8560,7 @@
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
-# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fb2037912a8>'
+# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fee8bb0b130>'
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
@@ -8261,6 +8634,111 @@
 # uninitialized constant Rails::WelcomeController::URL_OPTIONS
 # wrong constant name index
 # wrong constant name <static-init>
+# wrong constant name <Class:Color>
+# wrong constant name <Class:NullPresenter>
+# wrong constant name <Class:Presenter>
+# wrong constant name <Class:StringUtils>
+# wrong constant name <Class:Wrapper>
+# wrong constant name <Class:X11ColorNames>
+# wrong constant name <Class:Indexed>
+# wrong constant name <Class:Named>
+# wrong constant name <Class:RGB>
+# wrong constant name <Class:X11Named>
+# wrong constant name ground
+# wrong constant name codes
+# wrong constant name initialize
+# wrong constant name num
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name color_names
+# wrong constant name valid_names
+# wrong constant name b
+# wrong constant name g
+# wrong constant name initialize
+# wrong constant name r
+# wrong constant name <static-init>
+# wrong constant name to_ansi_domain
+# uninitialized constant Rainbow::Color::X11Named::NAMES
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name color_names
+# wrong constant name valid_names
+# wrong constant name <static-init>
+# wrong constant name build
+# wrong constant name parse_hex_color
+# uninitialized constant Rainbow::NullPresenter::BLANK_RE
+# uninitialized constant Rainbow::NullPresenter::ENCODED_BLANKS
+# wrong constant name background
+# wrong constant name bg
+# wrong constant name black
+# wrong constant name blink
+# wrong constant name blue
+# wrong constant name bold
+# wrong constant name bright
+# wrong constant name color
+# wrong constant name cyan
+# wrong constant name dark
+# wrong constant name faint
+# wrong constant name fg
+# wrong constant name foreground
+# wrong constant name green
+# wrong constant name hide
+# wrong constant name inverse
+# wrong constant name italic
+# wrong constant name magenta
+# wrong constant name method_missing
+# wrong constant name red
+# wrong constant name reset
+# wrong constant name underline
+# wrong constant name white
+# wrong constant name yellow
+# wrong constant name <static-init>
+# uninitialized constant Rainbow::Presenter::BLANK_RE
+# uninitialized constant Rainbow::Presenter::ENCODED_BLANKS
+# wrong constant name background
+# wrong constant name bg
+# wrong constant name black
+# wrong constant name blink
+# wrong constant name blue
+# wrong constant name bold
+# wrong constant name bright
+# wrong constant name color
+# wrong constant name cyan
+# wrong constant name dark
+# wrong constant name faint
+# wrong constant name fg
+# wrong constant name foreground
+# wrong constant name green
+# wrong constant name hide
+# wrong constant name inverse
+# wrong constant name italic
+# wrong constant name magenta
+# wrong constant name method_missing
+# wrong constant name red
+# wrong constant name reset
+# wrong constant name underline
+# wrong constant name white
+# wrong constant name yellow
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name uncolor
+# wrong constant name wrap_with_sgr
+# undefined method `initialize<defaultArg>1' for class `Rainbow::Wrapper'
+# Did you mean?  initialize_dup
+# wrong constant name enabled
+# wrong constant name enabled=
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name wrap
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name enabled
+# wrong constant name enabled=
+# wrong constant name global
+# wrong constant name new
+# wrong constant name uncolor
 # uninitialized constant Rake::FileUtilsExt::LN_SUPPORTED
 # uninitialized constant Rake::FileUtilsExt::LOW_METHODS
 # uninitialized constant Rake::FileUtilsExt::METHODS
@@ -9010,6 +9488,96 @@
 # wrong constant name <static-init>
 # wrong constant name main
 # wrong constant name output_file
+# wrong constant name enabled_gem_plugins
+# wrong constant name enabled_gem_plugins=
+# wrong constant name enabled_model_plugins
+# wrong constant name enabled_model_plugins=
+# wrong constant name enabled_plugins
+# wrong constant name extra_helper_includes
+# wrong constant name extra_helper_includes=
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name find_by_id
+# wrong constant name find_by_id!
+# wrong constant name find_n
+# wrong constant name first_n
+# wrong constant name last_n
+# wrong constant name <static-init>
+# uninitialized constant SorbetRails::CustomParamsMethods::RUBYGEMS_ACTIVATION_MONITOR
+# wrong constant name <Class:ActiveRecordAssoc>
+# wrong constant name <Class:ActiveRecordAttribute>
+# wrong constant name <Class:ActiveRecordEnum>
+# wrong constant name <Class:ActiveRecordFactoryMethods>
+# wrong constant name <Class:ActiveRecordFinderMethods>
+# wrong constant name <Class:ActiveRecordNamedScope>
+# wrong constant name <Class:ActiveRecordQuerying>
+# wrong constant name <Class:ActiveRelationWhereNot>
+# wrong constant name <Class:ActiveStorageMethods>
+# wrong constant name <Class:Base>
+# wrong constant name <Class:CustomFinderMethods>
+# wrong constant name <Class:EnumerableCollections>
+# uninitialized constant SorbetRails::ModelPlugins::RUBYGEMS_ACTIVATION_MONITOR
+# wrong constant name <Class:UnrecognizedPluginName>
+# wrong constant name get_plugin_by_name
+# wrong constant name get_plugins
+# wrong constant name register_plugin
+# wrong constant name register_plugin_by_name
+# wrong constant name set_plugins
+# wrong constant name assoc_should_be_untyped?
+# wrong constant name polymorphic_assoc?
+# wrong constant name populate_collection_assoc_getter_setter
+# wrong constant name populate_single_assoc_getter_setter
+# wrong constant name relation_should_be_untyped?
+# wrong constant name <static-init>
+# wrong constant name active_record_type_to_sorbet_type
+# wrong constant name time_zone_aware_column?
+# wrong constant name type_for_column_def
+# wrong constant name value_type_for_attr_writer
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name add_factory_method
+# wrong constant name <static-init>
+# wrong constant name create_finder_method_pair
+# wrong constant name create_finder_methods_for
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name create_has_many_methods
+# wrong constant name create_has_one_methods
+# wrong constant name <static-init>
+# wrong constant name available_classes
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name create_enumerable_methods_for
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name available_classes
+# wrong constant name generate_base_rbi
+# wrong constant name generate_rbi
+# wrong constant name initialize
+# wrong constant name run_plugins
+# wrong constant name <static-init>
+# wrong constant name add_relation_query_method
+# wrong constant name exists_class_method?
+# wrong constant name exists_instance_method?
+# wrong constant name model_assoc_proxy_class_name
+# wrong constant name model_assoc_relation_class_name
+# wrong constant name model_class
+# wrong constant name model_class_name
+# wrong constant name model_module_name
+# wrong constant name model_relation_class_name
+# wrong constant name <static-init>
+# uninitialized constant SorbetRails::Railtie::ABSTRACT_RAILTIES
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name rails_eager_load_all!
+# wrong constant name valid_method_name?
+# wrong constant name <static-init>
+# wrong constant name config
+# wrong constant name configure
+# wrong constant name register_configured_plugins
 # uninitialized constant SortedSet::InspectKey
 # wrong constant name initialize
 # wrong constant name setup
@@ -9175,8 +9743,7 @@
 # uninitialized constant SubTransaction::CALLBACKS
 # uninitialized constant SubTransaction::CALLBACK_FILTER_TYPES
 # uninitialized constant SubTransaction::CALL_COMPILABLE_REGEXP
-# wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant SubTransaction::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant SubTransaction::NAME_COMPILABLE_REGEXP
 # uninitialized constant SubTransaction::RESTRICTED_CLASS_METHODS
@@ -9188,19 +9755,53 @@
 # wrong constant name autosave_associated_records_for_category
 # wrong constant name autosave_associated_records_for_parent_transaction
 # wrong constant name currency_for_amount
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of SubTransaction::ActiveRecord_Relation has been removed from the module tree but is still active!
 # wrong constant name build_category
 # wrong constant name build_parent_transaction
-# wrong constant name category
-# wrong constant name category=
 # wrong constant name create_category
 # wrong constant name create_category!
 # wrong constant name create_parent_transaction
 # wrong constant name create_parent_transaction!
-# wrong constant name parent_transaction
-# wrong constant name parent_transaction=
 # wrong constant name reload_category
 # wrong constant name reload_parent_transaction
-# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name from_msgpack_ext
 # wrong constant name errno
@@ -9410,8 +10011,7 @@
 # uninitialized constant Transaction::CALLBACKS
 # uninitialized constant Transaction::CALLBACK_FILTER_TYPES
 # uninitialized constant Transaction::CALL_COMPILABLE_REGEXP
-# wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant Transaction::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant Transaction::NAME_COMPILABLE_REGEXP
 # uninitialized constant Transaction::RESTRICTED_CLASS_METHODS
@@ -9437,12 +10037,47 @@
 # wrong constant name before_remove_for_sub_transactions?
 # wrong constant name currency_for_amount
 # wrong constant name validate_associated_records_for_sub_transactions
-# wrong constant name account
-# wrong constant name account=
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Transaction::ActiveRecord_Relation has been removed from the module tree but is still active!
 # wrong constant name build_account
 # wrong constant name build_category
-# wrong constant name category
-# wrong constant name category=
 # wrong constant name create_account
 # wrong constant name create_account!
 # wrong constant name create_category
@@ -9451,9 +10086,6 @@
 # wrong constant name reload_category
 # wrong constant name sub_transaction_ids
 # wrong constant name sub_transaction_ids=
-# wrong constant name sub_transactions
-# wrong constant name sub_transactions=
-# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name after_add_for_sub_transactions
 # wrong constant name after_add_for_sub_transactions=
