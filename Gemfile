@@ -13,8 +13,12 @@ gem 'money-open-exchange-rates'
 gem 'sqlite3'
 gem 'sorbet-runtime'
 
-group :development, :test do
+group :development do
   gem 'sorbet'
+  gem 'sorbet-rails'
+end
+
+group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '4.0.0.beta2'
   gem 'factory_bot_rails'
