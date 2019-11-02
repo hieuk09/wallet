@@ -1,4 +1,4 @@
-# typed: false
+# typed: true
 class TransactionsController < ApplicationController
   before_action :set_transaction, only: [:show, :edit, :update, :destroy]
 
@@ -74,7 +74,7 @@ class TransactionsController < ApplicationController
   end
 
   def transaction_params
-    params.require(:transaction).permit(
+    safe_params_require(params, :transaction).permit(
       :category_id,
       :account_id,
       :amount_cents,

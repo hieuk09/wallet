@@ -38,7 +38,7 @@ RSpec.describe TransferTransactionsController do
         }.to change { Transaction.count }.by(0)
 
         expect(response).to redirect_to(new_transfer_transaction_path)
-        expect(flash[:notice]).to eq 'Params is invalid'
+        expect(flash[:notice]).to eq 'Validation failed: Account must exist'
       end
     end
 

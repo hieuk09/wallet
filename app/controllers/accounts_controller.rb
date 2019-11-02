@@ -1,4 +1,4 @@
-# typed: false
+# typed: true
 class AccountsController < ApplicationController
   before_action :set_account, only: [:edit, :update, :destroy]
 
@@ -57,6 +57,6 @@ class AccountsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def account_params
-      params.require(:account).permit(:initial_balance_cents, :initial_balance_currency, :name)
+      safe_params_require(params, :account).permit(:initial_balance_cents, :initial_balance_currency, :name)
     end
 end
