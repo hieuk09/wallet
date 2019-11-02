@@ -1,3 +1,4 @@
+# typed: true
 class CategoryDecorator
   delegate :name, :category_type, :id, to: :category
 

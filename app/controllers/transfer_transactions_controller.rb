@@ -1,3 +1,4 @@
+# typed: true
 class TransferTransactionsController < ApplicationController
   # GET /transactions/new
   def new
@@ -5,14 +6,16 @@ class TransferTransactionsController < ApplicationController
 
   # POST /transactions
   def create
-    data = params.require(:transaction).permit(
+    transaction_params = safe_params_require(params, :transaction)
+    data = transaction_params.permit(
       :amount_cents,
       :amount_currency,
       :paid_at,
       :description
     ).merge(ignored: true)
-    from_account_id = params['transaction']['from_account_id']
-    to_account_id = params['transaction']['to_account_id']
+
+    from_account_id = transaction_params[:from_account_id]
+    to_account_id = transaction_params[:to_account_id]
 
     Transaction.transaction do
       Transaction.create!(data.merge(account_id: from_account_id, category_id: Category.expense_transfer_category.id))

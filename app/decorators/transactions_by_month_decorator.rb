@@ -1,3 +1,4 @@
+# typed: true
 class TransactionsByMonthDecorator
   class ByMonthDecorator
     attr_reader :paid_at, :transactions

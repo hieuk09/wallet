@@ -11,6 +11,12 @@ gem 'chartkick'
 gem 'money-rails'
 gem 'money-open-exchange-rates'
 gem 'sqlite3'
+gem 'sorbet-runtime'
+
+group :development do
+  gem 'sorbet'
+  gem 'sorbet-rails'
+end
 
 group :development, :test do
   gem 'byebug'

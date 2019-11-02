@@ -1,3 +1,4 @@
+# typed: true
 class Category < ApplicationRecord
   INCOME = 'income'.freeze
   EXPENSE = 'expense'.freeze

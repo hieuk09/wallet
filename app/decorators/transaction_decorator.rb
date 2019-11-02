@@ -1,3 +1,4 @@
+# typed: true
 class TransactionDecorator
   delegate :name, to: :account, prefix: true
   delegate :name, to: :category, prefix: true

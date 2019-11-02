@@ -1,3 +1,4 @@
+# typed: true
 class AccountSummaryDecorator
   attr_reader :assets, :liabilities
 

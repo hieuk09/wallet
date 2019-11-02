@@ -1,3 +1,4 @@
+# typed: true
 class ReportsController < ApplicationController
   def transactions
     report_params = params[:report] || {}
