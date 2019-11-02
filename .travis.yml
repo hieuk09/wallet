@@ -8,5 +8,5 @@ jobs:
     - stage:
       script:
         - bundle exec rubocop
-        - bundle exec srb tc --ignore vendor/bundle
+        - bundle exec srb tc --progress --ignore vendor/bundle
         - bundle exec rspec --order random
