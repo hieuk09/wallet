@@ -56,6 +56,7 @@ class SubTransactionsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def sub_transaction_params
-    safe_params_require(params, :sub_transaction).permit(:transaction_id, :amount_cents, :amount_currency, :description, :category_id)
+    safe_params_require(params, :sub_transaction)
+      .permit(:transaction_id, :amount_cents, :amount_currency, :description, :category_id)
   end
 end

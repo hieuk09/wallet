@@ -6,10 +6,13 @@ class ReportsController < ApplicationController
     scope = Reports::TransactionQuery.new.execute(@report_params)
     decorators = TransactionsByDateDecorator.new(scope).decorate
 
+    income_data = decorators.map { |decorator| [decorator.paid_at, decorator.income.exchange_to(:usd).to_f] }
+    expense_data = decorators.map { |decorator| [decorator.paid_at, decorator.expense.exchange_to(:usd).to_f] }
+
     @transactions_data =
       [
-        { name: 'Income', data: decorators.map { |decorator| [decorator.paid_at, decorator.income.exchange_to(:usd).to_f] } },
-        { name: 'Expense', data: decorators.map { |decorator| [decorator.paid_at, decorator.expense.exchange_to(:usd).to_f] } }
+        { name: 'Income', data: income_data },
+        { name: 'Expense', data: expense_data }
       ]
   end
 
@@ -62,7 +65,7 @@ class ReportsController < ApplicationController
       'Infinite'
     end
 
-    while total > 0 || start_of_month <= 1.years.from_now
+    while total.positive? || start_of_month <= 1.years.from_now
       @data << [start_of_month.strftime('%b %Y'), total.exchange_to(:usd).to_f]
       start_of_month += 1.month
       total -= average
@@ -70,8 +73,6 @@ class ReportsController < ApplicationController
   end
 
   def runway
-    start_of_month = Time.current.beginning_of_month
-
     scope = Transaction.all.joins(:category)
       .where(ignored: false)
 

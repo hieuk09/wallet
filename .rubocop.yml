@@ -1,6 +1,19 @@
 AllCops:
   TargetRubyVersion: 2.6
 
+Layout/ElseAlignment:
+  Enabled: false
+
+Layout/EmptyLinesAroundBlockBody:
+  Exclude:
+    - db/schema.rb
+
+Layout/EndAlignment:
+  Enabled: false
+
+Layout/IndentationWidth:
+  Enabled: false
+
 Layout/MultilineMethodCallIndentation:
   Enabled: false
 
@@ -11,6 +24,7 @@ Lint/AmbiguousBlockAssociation:
 Metrics/BlockLength:
   Exclude:
     - spec/**/*
+    - db/schema.rb
 
 Metrics/AbcSize:
   Enabled: false
@@ -37,6 +51,9 @@ Style/IfUnlessModifier:
 Style/MixinUsage:
   Exclude:
     - bin/*
+
+Style/MultilineBlockChain:
+  Enabled: false
 
 Style/NumericLiterals:
   Enabled: false

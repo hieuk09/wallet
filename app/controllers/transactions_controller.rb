@@ -21,10 +21,10 @@ class TransactionsController < ApplicationController
 
   # GET /transactions/new
   def new
-    if id = params[:id]
-      @transaction = Transaction.find(id).dup
+    @transaction = if params[:id]
+      Transaction.find(params[:id]).dup
     else
-      @transaction = Transaction.new
+      Transaction.new
     end
   end
 
