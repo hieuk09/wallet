@@ -7,5 +7,6 @@ jobs:
   include:
     - stage:
       script:
+        - bundle exec rubocop
         - bundle exec srb tc --ignore vendor/bundle
         - bundle exec rspec --order random
