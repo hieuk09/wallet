@@ -24,7 +24,7 @@ class SubTransactionsController < ApplicationController
     end
 
     redirect_to transaction_path(@transaction)
-  rescue
+  rescue StandardError
     render :new
   end
 
@@ -37,7 +37,7 @@ class SubTransactionsController < ApplicationController
       @sub_transaction.update!(sub_transaction_params)
       @transaction.recalculate_amount
     end
-  rescue
+  rescue StandardError
     render :edit
   end
 

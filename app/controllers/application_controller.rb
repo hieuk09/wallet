@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
   private
 
-  sig {params(params: ActionController::Parameters, resource_name: Symbol).returns(ActionController::Parameters)}
+  sig { params(params: ActionController::Parameters, resource_name: Symbol).returns(ActionController::Parameters) }
   def safe_params_require(params, resource_name)
     resource_params = params.require(resource_name)
 

@@ -1,6 +1,6 @@
 # typed: true
 class AccountsController < ApplicationController
-  before_action :set_account, only: [:edit, :update, :destroy]
+  before_action :set_account, only: %i[edit update destroy]
 
   # GET /accounts
   def index
@@ -20,8 +20,7 @@ class AccountsController < ApplicationController
   end
 
   # GET /accounts/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /accounts
   def create
@@ -50,13 +49,14 @@ class AccountsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_account
-      @account = Account.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def account_params
-      safe_params_require(params, :account).permit(:initial_balance_cents, :initial_balance_currency, :name)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_account
+    @account = Account.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def account_params
+    safe_params_require(params, :account).permit(:initial_balance_cents, :initial_balance_currency, :name)
+  end
 end

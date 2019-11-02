@@ -1,6 +1,6 @@
 # typed: true
 class TransactionsController < ApplicationController
-  before_action :set_transaction, only: [:show, :edit, :update, :destroy]
+  before_action :set_transaction, only: %i[show edit update destroy]
 
   # GET /transactions
   def index
@@ -29,8 +29,7 @@ class TransactionsController < ApplicationController
   end
 
   # GET /transactions/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /transactions
   def create
