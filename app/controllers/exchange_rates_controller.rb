@@ -1,6 +1,6 @@
 # typed: true
 class ExchangeRatesController < ApplicationController
-  before_action :set_exchange_rate, only: [:show, :edit, :update, :destroy]
+  before_action :set_exchange_rate, only: %i[show edit update destroy]
 
   # GET /exchange_rates
   def index
@@ -8,8 +8,7 @@ class ExchangeRatesController < ApplicationController
   end
 
   # GET /exchange_rates/1
-  def show
-  end
+  def show; end
 
   # GET /exchange_rates/new
   def new
@@ -17,8 +16,7 @@ class ExchangeRatesController < ApplicationController
   end
 
   # GET /exchange_rates/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /exchange_rates
   def create
@@ -47,13 +45,14 @@ class ExchangeRatesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_exchange_rate
-      @exchange_rate = ExchangeRate.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def exchange_rate_params
-      safe_params_require(params, :category).permit(:from_code, :to_code)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_exchange_rate
+    @exchange_rate = ExchangeRate.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def exchange_rate_params
+    safe_params_require(params, :category).permit(:from_code, :to_code)
+  end
 end

@@ -1,6 +1,6 @@
 # typed: true
 class TransactionsController < ApplicationController
-  before_action :set_transaction, only: [:show, :edit, :update, :destroy]
+  before_action :set_transaction, only: %i[show edit update destroy]
 
   # GET /transactions
   def index
@@ -21,16 +21,15 @@ class TransactionsController < ApplicationController
 
   # GET /transactions/new
   def new
-    if id = params[:id]
-      @transaction = Transaction.find(id).dup
+    @transaction = if params[:id]
+      Transaction.find(params[:id]).dup
     else
-      @transaction = Transaction.new
+      Transaction.new
     end
   end
 
   # GET /transactions/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /transactions
   def create

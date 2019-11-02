@@ -1,8 +1,7 @@
 # typed: true
 class TransferTransactionsController < ApplicationController
   # GET /transactions/new
-  def new
-  end
+  def new; end
 
   # POST /transactions
   def create

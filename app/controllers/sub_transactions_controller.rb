@@ -24,7 +24,7 @@ class SubTransactionsController < ApplicationController
     end
 
     redirect_to transaction_path(@transaction)
-  rescue
+  rescue StandardError
     render :new
   end
 
@@ -37,7 +37,7 @@ class SubTransactionsController < ApplicationController
       @sub_transaction.update!(sub_transaction_params)
       @transaction.recalculate_amount
     end
-  rescue
+  rescue StandardError
     render :edit
   end
 
@@ -56,6 +56,7 @@ class SubTransactionsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def sub_transaction_params
-    safe_params_require(params, :sub_transaction).permit(:transaction_id, :amount_cents, :amount_currency, :description, :category_id)
+    safe_params_require(params, :sub_transaction)
+      .permit(:transaction_id, :amount_cents, :amount_currency, :description, :category_id)
   end
 end

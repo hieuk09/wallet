@@ -12,10 +12,10 @@ def new_bank
 end
 
 MoneyRails.configure do |config|
-  if Rails.env.test?
-    config.default_bank = Money::Bank::VariableExchange.new(Money::RatesStore::Memory.new)
+  config.default_bank = if Rails.env.test?
+    Money::Bank::VariableExchange.new(Money::RatesStore::Memory.new)
   else
-    config.default_bank = new_bank
+    new_bank
   end
   config.default_currency = :vnd
   config.default_format = { with_currency: true, symbol: false }

@@ -71,8 +71,8 @@ RSpec.describe TransferTransactionsController do
     end
 
     context 'when transactions are not successfully created' do
-      let(:from_account_id) { }
-      let(:to_account_id) { }
+      let(:from_account_id) {}
+      let(:to_account_id) {}
 
       it 'redirects to transfer page' do
         expect {
