@@ -2,9 +2,10 @@ language: ruby
 cache: bundler
 before_script:
   - cp config/secrets.yml.sample config/secrets.yml
-  - pwd
 
 jobs:
   include:
-    - stage: Type Check
-      script: bundle exec srb tc --ignore vendor/bundle
+    - stage:
+      script:
+        - bundle exec srb tc --ignore vendor/bundle
+        - bundle exec rspec --order random
