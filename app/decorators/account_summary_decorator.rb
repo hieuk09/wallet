@@ -1,12 +1,18 @@
-# typed: true
+# typed: strict
 class AccountSummaryDecorator
-  attr_reader :assets, :liabilities
+  extend T::Sig
+  sig {returns(Money)}
+  attr_reader :assets
+  sig {returns(Money)}
+  attr_reader :liabilities
 
+  sig {void}
   def initialize
-    @assets = Account.assets
-    @liabilities = Account.liabilities
+    @assets = T.let(Account.assets, Money)
+    @liabilities = T.let(Account.liabilities, Money)
   end
 
+  sig {returns(Money)}
   def total
     assets + liabilities
   end

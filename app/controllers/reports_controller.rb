@@ -53,7 +53,7 @@ class ReportsController < ApplicationController
       monthly_data << query.execute(query_params).sum(&:amount)
     end
 
-    average = monthly_data.sum / monthly_data.count
+    average = T.let(monthly_data.sum / monthly_data.count, Money)
 
     summary = AccountSummaryDecorator.new
     total = summary.total
