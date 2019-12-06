@@ -5,7 +5,7 @@ class AccountsController < ApplicationController
   # GET /accounts
   def index
     @summary = AccountSummaryDecorator.new
-    @accounts = Account.all
+    @accounts = Account.all.to_a.sort_by(&:current_balance)
   end
 
   # GET /accounts/1
