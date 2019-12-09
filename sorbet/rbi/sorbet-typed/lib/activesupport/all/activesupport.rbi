@@ -546,6 +546,13 @@ class ActiveSupport::TimeWithZone
   def at_middle_of_day; end
 end
 
+# defines some of the methods at https://github.com/rails/rails/blob/v6.0.0/activesupport/lib/active_support/core_ext/date
+# this is not a complete definition!
+class Date
+  sig { params(options: T::Hash[Symbol, Integer]).returns(Date) }
+  def advance(options); end
+end
+
 # defines some of the methods at https://github.com/rails/rails/blob/v6.0.0/activesupport/lib/active_support/core_ext/time
 # this is not a complete definition!
 class Time
@@ -554,6 +561,9 @@ class Time
 
   sig { returns(Time) }
   def beginning_of_day; end
+
+  sig { params(options: T::Hash[Symbol, Integer]).returns(Time) }
+  def advance(options); end
 
   sig { returns(Time) }
   def at_midnight; end
@@ -622,4 +632,69 @@ class Hash
 
   sig { returns(T::Hash[Symbol, T.untyped]) }
   def to_options; end
+end
+
+class Numeric
+  sig { returns(ActiveSupport::Duration) }
+  def second; end
+
+  sig { returns(ActiveSupport::Duration) }
+  def seconds; end
+
+  sig { returns(ActiveSupport::Duration) }
+  def minute; end
+
+  sig { returns(ActiveSupport::Duration) }
+  def minutes; end
+
+  sig { returns(ActiveSupport::Duration) }
+  def hour; end
+
+  sig { returns(ActiveSupport::Duration) }
+  def hours; end
+
+  sig { returns(ActiveSupport::Duration) }
+  def day; end
+
+  sig { returns(ActiveSupport::Duration) }
+  def days; end
+
+  sig { returns(ActiveSupport::Duration) }
+  def week; end
+
+  sig { returns(ActiveSupport::Duration) }
+  def weeks; end
+
+  sig { returns(ActiveSupport::Duration) }
+  def fortnight; end
+
+  sig { returns(ActiveSupport::Duration) }
+  def fortnights; end
+
+  sig { returns(T.self_type) }
+  def in_milliseconds; end
+end
+
+module Enumerable
+  # https://github.com/rails/rails/blob/v5.2.3/activesupport/lib/active_support/core_ext/enumerable.rb#L64..L72
+  # the case where a block isn't given isn't handled - that seems like an unlikely case
+  sig do
+    type_parameters(:key).params(
+      block: T.proc.params(o: Enumerable::Elem).returns(T.type_parameter(:key))
+    ).returns(
+      T::Hash[T.type_parameter(:key), Enumerable::Elem]
+    )
+  end
+  def index_by(&block); end
+end
+
+class ActiveSupport::Duration
+  sig { returns(Integer) }
+  def to_i; end
+
+  sig { returns(Float) }
+  def to_f; end
+
+  sig { returns(String) }
+  def to_s; end
 end
