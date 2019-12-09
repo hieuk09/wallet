@@ -12,8 +12,6 @@ gem 'money-rails'
 gem 'sorbet-runtime'
 gem 'sqlite3'
 
-gem "sprockets", "~> 3.7.2"
-
 group :development do
   gem 'rubocop'
   gem 'sorbet'
