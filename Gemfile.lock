@@ -189,7 +189,7 @@ GEM
       sorbet-static (= 0.5.5181)
     sorbet-rails (0.5.9.1)
       parlour (~> 1.0)
-    sorbet-runtime (0.5.5176)
+    sorbet-runtime (0.5.5181)
     sorbet-static (0.5.5181-universal-darwin-14)
     sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
