@@ -117,7 +117,7 @@ GEM
       commander (~> 4.4.0)
       rainbow (~> 3.0.0)
       sorbet-runtime
-    parser (2.7.0.1)
+    parser (2.7.0.2)
       ast (~> 2.4.0)
     rack (2.0.8)
     rack-test (1.1.0)
