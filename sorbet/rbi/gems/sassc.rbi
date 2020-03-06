@@ -7,7 +7,8 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/sassc/all/sassc.rbi
 #
-# sassc-2.2.0
+# sassc-2.2.1
+
 module SassC
   def self.load_paths; end
 end

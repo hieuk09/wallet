@@ -7,7 +7,8 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/monetize/all/monetize.rbi
 #
-# monetize-1.9.2
+# monetize-1.9.4
+
 class NilClass
   def to_money(currency = nil); end
 end

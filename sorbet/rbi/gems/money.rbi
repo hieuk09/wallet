@@ -7,7 +7,8 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/money/all/money.rbi
 #
-# money-6.13.4
+# money-6.13.7
+
 class Money
   def allocate(parts); end
   def amount; end
@@ -38,7 +39,7 @@ class Money
   def self.default_bank; end
   def self.default_bank=(arg0); end
   def self.default_currency; end
-  def self.default_currency=(arg0); end
+  def self.default_currency=(currency); end
   def self.default_formatting_rules; end
   def self.default_formatting_rules=(arg0); end
   def self.disallow_currency_conversion!; end
@@ -49,7 +50,7 @@ class Money
   def self.locale_backend; end
   def self.locale_backend=(value); end
   def self.rounding_mode(mode = nil); end
-  def self.rounding_mode=(arg0); end
+  def self.rounding_mode=(new_rounding_mode); end
   def self.setup_defaults; end
   def self.use_i18n; end
   def self.use_i18n=(value); end
@@ -150,11 +151,12 @@ class Money::RatesStore::Memory
   def add_rate(currency_iso_from, currency_iso_to, rate); end
   def each_rate(&block); end
   def get_rate(currency_iso_from, currency_iso_to); end
-  def index; end
-  def initialize(opts = nil, rt = nil); end
+  def guard; end
+  def initialize(opts = nil, rates = nil); end
   def marshal_dump; end
   def options; end
   def rate_key_for(currency_iso_from, currency_iso_to); end
+  def rates; end
   def transaction(&block); end
 end
 class Money::Bank::UnknownRateFormat < StandardError

@@ -7,7 +7,8 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/tilt/all/tilt.rbi
 #
-# tilt-2.0.9
+# tilt-2.0.10
+
 class Tilt::Dummy
 end
 module Tilt
@@ -47,8 +48,8 @@ end
 class Tilt::Template
   def basename(suffix = nil); end
   def binary(string); end
-  def compile_template_method(local_keys); end
-  def compiled_method(locals_keys); end
+  def compile_template_method(local_keys, scope_class = nil); end
+  def compiled_method(locals_keys, scope_class = nil); end
   def data; end
   def default_encoding; end
   def eval_file; end

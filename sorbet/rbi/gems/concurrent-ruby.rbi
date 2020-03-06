@@ -8,6 +8,7 @@
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/concurrent-ruby/all/concurrent-ruby.rbi
 #
 # concurrent-ruby-1.1.5
+
 module Concurrent
   def abort_transaction; end
   def atomically; end

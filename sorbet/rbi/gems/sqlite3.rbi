@@ -7,7 +7,8 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/sqlite3/all/sqlite3.rbi
 #
-# sqlite3-1.4.1
+# sqlite3-1.4.2
+
 class SQLite3::Database
   def authorizer(&block); end
   def authorizer=(arg0); end

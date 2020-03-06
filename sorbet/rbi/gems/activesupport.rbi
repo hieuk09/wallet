@@ -7,7 +7,8 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/activesupport/all/activesupport.rbi
 #
-# activesupport-6.0.0
+# activesupport-6.0.2.1
+
 class Hash
   def _deep_transform_keys_in_object!(object, &block); end
   def _deep_transform_keys_in_object(object, &block); end
@@ -1058,6 +1059,7 @@ module ActiveSupport::Dependencies::ZeitwerkIntegration::RequireDependency
 end
 module ActiveSupport::Dependencies::ZeitwerkIntegration::Inflector
   def self.camelize(basename, _abspath); end
+  def self.inflect(overrides); end
 end
 class Method
   def duplicable?; end
@@ -2010,8 +2012,8 @@ module ActiveSupport::NumericWithFormat
   def to_s(format = nil, options = nil); end
 end
 class File < IO
+  def self.atomic_write(file_name, temp_dir = nil); end
   def self.empty?(arg0); end
-  def self.probe_stat_in(dir); end
 end
 module ActiveSupport::RangeWithFormat
   def to_default_s(format = nil); end

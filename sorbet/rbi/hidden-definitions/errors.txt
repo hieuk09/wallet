@@ -21,22 +21,7 @@
 # wrong constant name <RESERVED_108>
 # wrong constant name <RESERVED_109>
 # wrong constant name <RESERVED_10>
-# wrong constant name <RESERVED_110>
-# wrong constant name <RESERVED_111>
-# wrong constant name <RESERVED_112>
-# wrong constant name <RESERVED_113>
-# wrong constant name <RESERVED_114>
-# wrong constant name <RESERVED_115>
-# wrong constant name <RESERVED_116>
-# wrong constant name <RESERVED_117>
-# wrong constant name <RESERVED_118>
-# wrong constant name <RESERVED_119>
 # wrong constant name <RESERVED_11>
-# wrong constant name <RESERVED_120>
-# wrong constant name <RESERVED_121>
-# wrong constant name <RESERVED_122>
-# wrong constant name <RESERVED_123>
-# wrong constant name <RESERVED_124>
 # wrong constant name <RESERVED_12>
 # wrong constant name <RESERVED_13>
 # wrong constant name <RESERVED_14>
@@ -580,6 +565,50 @@
 # uninitialized constant ActionController::Base::RENDERERS
 # uninitialized constant ActionController::Base::RENDER_FORMATS_IN_PRIORITY
 # uninitialized constant ActionController::Base::URL_OPTIONS
+# wrong constant name <Class:Buffer>
+# wrong constant name <Class:ClassMethods>
+# wrong constant name <Class:ClientDisconnected>
+# wrong constant name <Class:Response>
+# wrong constant name <Class:SSE>
+# wrong constant name new_controller_thread
+# wrong constant name process
+# wrong constant name response_body=
+# wrong constant name call_on_error
+# wrong constant name connected?
+# wrong constant name ignore_disconnect
+# wrong constant name ignore_disconnect=
+# wrong constant name initialize
+# wrong constant name on_error
+# wrong constant name <static-init>
+# wrong constant name make_response!
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# uninitialized constant ActionController::Live::Response::CONTENT_TYPE
+# uninitialized constant ActionController::Live::Response::CONTENT_TYPE_PARSER
+# uninitialized constant ActionController::Live::Response::DATE
+# uninitialized constant ActionController::Live::Response::DEFAULT_CACHE_CONTROL
+# uninitialized constant ActionController::Live::Response::FILTERED
+# uninitialized constant ActionController::Live::Response::LAST_MODIFIED
+# uninitialized constant ActionController::Live::Response::LOCATION
+# uninitialized constant ActionController::Live::Response::MUST_REVALIDATE
+# uninitialized constant ActionController::Live::Response::NO_CACHE
+# uninitialized constant ActionController::Live::Response::NO_CONTENT_CODES
+# uninitialized constant ActionController::Live::Response::NullContentTypeHeader
+# uninitialized constant ActionController::Live::Response::PRIVATE
+# uninitialized constant ActionController::Live::Response::PUBLIC
+# uninitialized constant ActionController::Live::Response::SET_COOKIE
+# uninitialized constant ActionController::Live::Response::SPECIAL_KEYS
+# wrong constant name <static-init>
+# undefined method `initialize<defaultArg>1' for class `ActionController::Live::SSE'
+# Did you mean?  initialize_dup
+# undefined method `write<defaultArg>1' for class `ActionController::Live::SSE'
+# wrong constant name close
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
+# wrong constant name write<defaultArg>1
+# wrong constant name write
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # uninitialized constant ActionController::LogSubscriber::BLACK
 # uninitialized constant ActionController::LogSubscriber::BLUE
 # uninitialized constant ActionController::LogSubscriber::BOLD
@@ -2198,6 +2227,7 @@
 # uninitialized constant ActiveRecord::ConnectionAdapters::AbstractAdapter::CALLBACK_FILTER_TYPES
 # uninitialized constant ActiveRecord::ConnectionAdapters::SQLite3Adapter::CALLBACK_FILTER_TYPES
 # uninitialized constant ActiveRecord::ConnectionAdapters::SQLite3Adapter::SIMPLE_INT
+# uninitialized constant ActiveRecord::Enum::RUBYGEMS_ACTIVATION_MONITOR
 # wrong constant name collect?
 # uninitialized constant ActiveRecord::InternalMetadata::ACTIONS
 # uninitialized constant ActiveRecord::InternalMetadata::CALLBACKS
@@ -4010,8 +4040,6 @@
 # wrong constant name initialize
 # wrong constant name message_for
 # wrong constant name <static-init>
-# wrong constant name correct
-# wrong constant name initialize
 # wrong constant name corrections
 # wrong constant name cvar_names
 # wrong constant name initialize
@@ -4088,7 +4116,6 @@
 # wrong constant name to_set<defaultArg>1
 # wrong constant name to_set
 # wrong constant name uniq
-# wrong constant name zip
 # wrong constant name +
 # wrong constant name <Class:ArithmeticSequence>
 # wrong constant name <Class:Chain>
@@ -4252,12 +4279,10 @@
 # wrong constant name current
 # wrong constant name yield
 # wrong constant name size?
-# undefined singleton method `atomic_write<defaultArg>1' for `File'
-# wrong constant name atomic_write<defaultArg>1
-# wrong constant name atomic_write
 # wrong constant name exists?
 # wrong constant name lutime
 # wrong constant name mkfifo
+# wrong constant name probe_stat_in
 # uninitialized constant FileUtils::DryRun::LN_SUPPORTED
 # uninitialized constant FileUtils::DryRun::RUBY
 # uninitialized constant FileUtils::DryRun::VERSION
@@ -4296,13 +4321,21 @@
 # wrong constant name _valid_method?
 # wrong constant name debug
 # wrong constant name debug=
-# wrong constant name <static-init>
 # wrong constant name garbage_collect
 # wrong constant name latest_gc_info
 # wrong constant name stress=
 # wrong constant name verify_internal_consistency
 # wrong constant name verify_transient_heap_internal_consistency
 # uninitialized constant Gem::Resolver::Molinillo::DependencyGraph::Log::Elem
+# wrong constant name _routes
+# wrong constant name rails_info_path
+# wrong constant name rails_info_properties_path
+# wrong constant name rails_info_properties_url
+# wrong constant name rails_info_routes_path
+# wrong constant name rails_info_routes_url
+# wrong constant name rails_info_url
+# wrong constant name rails_mailers_path
+# wrong constant name rails_mailers_url
 # wrong constant name <Class:BaseLocator>
 # wrong constant name <Class:BlockLocator>
 # wrong constant name <Class:UnscopedLocator>
@@ -5148,7 +5181,6 @@
 # wrong constant name itself
 # wrong constant name object_id
 # wrong constant name pretty_inspect
-# wrong constant name respond_to?
 # wrong constant name then
 # wrong constant name yield_self
 # undefined singleton method `load<defaultArg>1' for `Kernel'
@@ -6594,6 +6626,7 @@
 # undefined method `assert_operator<defaultArg>2' for module `Minitest::Assertions'
 # undefined method `assert_output<defaultArg>1' for module `Minitest::Assertions'
 # undefined method `assert_output<defaultArg>2' for module `Minitest::Assertions'
+# undefined method `assert_path_exists<defaultArg>1' for module `Minitest::Assertions'
 # undefined method `assert_predicate<defaultArg>1' for module `Minitest::Assertions'
 # undefined method `assert_respond_to<defaultArg>1' for module `Minitest::Assertions'
 # undefined method `assert_same<defaultArg>1' for module `Minitest::Assertions'
@@ -6612,6 +6645,7 @@
 # undefined method `refute_match<defaultArg>1' for module `Minitest::Assertions'
 # undefined method `refute_operator<defaultArg>1' for module `Minitest::Assertions'
 # undefined method `refute_operator<defaultArg>2' for module `Minitest::Assertions'
+# undefined method `refute_path_exists<defaultArg>1' for module `Minitest::Assertions'
 # undefined method `refute_predicate<defaultArg>1' for module `Minitest::Assertions'
 # undefined method `refute_respond_to<defaultArg>1' for module `Minitest::Assertions'
 # undefined method `refute_same<defaultArg>1' for module `Minitest::Assertions'
@@ -6636,6 +6670,8 @@
 # wrong constant name assert_output<defaultArg>1
 # wrong constant name assert_output<defaultArg>2
 # wrong constant name assert_output
+# wrong constant name assert_path_exists<defaultArg>1
+# wrong constant name assert_path_exists
 # wrong constant name assert_predicate<defaultArg>1
 # wrong constant name assert_predicate
 # wrong constant name assert_respond_to<defaultArg>1
@@ -6651,6 +6687,7 @@
 # wrong constant name capture_subprocess_io
 # wrong constant name diff
 # wrong constant name exception_details
+# wrong constant name fail_after
 # wrong constant name flunk<defaultArg>1
 # wrong constant name flunk
 # wrong constant name message<defaultArg>1
@@ -6675,6 +6712,8 @@
 # wrong constant name refute_operator<defaultArg>1
 # wrong constant name refute_operator<defaultArg>2
 # wrong constant name refute_operator
+# wrong constant name refute_path_exists<defaultArg>1
+# wrong constant name refute_path_exists
 # wrong constant name refute_predicate<defaultArg>1
 # wrong constant name refute_predicate
 # wrong constant name refute_respond_to<defaultArg>1
@@ -6684,12 +6723,15 @@
 # wrong constant name skip<defaultArg>1
 # wrong constant name skip<defaultArg>2
 # wrong constant name skip
+# wrong constant name skip_until
 # wrong constant name skipped?
+# wrong constant name things_to_diff
 # wrong constant name diff
 # wrong constant name diff=
 # undefined method `jruby?<defaultArg>1' for module `Minitest::Guard'
 # undefined method `maglev?<defaultArg>1' for module `Minitest::Guard'
 # undefined method `mri?<defaultArg>1' for module `Minitest::Guard'
+# undefined method `osx?<defaultArg>1' for module `Minitest::Guard'
 # undefined method `rubinius?<defaultArg>1' for module `Minitest::Guard'
 # undefined method `windows?<defaultArg>1' for module `Minitest::Guard'
 # wrong constant name jruby?<defaultArg>1
@@ -6698,6 +6740,8 @@
 # wrong constant name maglev?
 # wrong constant name mri?<defaultArg>1
 # wrong constant name mri?
+# wrong constant name osx?<defaultArg>1
+# wrong constant name osx?
 # wrong constant name rubinius?<defaultArg>1
 # wrong constant name rubinius?
 # wrong constant name windows?<defaultArg>1
@@ -7224,11 +7268,21 @@
 # wrong constant name fips_mode
 # uninitialized constant Opus
 # uninitialized constant Opus
+# uninitialized constant Parser::Ruby26::Racc_Main_Parsing_Routine
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Id_C
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Revision
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Revision_C
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Revision_R
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Version
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Version_C
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Core_Version_R
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Revision
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Type
+# uninitialized constant Parser::Ruby26::Racc_Runtime_Version
+# uninitialized constant Parser::Ruby26::Racc_YY_Parse_Method
 # undefined method `children<defaultArg>1' for class `Pathname'
-# undefined method `each_child<defaultArg>1' for class `Pathname'
 # undefined method `find<defaultArg>1' for class `Pathname'
 # wrong constant name children<defaultArg>1
-# wrong constant name each_child<defaultArg>1
 # wrong constant name empty?
 # wrong constant name find<defaultArg>1
 # wrong constant name fnmatch?
@@ -7802,6 +7856,150 @@
 # wrong constant name safe_load<defaultArg>9
 # wrong constant name safe_load
 # wrong constant name to_json
+# uninitialized constant REXML::Attribute::NAME
+# uninitialized constant REXML::Attribute::NAMECHAR
+# uninitialized constant REXML::Attribute::NAMESPLIT
+# uninitialized constant REXML::Attribute::NAME_CHAR
+# uninitialized constant REXML::Attribute::NAME_START_CHAR
+# uninitialized constant REXML::Attribute::NAME_STR
+# uninitialized constant REXML::Attribute::NCNAME_STR
+# uninitialized constant REXML::Attribute::NMTOKEN
+# uninitialized constant REXML::Attribute::NMTOKENS
+# uninitialized constant REXML::Attribute::REFERENCE
+# uninitialized constant REXML::CData::EREFERENCE
+# uninitialized constant REXML::CData::NEEDS_A_SECOND_CHECK
+# uninitialized constant REXML::CData::NUMERICENTITY
+# uninitialized constant REXML::CData::REFERENCE
+# uninitialized constant REXML::CData::SETUTITSBUS
+# uninitialized constant REXML::CData::SLAICEPS
+# uninitialized constant REXML::CData::SPECIALS
+# uninitialized constant REXML::CData::SUBSTITUTES
+# uninitialized constant REXML::CData::VALID_CHAR
+# uninitialized constant REXML::CData::VALID_XML_CHARS
+# uninitialized constant REXML::DocType::NAME
+# uninitialized constant REXML::DocType::NAMECHAR
+# uninitialized constant REXML::DocType::NAME_CHAR
+# uninitialized constant REXML::DocType::NAME_START_CHAR
+# uninitialized constant REXML::DocType::NAME_STR
+# uninitialized constant REXML::DocType::NCNAME_STR
+# uninitialized constant REXML::DocType::NMTOKEN
+# uninitialized constant REXML::DocType::NMTOKENS
+# uninitialized constant REXML::DocType::REFERENCE
+# uninitialized constant REXML::Document::NAME
+# uninitialized constant REXML::Document::NAMECHAR
+# uninitialized constant REXML::Document::NAMESPLIT
+# uninitialized constant REXML::Document::NAME_CHAR
+# uninitialized constant REXML::Document::NAME_START_CHAR
+# uninitialized constant REXML::Document::NAME_STR
+# uninitialized constant REXML::Document::NCNAME_STR
+# uninitialized constant REXML::Document::NMTOKEN
+# uninitialized constant REXML::Document::NMTOKENS
+# uninitialized constant REXML::Document::REFERENCE
+# uninitialized constant REXML::Document::UNDEFINED
+# uninitialized constant REXML::Element::NAME
+# uninitialized constant REXML::Element::NAMECHAR
+# uninitialized constant REXML::Element::NAMESPLIT
+# uninitialized constant REXML::Element::NAME_CHAR
+# uninitialized constant REXML::Element::NAME_START_CHAR
+# uninitialized constant REXML::Element::NAME_STR
+# uninitialized constant REXML::Element::NCNAME_STR
+# uninitialized constant REXML::Element::NMTOKEN
+# uninitialized constant REXML::Element::NMTOKENS
+# uninitialized constant REXML::Element::REFERENCE
+# uninitialized constant REXML::Entity::NAME
+# uninitialized constant REXML::Entity::NAMECHAR
+# uninitialized constant REXML::Entity::NAME_CHAR
+# uninitialized constant REXML::Entity::NAME_START_CHAR
+# uninitialized constant REXML::Entity::NAME_STR
+# uninitialized constant REXML::Entity::NCNAME_STR
+# uninitialized constant REXML::Entity::NMTOKEN
+# uninitialized constant REXML::Entity::NMTOKENS
+# uninitialized constant REXML::Entity::REFERENCE
+# undefined singleton method `boolean<defaultArg>1' for `REXML::Functions'
+# undefined singleton method `get_namespace<defaultArg>1' for `REXML::Functions'
+# undefined singleton method `local_name<defaultArg>1' for `REXML::Functions'
+# undefined singleton method `name<defaultArg>1' for `REXML::Functions'
+# undefined singleton method `namespace_uri<defaultArg>1' for `REXML::Functions'
+# undefined singleton method `normalize_space<defaultArg>1' for `REXML::Functions'
+# undefined singleton method `number<defaultArg>1' for `REXML::Functions'
+# undefined singleton method `string<defaultArg>1' for `REXML::Functions'
+# undefined singleton method `substring<defaultArg>1' for `REXML::Functions'
+# wrong constant name boolean<defaultArg>1
+# wrong constant name boolean
+# wrong constant name ceiling
+# wrong constant name compare_language
+# wrong constant name concat
+# wrong constant name contains
+# wrong constant name context=
+# wrong constant name count
+# wrong constant name false
+# wrong constant name floor
+# wrong constant name get_namespace<defaultArg>1
+# wrong constant name get_namespace
+# wrong constant name id
+# wrong constant name lang
+# wrong constant name last
+# wrong constant name local_name<defaultArg>1
+# wrong constant name local_name
+# wrong constant name name<defaultArg>1
+# wrong constant name name
+# wrong constant name namespace_context
+# wrong constant name namespace_context=
+# wrong constant name namespace_uri<defaultArg>1
+# wrong constant name namespace_uri
+# wrong constant name normalize_space<defaultArg>1
+# wrong constant name normalize_space
+# wrong constant name not
+# wrong constant name number<defaultArg>1
+# wrong constant name number
+# wrong constant name position
+# wrong constant name processing_instruction
+# wrong constant name round
+# wrong constant name send
+# wrong constant name singleton_method_added
+# wrong constant name starts_with
+# wrong constant name string<defaultArg>1
+# wrong constant name string
+# wrong constant name string_length
+# wrong constant name string_value
+# wrong constant name substring<defaultArg>1
+# wrong constant name substring
+# wrong constant name substring_after
+# wrong constant name substring_before
+# wrong constant name sum
+# wrong constant name text
+# wrong constant name translate
+# wrong constant name true
+# wrong constant name variables
+# wrong constant name variables=
+# uninitialized constant REXML::Namespace::NAME
+# uninitialized constant REXML::Namespace::NAMECHAR
+# uninitialized constant REXML::Namespace::NAME_CHAR
+# uninitialized constant REXML::Namespace::NAME_START_CHAR
+# uninitialized constant REXML::Namespace::NAME_STR
+# uninitialized constant REXML::Namespace::NCNAME_STR
+# uninitialized constant REXML::Namespace::NMTOKEN
+# uninitialized constant REXML::Namespace::NMTOKENS
+# uninitialized constant REXML::Namespace::REFERENCE
+# uninitialized constant REXML::Parsers::XPathParser::NAME
+# uninitialized constant REXML::Parsers::XPathParser::NAMECHAR
+# uninitialized constant REXML::Parsers::XPathParser::NAME_CHAR
+# uninitialized constant REXML::Parsers::XPathParser::NAME_START_CHAR
+# uninitialized constant REXML::Parsers::XPathParser::NAME_STR
+# uninitialized constant REXML::Parsers::XPathParser::NCNAME_STR
+# uninitialized constant REXML::Parsers::XPathParser::NMTOKEN
+# uninitialized constant REXML::Parsers::XPathParser::NMTOKENS
+# uninitialized constant REXML::Parsers::XPathParser::REFERENCE
+# uninitialized constant REXML::XPath::INTERNAL_METHODS
+# uninitialized constant REXML::XPathParser::NAME
+# uninitialized constant REXML::XPathParser::NAMECHAR
+# uninitialized constant REXML::XPathParser::NAME_CHAR
+# uninitialized constant REXML::XPathParser::NAME_START_CHAR
+# uninitialized constant REXML::XPathParser::NAME_STR
+# uninitialized constant REXML::XPathParser::NCNAME_STR
+# uninitialized constant REXML::XPathParser::NMTOKEN
+# uninitialized constant REXML::XPathParser::NMTOKENS
+# uninitialized constant REXML::XPathParser::REFERENCE
 # wrong constant name <Class:CparseParams>
 # wrong constant name <static-init>
 # wrong constant name <Class:Builder>
@@ -8412,7 +8610,7 @@
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
-# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fcf3ecae6c0>'
+# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fe622f1a580>'
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
@@ -8562,7 +8760,6 @@
 # wrong constant name special_prefixes=
 # wrong constant name vi_editing_mode
 # wrong constant name vi_editing_mode?
-# wrong constant name match?
 # wrong constant name <Class:Config>
 # wrong constant name <Class:Label>
 # wrong constant name <Class:Message>
@@ -9041,6 +9238,8 @@
 # uninitialized constant RuboCop::Cop::Layout::LeadingCommentSpace::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Layout::LeadingCommentSpace::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::LeadingEmptyLines::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Layout::LineLength::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Layout::LineLength::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::MultilineArrayBraceLayout::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::MultilineArrayLineBreaks::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::MultilineAssignmentLayout::BYTE_ORDER_MARK
@@ -9154,6 +9353,7 @@
 # uninitialized constant RuboCop::Cop::Lint::NestedPercentLiteral::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Lint::NestedPercentLiteral::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::NextWithoutAccumulator::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::NonDeterministicRequireOrder::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::NonLocalExitFromIterator::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::NumberConversion::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::OrderedMagicComments::FROZEN_STRING_LITERAL
@@ -9219,8 +9419,6 @@
 # uninitialized constant RuboCop::Cop::Metrics::BlockLength::MSG
 # uninitialized constant RuboCop::Cop::Metrics::BlockNesting::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Metrics::CyclomaticComplexity::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Metrics::LineLength::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Metrics::LineLength::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Metrics::MethodLength::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Metrics::MethodLength::MSG
 # uninitialized constant RuboCop::Cop::Metrics::ParameterLists::LITERAL_REGEX
@@ -9268,8 +9466,6 @@
 # uninitialized constant RuboCop::Cop::Style::BlockComments::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::BlockComments::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::BlockDelimiters::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::BracesAroundHashParameters::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Style::BracesAroundHashParameters::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::CaseEquality::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::CharacterLiteral::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::ClassAndModuleChildren::BYTE_ORDER_MARK
@@ -9334,6 +9530,7 @@
 # uninitialized constant RuboCop::Cop::Style::FrozenStringLiteralComment::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::GlobalVars::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::GuardClause::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::HashEachMethods::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::HashSyntax::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::HashSyntax::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::IdenticalConditionalBranches::LITERAL_REGEX
@@ -9350,7 +9547,6 @@
 # uninitialized constant RuboCop::Cop::Style::Lambda::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::LineEndConcatenation::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::LineEndConcatenation::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Style::MethodCallWithArgsParentheses::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::MethodCallWithoutArgsParentheses::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::MethodCalledOnDoEndBlock::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::MethodCalledOnDoEndBlock::LITERAL_REGEX
@@ -10109,6 +10305,7 @@
 # wrong constant name real_hash
 # wrong constant name real_instance_methods
 # wrong constant name real_is_a?
+# wrong constant name real_method
 # wrong constant name real_name
 # wrong constant name real_object_id
 # wrong constant name real_private_instance_methods
@@ -10170,33 +10367,32 @@
 # uninitialized constant SortedSet::InspectKey
 # wrong constant name initialize
 # wrong constant name setup
-# wrong constant name <Class:CoffeeScriptTemplate>
-# wrong constant name <Class:ERBTemplate>
-# wrong constant name <Class:EcoTemplate>
-# wrong constant name <Class:EjsTemplate>
-# wrong constant name <Class:SassTemplate>
-# wrong constant name <Class:ScssTemplate>
+# uninitialized constant Sprockets::Base::ALLOWED_REQUEST_METHODS
+# uninitialized constant Sprockets::Base::BASE64_DIGITS
+# uninitialized constant Sprockets::Base::BASE64_VALUES
 # uninitialized constant Sprockets::Base::DIGEST_SIZES
 # uninitialized constant Sprockets::Base::HASH_ALGORITHMS
 # uninitialized constant Sprockets::Base::POSSIBLE_BOWER_JSONS
 # uninitialized constant Sprockets::Base::SEPARATOR_PATTERN
-# uninitialized constant Sprockets::Base::UNBOUND_METHODS_BIND_TO_ANY_OBJECT
 # uninitialized constant Sprockets::Base::VALID_METADATA_COMPOUND_TYPES
 # uninitialized constant Sprockets::Base::VALID_METADATA_COMPOUND_TYPES_HASH
 # uninitialized constant Sprockets::Base::VALID_METADATA_TYPES
 # uninitialized constant Sprockets::Base::VALID_METADATA_VALUE_TYPES
 # uninitialized constant Sprockets::Base::VALID_METADATA_VALUE_TYPES_HASH
+# uninitialized constant Sprockets::Base::VLQ_BASE
+# uninitialized constant Sprockets::Base::VLQ_BASE_MASK
+# uninitialized constant Sprockets::Base::VLQ_BASE_SHIFT
+# uninitialized constant Sprockets::Base::VLQ_CONTINUATION_BIT
 # wrong constant name <Class:NullStore>
+# undefined method `clear<defaultArg>1' for class `Sprockets::Cache::NullStore'
+# wrong constant name clear<defaultArg>1
+# wrong constant name clear
 # wrong constant name get
 # wrong constant name set
 # wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name cache_key
-# wrong constant name call
 # uninitialized constant Sprockets::Configuration::DIGEST_SIZES
 # uninitialized constant Sprockets::Configuration::HASH_ALGORITHMS
 # uninitialized constant Sprockets::Configuration::SEPARATOR_PATTERN
-# uninitialized constant Sprockets::Configuration::UNBOUND_METHODS_BIND_TO_ANY_OBJECT
 # uninitialized constant Sprockets::Configuration::VALID_METADATA_COMPOUND_TYPES
 # uninitialized constant Sprockets::Configuration::VALID_METADATA_COMPOUND_TYPES_HASH
 # uninitialized constant Sprockets::Configuration::VALID_METADATA_TYPES
@@ -10205,30 +10401,18 @@
 # uninitialized constant Sprockets::Dependencies::DIGEST_SIZES
 # uninitialized constant Sprockets::Dependencies::HASH_ALGORITHMS
 # uninitialized constant Sprockets::Dependencies::SEPARATOR_PATTERN
-# wrong constant name call
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name cache_key
-# wrong constant name call
-# wrong constant name <static-init>
-# wrong constant name cache_key
-# wrong constant name call
 # uninitialized constant Sprockets::Loader::DIGEST_SIZES
 # uninitialized constant Sprockets::Loader::HASH_ALGORITHMS
 # uninitialized constant Sprockets::Loader::SEPARATOR_PATTERN
-# uninitialized constant Sprockets::Loader::UNBOUND_METHODS_BIND_TO_ANY_OBJECT
 # uninitialized constant Sprockets::Loader::VALID_METADATA_COMPOUND_TYPES
 # uninitialized constant Sprockets::Loader::VALID_METADATA_COMPOUND_TYPES_HASH
 # uninitialized constant Sprockets::Loader::VALID_METADATA_TYPES
 # uninitialized constant Sprockets::Loader::VALID_METADATA_VALUE_TYPES
 # uninitialized constant Sprockets::Loader::VALID_METADATA_VALUE_TYPES_HASH
-# uninitialized constant Sprockets::Mime::UNBOUND_METHODS_BIND_TO_ANY_OBJECT
 # uninitialized constant Sprockets::PathDigestUtils::DIGEST_SIZES
 # uninitialized constant Sprockets::PathDigestUtils::HASH_ALGORITHMS
 # uninitialized constant Sprockets::PathDigestUtils::SEPARATOR_PATTERN
 # uninitialized constant Sprockets::Paths::SEPARATOR_PATTERN
-# uninitialized constant Sprockets::Paths::UNBOUND_METHODS_BIND_TO_ANY_OBJECT
-# uninitialized constant Sprockets::Processing::UNBOUND_METHODS_BIND_TO_ANY_OBJECT
 # uninitialized constant Sprockets::Processing::VALID_METADATA_COMPOUND_TYPES
 # uninitialized constant Sprockets::Processing::VALID_METADATA_COMPOUND_TYPES_HASH
 # uninitialized constant Sprockets::Processing::VALID_METADATA_TYPES
@@ -10242,11 +10426,6 @@
 # uninitialized constant Sprockets::Rails::Helper::URI_REGEXP
 # uninitialized constant Sprockets::Railtie::ABSTRACT_RAILTIES
 # uninitialized constant Sprockets::Resolve::SEPARATOR_PATTERN
-# wrong constant name <static-init>
-# wrong constant name call
-# wrong constant name <static-init>
-# wrong constant name call
-# uninitialized constant Sprockets::Transformers::UNBOUND_METHODS_BIND_TO_ANY_OBJECT
 # uninitialized constant Sprockets::Transformers::VALID_METADATA_COMPOUND_TYPES
 # uninitialized constant Sprockets::Transformers::VALID_METADATA_COMPOUND_TYPES_HASH
 # uninitialized constant Sprockets::Transformers::VALID_METADATA_TYPES
