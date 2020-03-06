@@ -7,7 +7,8 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/bootsnap/all/bootsnap.rbi
 #
-# bootsnap-1.4.5
+# bootsnap-1.4.6
+
 module Bootsnap
   def bundler?; end
   def self.setup(cache_dir:, development_mode: nil, load_path_cache: nil, autoload_paths_cache: nil, disable_trace: nil, compile_cache_iseq: nil, compile_cache_yaml: nil); end
@@ -111,12 +112,13 @@ module Bootsnap::LoadPathCache::ChangeObserver::ArrayMixin
   def unshift(*entries); end
 end
 class Bootsnap::LoadPathCache::LoadedFeaturesIndex
+  def extension_elidable?(f); end
   def initialize; end
   def key?(feature); end
   def purge(feature); end
   def purge_multi(features); end
   def register(short, long = nil); end
-  def strip_extension(f); end
+  def strip_extension_if_elidable(f); end
 end
 class Bootsnap::LoadPathCache::RealpathCache
   def call(*key); end

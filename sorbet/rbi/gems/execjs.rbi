@@ -8,6 +8,7 @@
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/execjs/all/execjs.rbi
 #
 # execjs-2.7.0
+
 module ExecJS
   def self.compile(source, options = nil); end
   def self.cygwin?; end

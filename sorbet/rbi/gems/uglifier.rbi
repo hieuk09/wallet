@@ -8,6 +8,7 @@
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/uglifier/all/uglifier.rbi
 #
 # uglifier-4.2.0
+
 class Uglifier
   def comment_options; end
   def comment_setting; end

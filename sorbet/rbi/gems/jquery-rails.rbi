@@ -8,6 +8,7 @@
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/jquery-rails/all/jquery-rails.rbi
 #
 # jquery-rails-4.3.5
+
 module Jquery
 end
 module Jquery::Rails

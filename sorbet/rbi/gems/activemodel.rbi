@@ -7,7 +7,8 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/activemodel/all/activemodel.rbi
 #
-# activemodel-6.0.0
+# activemodel-6.0.2.1
+
 module ActiveModel
   def self.eager_load!; end
   def self.gem_version; end
@@ -422,9 +423,9 @@ class ActiveModel::Type::Date < ActiveModel::Type::Value
   def type_cast_for_schema(value); end
   def value_from_multiparameter_assignment(*arg0); end
   include ActiveModel::Type::Helpers::Timezone
-  include Anonymous_ActiveModel_Type_Helpers_AcceptsMultiparameterTime_5
+  include Anonymous_ActiveModel_Type_Helpers_AcceptsMultiparameterTime_7
 end
-module Anonymous_ActiveModel_Type_Helpers_AcceptsMultiparameterTime_5
+module Anonymous_ActiveModel_Type_Helpers_AcceptsMultiparameterTime_7
   def assert_valid_value(value); end
   def cast(value); end
   def serialize(value); end
@@ -439,9 +440,9 @@ class ActiveModel::Type::DateTime < ActiveModel::Type::Value
   def value_from_multiparameter_assignment(values_hash); end
   include ActiveModel::Type::Helpers::TimeValue
   include ActiveModel::Type::Helpers::Timezone
-  include Anonymous_ActiveModel_Type_Helpers_AcceptsMultiparameterTime_6
+  include Anonymous_ActiveModel_Type_Helpers_AcceptsMultiparameterTime_8
 end
-module Anonymous_ActiveModel_Type_Helpers_AcceptsMultiparameterTime_6
+module Anonymous_ActiveModel_Type_Helpers_AcceptsMultiparameterTime_8
   def assert_valid_value(value); end
   def cast(value); end
   def serialize(value); end
@@ -478,9 +479,9 @@ class ActiveModel::Type::Time < ActiveModel::Type::Value
   def user_input_in_time_zone(value); end
   include ActiveModel::Type::Helpers::TimeValue
   include ActiveModel::Type::Helpers::Timezone
-  include Anonymous_ActiveModel_Type_Helpers_AcceptsMultiparameterTime_7
+  include Anonymous_ActiveModel_Type_Helpers_AcceptsMultiparameterTime_9
 end
-module Anonymous_ActiveModel_Type_Helpers_AcceptsMultiparameterTime_7
+module Anonymous_ActiveModel_Type_Helpers_AcceptsMultiparameterTime_9
   def assert_valid_value(value); end
   def cast(value); end
   def serialize(value); end
@@ -649,12 +650,10 @@ class ActiveModel::Validations::AcceptanceValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value); end
 end
 class ActiveModel::Validations::AcceptanceValidator::LazilyDefineAttributes < Module
-  def initialize(attribute_definition); end
-end
-class ActiveModel::Validations::AcceptanceValidator::AttributeDefinition
+  def ==(other); end
   def attributes; end
-  def convert_to_reader_name(method_name); end
   def define_on(klass); end
+  def included(klass); end
   def initialize(attributes); end
   def matches?(method_name); end
 end

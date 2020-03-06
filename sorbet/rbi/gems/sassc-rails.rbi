@@ -8,6 +8,7 @@
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/sassc-rails/all/sassc-rails.rbi
 #
 # sassc-rails-2.1.2
+
 module SassC
 end
 module SassC::Rails

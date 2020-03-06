@@ -8,6 +8,7 @@
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/money-rails/all/money-rails.rbi
 #
 # money-rails-1.13.3
+
 module MoneyRails
   extend MoneyRails::Configuration
 end

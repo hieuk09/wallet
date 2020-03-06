@@ -8,6 +8,7 @@
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/money-open-exchange-rates/all/money-open-exchange-rates.rbi
 #
 # money-open-exchange-rates-1.3.0
+
 module OpenExchangeRatesBank
 end
 class Money
