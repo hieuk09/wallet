@@ -2,7 +2,6 @@
 #   srb rbi todo
 
 # typed: strong
-module ::Anonymous_Delegator_12; end
 module ::Anonymous_Delegator_13; end
 module ::Anonymous_Delegator_14; end
 module ::Anonymous_Delegator_15; end
@@ -10,14 +9,17 @@ module ::Anonymous_Delegator_16; end
 module ::Anonymous_Delegator_17; end
 module ::Anonymous_Delegator_18; end
 module ::Anonymous_Delegator_2; end
+module ::Anonymous_Delegator_23; end
 module ::Anonymous_Delegator_4; end
-module ::Anonymous_Delegator_6; end
+module ::Anonymous_Delegator_7; end
 module ActiveRecord::CollectionCacheKey; end
 module ActiveStorage::Blob::Analyzable; end
 module ActiveStorage::Blob::Identifiable; end
 module ActiveStorage::Variant; end
-module Anonymous_Module_24::Anonymous_Module_25; end
-module Anonymous_Module_24::Anonymous_Module_26; end
+module Anonymous_Module_19::Anonymous_Module_20; end
+module Anonymous_Module_19::Anonymous_Module_21; end
+module Anonymous_Module_29::Anonymous_Module_20; end
+module Anonymous_Module_29::Anonymous_Module_21; end
 module T::InterfaceWrapper::Helpers; end
 module T::Private::Abstract::Hooks; end
 module T::Private::Methods::MethodHooks; end

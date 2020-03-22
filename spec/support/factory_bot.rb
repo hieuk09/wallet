@@ -1,4 +1,4 @@
-# typed: false
+# typed: strict
 require 'factory_bot'
 
 RSpec.configure do |config|

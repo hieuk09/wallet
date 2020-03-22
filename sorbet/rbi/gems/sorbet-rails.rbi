@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/sorbet-rails/all/sorbet-rails.rbi
 #
-# sorbet-rails-0.6.0
+# sorbet-rails-0.6.1
 
 module SorbetRails
   def self.config(&blk); end
@@ -39,6 +39,8 @@ module SorbetRails::ModelUtils
   def model_class_name(*args, &blk); end
   def model_module_name(*args, &blk); end
   def model_relation_class_name(*args, &blk); end
+  def model_relation_type_alias(*args, &blk); end
+  def model_relation_type_class_name(*args, &blk); end
   extend T::Helpers
   extend T::InterfaceWrapper::Helpers
   extend T::Private::Abstract::Hooks
@@ -105,6 +107,25 @@ class SorbetRails::ModelPlugins::ActiveRecordAttribute < SorbetRails::ModelPlugi
   def value_type_for_attr_writer(*args, &blk); end
   extend T::Private::Methods::MethodHooks
   extend T::Private::Methods::SingletonMethodHooks
+end
+class SorbetRails::ModelPlugins::ActiveRecordAttribute::ColumnType < T::Struct
+  def __t_props_generated_deserialize(*args); end
+  def __t_props_generated_serialize(*args); end
+  def array_type; end
+  def base_type; end
+  def nilable; end
+  def self.inherited(s); end
+  def to_s(*args, &blk); end
+  extend T::Private::Methods::MethodHooks
+  extend T::Private::Methods::SingletonMethodHooks
+  extend T::Props::ClassMethods
+  extend T::Props::Plugin::ClassMethods
+  extend T::Props::Plugin::ClassMethods
+  extend T::Props::Plugin::ClassMethods
+  extend T::Props::Plugin::ClassMethods
+  extend T::Props::Plugin::ClassMethods
+  extend T::Props::Serializable::ClassMethods
+  extend T::Sig
 end
 class SorbetRails::ModelPlugins::ActiveRecordAssoc < SorbetRails::ModelPlugins::Base
   def assoc_should_be_untyped?(*args, &blk); end
@@ -213,9 +234,9 @@ module GeneratedUrlHelpers
   def self._routes; end
   def self.default_url_options=(obj); end
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_24
+  include Anonymous_Module_29
 end
-module Anonymous_Module_24
+module Anonymous_Module_29
   def _generate_paths_by_default; end
   def _routes; end
   def self._routes; end
@@ -227,11 +248,11 @@ module Anonymous_Module_24
   def self.url_for(options); end
   def self.url_options; end
   extend ActiveSupport::Concern
-  extend Anonymous_Module_25
-  extend Anonymous_Module_26
+  extend Anonymous_Module_20
+  extend Anonymous_Module_21
   include ActionDispatch::Routing::UrlFor
-  include Anonymous_Module_25
-  include Anonymous_Module_26
+  include Anonymous_Module_20
+  include Anonymous_Module_21
 end
 class ActiveRecordOverrides
   def enum_calls; end
@@ -245,6 +266,8 @@ class ActiveRecordOverrides
   include Singleton
 end
 class SorbetRails::TypedEnumConfig < T::Struct
+  def __t_props_generated_deserialize(*args); end
+  def __t_props_generated_serialize(*args); end
   def class_name; end
   def self.inherited(s); end
   def strict_mode; end
