@@ -10,7 +10,19 @@ jobs:
     steps:
       - checkout
       - ruby/bundle-install
-      - bundle exec rubocop
-      - bundle exec srb tc --progress --ignore vendor/bundle
-      - bundle exec rspec --order random
+
+      - run:
+          name: Rubocop
+          command: |
+            bundle exec rubocop
+
+      - run:
+          name: Sorbet
+          command: |
+            bundle exec srb tc --progress --ignore vendor/bundle
+
+      - run:
+          name: unit test
+          command: |
+            bundle exec rspec --order random
 
