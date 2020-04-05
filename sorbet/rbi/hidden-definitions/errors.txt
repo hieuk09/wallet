@@ -16,10 +16,6 @@
 # wrong constant name <RESERVED_103>
 # wrong constant name <RESERVED_104>
 # wrong constant name <RESERVED_105>
-# wrong constant name <RESERVED_106>
-# wrong constant name <RESERVED_107>
-# wrong constant name <RESERVED_108>
-# wrong constant name <RESERVED_109>
 # wrong constant name <RESERVED_10>
 # wrong constant name <RESERVED_11>
 # wrong constant name <RESERVED_12>
@@ -6378,63 +6374,10 @@
 # uninitialized constant REXML::XPathParser::REFERENCE
 # uninitialized constant RSpec::Core::ExampleGroup::NOT_YET_IMPLEMENTED
 # uninitialized constant RSpec::Core::ExampleGroup::NO_REASON_GIVEN
-# wrong constant name example_failed
-# wrong constant name example_finished
-# wrong constant name initialize
-# wrong constant name start_dump
-# wrong constant name <static-init>
-# wrong constant name inherited
-# wrong constant name close
-# wrong constant name example_group
-# wrong constant name example_group=
-# wrong constant name example_group_started
-# wrong constant name initialize
-# wrong constant name output
-# wrong constant name start
-# wrong constant name <static-init>
-# wrong constant name dump_failures
-# wrong constant name dump_pending
-# wrong constant name dump_summary
-# wrong constant name message
-# wrong constant name seed
-# wrong constant name <static-init>
-# wrong constant name initialize
-# wrong constant name notify_results
-# wrong constant name <static-init>
-# wrong constant name example_failed
-# wrong constant name example_group_finished
-# wrong constant name example_passed
-# wrong constant name example_pending
-# wrong constant name <static-init>
-# wrong constant name initialize
-# wrong constant name message
-# wrong constant name output
-# wrong constant name <static-init>
-# wrong constant name dump_summary
-# wrong constant name example_failed
-# wrong constant name example_passed
-# wrong constant name example_pending
-# wrong constant name example_started
-# wrong constant name start_dump
-# wrong constant name <static-init>
-# wrong constant name dump_profile
-# wrong constant name dump_profile_slowest_example_groups
-# wrong constant name dump_profile_slowest_examples
-# wrong constant name dump_summary
-# wrong constant name message
-# wrong constant name output_hash
-# wrong constant name seed
-# wrong constant name stop
-# wrong constant name <static-init>
-# wrong constant name dump_profile
-# wrong constant name initialize
-# wrong constant name output
-# wrong constant name <static-init>
-# wrong constant name example_failed
-# wrong constant name example_passed
-# wrong constant name example_pending
-# wrong constant name start_dump
-# wrong constant name <static-init>
+# uninitialized constant RSpec::Core::Formatters::HtmlPrinter::HTML_ESCAPE
+# uninitialized constant RSpec::Core::Formatters::HtmlPrinter::HTML_ESCAPE_ONCE_REGEXP
+# uninitialized constant RSpec::Core::Formatters::HtmlPrinter::JSON_ESCAPE
+# uninitialized constant RSpec::Core::Formatters::HtmlPrinter::JSON_ESCAPE_REGEXP
 # uninitialized constant RSpec::Matchers::BuiltIn::Equal::UNDEFINED
 # wrong constant name <Class:CparseParams>
 # wrong constant name <static-init>
@@ -7014,7 +6957,7 @@
 # uninitialized constant Rails::BacktraceCleaner::FORMATTED_GEMS_PATTERN
 # wrong constant name properties
 # wrong constant name properties=
-# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fea17f1d5e8>'
+# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007faee9a78470>'
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
@@ -7751,7 +7694,6 @@
 # uninitialized constant RuboCop::Cop::Lint::EmptyExpression::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::EmptyInterpolation::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::EmptyWhen::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::EndInMethod::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::EnsureReturn::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::ErbNewArguments::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Lint::ErbNewArguments::LITERAL_REGEX
@@ -7788,6 +7730,7 @@
 # uninitialized constant RuboCop::Cop::Lint::PercentStringArray::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::PercentSymbolArray::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Lint::PercentSymbolArray::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::RaiseException::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::RandOne::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::RedundantCopDisableDirective::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Lint::RedundantCopDisableDirective::LITERAL_REGEX
@@ -7821,6 +7764,7 @@
 # uninitialized constant RuboCop::Cop::Lint::ShadowedException::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Lint::ShadowedException::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::ShadowingOuterLocalVariable::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::StructNewOverride::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::SuppressedException::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::Syntax::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::ToJSON::LITERAL_REGEX
@@ -7860,6 +7804,7 @@
 # uninitialized constant RuboCop::Cop::Naming::HeredocDelimiterNaming::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Naming::HeredocDelimiterNaming::OPENING_DELIMITER
 # uninitialized constant RuboCop::Cop::Naming::MemoizedInstanceVariableName::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Naming::MethodName::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Naming::MethodName::FORMATS
 # uninitialized constant RuboCop::Cop::Naming::MethodName::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Naming::RescuedExceptionsVariableName::LITERAL_REGEX
@@ -8087,6 +8032,7 @@
 # uninitialized constant RuboCop::Cop::Style::TrailingBodyOnMethodDefinition::SPACE
 # uninitialized constant RuboCop::Cop::Style::TrailingBodyOnModule::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::TrailingBodyOnModule::SPACE
+# uninitialized constant RuboCop::Cop::Style::TrailingCommaInBlockArgs::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::TrailingMethodEndStatement::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::TrailingMethodEndStatement::SPACE
 # uninitialized constant RuboCop::Cop::Style::TrailingUnderscoreVariable::BYTE_ORDER_MARK
