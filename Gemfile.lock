@@ -118,7 +118,7 @@ GEM
       parser
       rainbow (~> 3.0)
       sorbet-runtime (>= 0.5)
-    parser (2.7.0.5)
+    parser (2.7.1.1)
       ast (~> 2.4.0)
     polyfill (1.8.0)
     rack (2.2.2)
@@ -170,7 +170,7 @@ GEM
       rspec-mocks (~> 3.9)
       rspec-support (~> 3.9)
     rspec-support (3.9.2)
-    rubocop (0.81.0)
+    rubocop (0.82.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.7.0.1)
