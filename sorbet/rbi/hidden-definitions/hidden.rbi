@@ -5269,13 +5269,13 @@ class File::Stat
 end
 
 class File
-  def self.empty?(_); end
-
   def self.exists?(_); end
 
   def self.lutime(*_); end
 
   def self.mkfifo(*_); end
+
+  def self.probe_stat_in(dir); end
 end
 
 module FileUtils
@@ -12224,6 +12224,7 @@ end
 class RuboCop::ConfigValidator
   COMMON_PARAMS = ::T.let(nil, ::T.untyped)
   INTERNAL_PARAMS = ::T.let(nil, ::T.untyped)
+  NEW_COPS_VALUES = ::T.let(nil, ::T.untyped)
 end
 
 module RuboCop::Cop::Alignment
@@ -12506,6 +12507,10 @@ class RuboCop::Cop::Layout::IndentationConsistency
   MSG = ::T.let(nil, ::T.untyped)
 end
 
+class RuboCop::Cop::Layout::IndentationStyle
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
 class RuboCop::Cop::Layout::IndentationWidth
   MSG = ::T.let(nil, ::T.untyped)
 end
@@ -12617,6 +12622,10 @@ class RuboCop::Cop::Layout::SpaceAroundKeyword
   SAFE_NAVIGATION = ::T.let(nil, ::T.untyped)
 end
 
+class RuboCop::Cop::Layout::SpaceAroundMethodCallOperator
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
 class RuboCop::Cop::Layout::SpaceAroundOperators
   EXCESSIVE_SPACE = ::T.let(nil, ::T.untyped)
   IRREGULAR_METHODS = ::T.let(nil, ::T.untyped)
@@ -12678,10 +12687,6 @@ end
 class RuboCop::Cop::Layout::SpaceInsideStringInterpolation
   NO_SPACE_MSG = ::T.let(nil, ::T.untyped)
   SPACE_MSG = ::T.let(nil, ::T.untyped)
-end
-
-class RuboCop::Cop::Layout::Tab
-  MSG = ::T.let(nil, ::T.untyped)
 end
 
 class RuboCop::Cop::Layout::TrailingWhitespace
@@ -13367,6 +13372,10 @@ class RuboCop::Cop::Style::DefWithParentheses
 end
 
 class RuboCop::Cop::Style::Dir
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::DisableCopsWithinSourceCodeDirective
   MSG = ::T.let(nil, ::T.untyped)
 end
 

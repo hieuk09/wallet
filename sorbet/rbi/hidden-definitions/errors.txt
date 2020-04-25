@@ -2851,10 +2851,10 @@
 # wrong constant name current
 # wrong constant name yield
 # wrong constant name size?
-# wrong constant name empty?
 # wrong constant name exists?
 # wrong constant name lutime
 # wrong constant name mkfifo
+# wrong constant name probe_stat_in
 # uninitialized constant FileUtils::DryRun::LN_SUPPORTED
 # uninitialized constant FileUtils::DryRun::RUBY
 # uninitialized constant FileUtils::DryRun::VERSION
@@ -6957,7 +6957,7 @@
 # uninitialized constant Rails::BacktraceCleaner::FORMATTED_GEMS_PATTERN
 # wrong constant name properties
 # wrong constant name properties=
-# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007faee9a78470>'
+# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007f826c614f90>'
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
@@ -7595,6 +7595,9 @@
 # uninitialized constant RuboCop::Cop::Layout::HeredocIndentation::OPENING_DELIMITER
 # uninitialized constant RuboCop::Cop::Layout::IndentationConsistency::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::IndentationConsistency::SPACE
+# uninitialized constant RuboCop::Cop::Layout::IndentationStyle::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Layout::IndentationStyle::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Layout::IndentationStyle::SPACE
 # uninitialized constant RuboCop::Cop::Layout::IndentationWidth::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Layout::IndentationWidth::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::IndentationWidth::SPACE
@@ -7631,6 +7634,11 @@
 # uninitialized constant RuboCop::Cop::Layout::SpaceAroundEqualsInParameterDefault::SINGLE_SPACE_REGEXP
 # uninitialized constant RuboCop::Cop::Layout::SpaceAroundEqualsInParameterDefault::SPACE_COMMAND
 # uninitialized constant RuboCop::Cop::Layout::SpaceAroundKeyword::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Layout::SpaceAroundMethodCallOperator::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Layout::SpaceAroundMethodCallOperator::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Layout::SpaceAroundMethodCallOperator::NO_SPACE_COMMAND
+# uninitialized constant RuboCop::Cop::Layout::SpaceAroundMethodCallOperator::SINGLE_SPACE_REGEXP
+# uninitialized constant RuboCop::Cop::Layout::SpaceAroundMethodCallOperator::SPACE_COMMAND
 # uninitialized constant RuboCop::Cop::Layout::SpaceAroundOperators::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Layout::SpaceAroundOperators::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::SpaceBeforeBlockBraces::BYTE_ORDER_MARK
@@ -7670,9 +7678,6 @@
 # uninitialized constant RuboCop::Cop::Layout::SpaceInsideStringInterpolation::NO_SPACE_COMMAND
 # uninitialized constant RuboCop::Cop::Layout::SpaceInsideStringInterpolation::SINGLE_SPACE_REGEXP
 # uninitialized constant RuboCop::Cop::Layout::SpaceInsideStringInterpolation::SPACE_COMMAND
-# uninitialized constant RuboCop::Cop::Layout::Tab::BYTE_ORDER_MARK
-# uninitialized constant RuboCop::Cop::Layout::Tab::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Layout::Tab::SPACE
 # uninitialized constant RuboCop::Cop::Layout::TrailingWhitespace::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Layout::TrailingWhitespace::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::AmbiguousBlockAssociation::LITERAL_REGEX
@@ -7858,6 +7863,7 @@
 # uninitialized constant RuboCop::Cop::Style::DateTime::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::DefWithParentheses::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::Dir::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::DisableCopsWithinSourceCodeDirective::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::Documentation::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::DocumentationMethod::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::DocumentationMethod::NON_PUBLIC_MODIFIERS
