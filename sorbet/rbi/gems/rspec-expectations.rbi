@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/rspec-expectations/all/rspec-expectations.rbi
 #
-# rspec-expectations-3.9.1
+# rspec-expectations-3.9.2
 
 module RSpec
 end
@@ -1071,6 +1071,7 @@ end
 class RSpec::Matchers::BuiltIn::YieldControl < RSpec::Matchers::BuiltIn::BaseMatcher
   def at_least(number); end
   def at_most(number); end
+  def count_constraint_to_number(n); end
   def does_not_match?(block); end
   def exactly(number); end
   def failure_message; end

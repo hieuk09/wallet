@@ -10,12 +10,6 @@
 # wrong constant name <Magic>
 # wrong constant name <Class:<Magic>>
 # wrong constant name <RESERVED_0>
-# wrong constant name <RESERVED_100>
-# wrong constant name <RESERVED_101>
-# wrong constant name <RESERVED_102>
-# wrong constant name <RESERVED_103>
-# wrong constant name <RESERVED_104>
-# wrong constant name <RESERVED_105>
 # wrong constant name <RESERVED_10>
 # wrong constant name <RESERVED_11>
 # wrong constant name <RESERVED_12>
@@ -111,9 +105,6 @@
 # wrong constant name <RESERVED_94>
 # wrong constant name <RESERVED_95>
 # wrong constant name <RESERVED_96>
-# wrong constant name <RESERVED_97>
-# wrong constant name <RESERVED_98>
-# wrong constant name <RESERVED_99>
 # wrong constant name <RESERVED_9>
 # wrong constant name <TypeAlias>
 # wrong constant name <TypeAlias>
@@ -347,6 +338,8 @@
 # wrong constant name <static-init>
 # uninitialized constant ActionDispatch::Integration::Runner::RESPONSE_PREDICATES
 # wrong constant name app
+# wrong constant name assertions
+# wrong constant name assertions=
 # wrong constant name assigns
 # wrong constant name before_setup
 # wrong constant name cookies
@@ -366,6 +359,8 @@
 # wrong constant name put
 # wrong constant name remove!
 # wrong constant name reset!
+# wrong constant name root_session
+# wrong constant name root_session=
 # wrong constant name <static-init>
 # undefined method `https!<defaultArg>1' for class `ActionDispatch::Integration::Session'
 # undefined method `process<defaultArg>1' for class `ActionDispatch::Integration::Session'
@@ -614,8 +609,11 @@
 # wrong constant name receive
 # undefined method `perform<defaultArg>1' for class `ActionMailer::MailDeliveryJob'
 # Did you mean?  perform_later
+# undefined method `perform<defaultArg>2' for class `ActionMailer::MailDeliveryJob'
+# Did you mean?  perform_later
 # uninitialized constant ActionMailer::MailDeliveryJob::CALLBACK_FILTER_TYPES
 # wrong constant name perform<defaultArg>1
+# wrong constant name perform<defaultArg>2
 # wrong constant name perform
 # wrong constant name <static-init>
 # wrong constant name initialize
@@ -952,6 +950,69 @@
 # wrong constant name test_to_partial_path
 # wrong constant name <static-init>
 # wrong constant name <static-init>
+# uninitialized constant ActiveRecord::AdvisoryLockBase::ACTIONS
+# wrong constant name <Class:ActiveRecord_AssociationRelation>
+# wrong constant name <Class:ActiveRecord_Associations_CollectionProxy>
+# wrong constant name <Class:ActiveRecord_Relation>
+# uninitialized constant ActiveRecord::AdvisoryLockBase::CALLBACKS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::CALLBACK_FILTER_TYPES
+# uninitialized constant ActiveRecord::AdvisoryLockBase::CALL_COMPILABLE_REGEXP
+# wrong constant name <Class:GeneratedAssociationMethods>
+# wrong constant name <Class:GeneratedAttributeMethods>
+# wrong constant name <Class:GeneratedRelationMethods>
+# uninitialized constant ActiveRecord::AdvisoryLockBase::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant ActiveRecord::AdvisoryLockBase::NAME_COMPILABLE_REGEXP
+# uninitialized constant ActiveRecord::AdvisoryLockBase::RESTRICTED_CLASS_METHODS
+# uninitialized constant ActiveRecord::AdvisoryLockBase::UNASSIGNABLE_KEYS
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# wrong constant name <static-init>
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# wrong constant name <static-init>
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation has been removed from the module tree but is still active!
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name dump
 # wrong constant name load
@@ -967,6 +1028,7 @@
 # wrong constant name <static-init>
 # uninitialized constant ActiveRecord::ConnectionAdapters::AbstractAdapter::CALLBACK_FILTER_TYPES
 # uninitialized constant ActiveRecord::ConnectionAdapters::SQLite3Adapter::CALLBACK_FILTER_TYPES
+# uninitialized constant ActiveRecord::ConnectionAdapters::SQLite3Adapter::COMMENT_REGEX
 # uninitialized constant ActiveRecord::ConnectionAdapters::SQLite3Adapter::SIMPLE_INT
 # uninitialized constant ActiveRecord::Enum::RUBYGEMS_ACTIVATION_MONITOR
 # wrong constant name collect?
@@ -1086,7 +1148,6 @@
 # wrong constant name call
 # wrong constant name <static-init>
 # wrong constant name <Class:CommandRecorder>
-# undefined method `change_table<defaultArg>1' for class `ActiveRecord::Migration::CommandRecorder'
 # undefined method `initialize<defaultArg>1' for class `ActiveRecord::Migration::CommandRecorder'
 # Did you mean?  initialize_dup
 # wrong constant name <Class:StraightReversions>
@@ -1100,7 +1161,6 @@
 # wrong constant name change_column_comment
 # wrong constant name change_column_default
 # wrong constant name change_column_null
-# wrong constant name change_table<defaultArg>1
 # wrong constant name change_table
 # wrong constant name change_table_comment
 # wrong constant name commands
@@ -1137,6 +1197,7 @@
 # wrong constant name reverting=
 # wrong constant name transaction
 # wrong constant name invert_add_column
+# wrong constant name invert_add_foreign_key
 # wrong constant name invert_add_reference
 # wrong constant name invert_add_timestamps
 # wrong constant name invert_create_join_table
@@ -1147,6 +1208,7 @@
 # wrong constant name invert_enable_extension
 # wrong constant name invert_execute_block
 # wrong constant name invert_remove_column
+# wrong constant name invert_remove_foreign_key
 # wrong constant name invert_remove_reference
 # wrong constant name invert_remove_timestamps
 # wrong constant name <static-init>
@@ -1594,43 +1656,7 @@
 # wrong constant name initialize<defaultArg>1
 # wrong constant name initialize<defaultArg>2
 # wrong constant name initialize
-# undefined method `format<defaultArg>1' for class `Benchmark::Tms'
-# undefined method `initialize<defaultArg>1' for class `Benchmark::Tms'
-# Did you mean?  initialize_dup
-# undefined method `initialize<defaultArg>2' for class `Benchmark::Tms'
-# Did you mean?  initialize_dup
-# undefined method `initialize<defaultArg>3' for class `Benchmark::Tms'
-# Did you mean?  initialize_dup
-# undefined method `initialize<defaultArg>4' for class `Benchmark::Tms'
-# Did you mean?  initialize_dup
-# undefined method `initialize<defaultArg>5' for class `Benchmark::Tms'
-# Did you mean?  initialize_dup
-# undefined method `initialize<defaultArg>6' for class `Benchmark::Tms'
-# Did you mean?  initialize_dup
-# wrong constant name *
-# wrong constant name +
-# wrong constant name -
-# wrong constant name /
-# wrong constant name add
-# wrong constant name add!
-# wrong constant name cstime
-# wrong constant name cutime
-# wrong constant name format<defaultArg>1
-# wrong constant name format
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize<defaultArg>2
-# wrong constant name initialize<defaultArg>3
-# wrong constant name initialize<defaultArg>4
-# wrong constant name initialize<defaultArg>5
-# wrong constant name initialize<defaultArg>6
-# wrong constant name initialize
-# wrong constant name label
-# wrong constant name memberwise
-# wrong constant name real
-# wrong constant name stime
 # wrong constant name to_a
-# wrong constant name total
-# wrong constant name utime
 # uninitialized constant BigDecimal::EXABYTE
 # uninitialized constant BigDecimal::GIGABYTE
 # uninitialized constant BigDecimal::KILOBYTE
@@ -1638,7 +1664,6 @@
 # uninitialized constant BigDecimal::PETABYTE
 # uninitialized constant BigDecimal::TERABYTE
 # wrong constant name clone
-# wrong constant name to_d
 # wrong constant name to_digits
 # wrong constant name new
 # wrong constant name clone
@@ -2160,6 +2185,8 @@
 # wrong constant name textarea<defaultArg>3
 # wrong constant name textarea
 # wrong constant name <static-init>
+# uninitialized constant CMath
+# uninitialized constant CMath
 # uninitialized constant Category::ACTIONS
 # uninitialized constant Category::CALLBACKS
 # uninitialized constant Category::CALLBACK_FILTER_TYPES
@@ -2343,45 +2370,18 @@
 # uninitialized constant Concurrent::TimerTask::WARN
 # uninitialized constant Configatron
 # uninitialized constant Configatron
+# uninitialized constant Continuation
+# uninitialized constant Continuation
 # uninitialized constant Coverage
 # uninitialized constant Coverage
-# wrong constant name <Class:DRbArray>
-# wrong constant name <Class:DRbBadScheme>
-# wrong constant name <Class:DRbBadURI>
-# wrong constant name <Class:DRbConn>
-# wrong constant name <Class:DRbConnError>
-# wrong constant name <Class:DRbError>
-# wrong constant name <Class:DRbIdConv>
-# wrong constant name <Class:DRbMessage>
-# wrong constant name <Class:DRbObject>
-# wrong constant name <Class:DRbProtocol>
-# wrong constant name <Class:DRbRemoteError>
-# wrong constant name <Class:DRbServer>
-# wrong constant name <Class:DRbServerNotFound>
-# wrong constant name <Class:DRbTCPSocket>
-# wrong constant name <Class:DRbUNIXSocket>
-# wrong constant name <Class:DRbURIOption>
-# wrong constant name <Class:DRbUndumped>
-# wrong constant name <Class:DRbUnknown>
-# wrong constant name <Class:DRbUnknownError>
 # wrong constant name _dump
-# wrong constant name initialize
-# wrong constant name <static-init>
 # wrong constant name _load
-# wrong constant name <static-init>
-# wrong constant name <static-init>
 # wrong constant name alive?
 # wrong constant name close
 # wrong constant name initialize
 # wrong constant name send_message
 # wrong constant name uri
-# wrong constant name <static-init>
 # wrong constant name open
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name to_id
-# wrong constant name to_obj
-# wrong constant name <static-init>
 # undefined method `dump<defaultArg>1' for class `DRb::DRbMessage'
 # wrong constant name dump<defaultArg>1
 # wrong constant name dump
@@ -2391,41 +2391,16 @@
 # wrong constant name recv_request
 # wrong constant name send_reply
 # wrong constant name send_request
-# wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for class `DRb::DRbObject'
 # Did you mean?  initialize_dup
-# undefined method `respond_to?<defaultArg>1' for class `DRb::DRbObject'
 # wrong constant name ==
-# wrong constant name __drbref
-# wrong constant name __drburi
-# wrong constant name _dump
 # wrong constant name eql?
 # wrong constant name initialize<defaultArg>1
 # wrong constant name initialize
-# wrong constant name method_missing
-# wrong constant name respond_to?<defaultArg>1
-# wrong constant name respond_to?
-# wrong constant name <static-init>
-# wrong constant name _load
-# wrong constant name new_with
-# wrong constant name new_with_uri
 # wrong constant name prepare_backtrace
 # wrong constant name with_friend
-# undefined singleton method `open<defaultArg>1' for `DRb::DRbProtocol'
-# undefined singleton method `open_server<defaultArg>1' for `DRb::DRbProtocol'
-# undefined singleton method `uri_option<defaultArg>1' for `DRb::DRbProtocol'
-# wrong constant name <static-init>
-# wrong constant name add_protocol
 # wrong constant name auto_load
-# wrong constant name open<defaultArg>1
-# wrong constant name open
-# wrong constant name open_server<defaultArg>1
-# wrong constant name open_server
-# wrong constant name uri_option<defaultArg>1
-# wrong constant name uri_option
 # wrong constant name initialize
-# wrong constant name reason
-# wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for class `DRb::DRbServer'
 # Did you mean?  initialize_dup
 # undefined method `initialize<defaultArg>2' for class `DRb::DRbServer'
@@ -2434,23 +2409,11 @@
 # Did you mean?  initialize_dup
 # wrong constant name <Class:InvokeMethod>
 # wrong constant name <Class:InvokeMethod18Mixin>
-# wrong constant name alive?
-# wrong constant name check_insecure_method
-# wrong constant name config
-# wrong constant name front
-# wrong constant name here?
 # wrong constant name initialize<defaultArg>1
 # wrong constant name initialize<defaultArg>2
 # wrong constant name initialize<defaultArg>3
 # wrong constant name initialize
 # wrong constant name safe_level
-# wrong constant name stop_service
-# wrong constant name thread
-# wrong constant name to_id
-# wrong constant name to_obj
-# wrong constant name uri
-# wrong constant name verbose
-# wrong constant name verbose=
 # wrong constant name initialize
 # wrong constant name perform
 # wrong constant name <static-init>
@@ -2458,17 +2421,9 @@
 # wrong constant name perform_with_block
 # wrong constant name <static-init>
 # undefined singleton method `make_config<defaultArg>1' for `DRb::DRbServer'
-# wrong constant name <static-init>
-# wrong constant name default_acl
-# wrong constant name default_argc_limit
-# wrong constant name default_id_conv
-# wrong constant name default_load_limit
 # wrong constant name default_safe_level
 # wrong constant name make_config<defaultArg>1
 # wrong constant name make_config
-# wrong constant name verbose
-# wrong constant name verbose=
-# wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for class `DRb::DRbTCPSocket'
 # Did you mean?  initialize_dup
 # wrong constant name accept
@@ -2485,7 +2440,6 @@
 # wrong constant name shutdown
 # wrong constant name stream
 # wrong constant name uri
-# wrong constant name <static-init>
 # wrong constant name getservername
 # wrong constant name open
 # wrong constant name open_server
@@ -2507,45 +2461,12 @@
 # wrong constant name option
 # wrong constant name <static-init>
 # wrong constant name _dump
-# wrong constant name <static-init>
 # wrong constant name _dump
-# wrong constant name buf
-# wrong constant name exception
-# wrong constant name initialize
-# wrong constant name name
-# wrong constant name reload
-# wrong constant name <static-init>
 # wrong constant name _load
 # wrong constant name _dump
 # wrong constant name initialize
-# wrong constant name unknown
-# wrong constant name <static-init>
 # wrong constant name _load
-# undefined singleton method `start_service<defaultArg>1' for `DRb'
-# undefined singleton method `start_service<defaultArg>2' for `DRb'
-# undefined singleton method `start_service<defaultArg>3' for `DRb'
-# wrong constant name <static-init>
-# wrong constant name config
-# wrong constant name current_server
-# wrong constant name fetch_server
-# wrong constant name front
-# wrong constant name here?
-# wrong constant name install_acl
-# wrong constant name install_id_conv
 # wrong constant name mutex
-# wrong constant name primary_server
-# wrong constant name primary_server=
-# wrong constant name regist_server
-# wrong constant name remove_server
-# wrong constant name start_service<defaultArg>1
-# wrong constant name start_service<defaultArg>2
-# wrong constant name start_service<defaultArg>3
-# wrong constant name start_service
-# wrong constant name stop_service
-# wrong constant name thread
-# wrong constant name to_id
-# wrong constant name to_obj
-# wrong constant name uri
 # undefined method `to_s<defaultArg>1' for class `Date'
 # undefined method `to_time<defaultArg>1' for class `Date'
 # uninitialized constant Date::DAYS_INTO_WEEK
@@ -2846,15 +2767,17 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
+# uninitialized constant Fcntl
+# uninitialized constant Fcntl
 # wrong constant name resume
 # wrong constant name transfer
 # wrong constant name current
 # wrong constant name yield
 # wrong constant name size?
+# wrong constant name empty?
 # wrong constant name exists?
 # wrong constant name lutime
 # wrong constant name mkfifo
-# wrong constant name probe_stat_in
 # uninitialized constant FileUtils::DryRun::LN_SUPPORTED
 # uninitialized constant FileUtils::DryRun::RUBY
 # uninitialized constant FileUtils::DryRun::VERSION
@@ -2864,30 +2787,12 @@
 # uninitialized constant FileUtils::Verbose::LN_SUPPORTED
 # uninitialized constant FileUtils::Verbose::RUBY
 # uninitialized constant FileUtils::Verbose::VERSION
-# undefined singleton method `find<defaultArg>1' for `Find'
-# wrong constant name <static-init>
-# wrong constant name find<defaultArg>1
-# wrong constant name find
-# wrong constant name prune
-# undefined method `to_d<defaultArg>1' for class `Float'
 # uninitialized constant Float::EXABYTE
 # uninitialized constant Float::GIGABYTE
 # uninitialized constant Float::KILOBYTE
 # uninitialized constant Float::MEGABYTE
 # uninitialized constant Float::PETABYTE
 # uninitialized constant Float::TERABYTE
-# wrong constant name to_d<defaultArg>1
-# wrong constant name to_d
-# undefined method `def_delegator<defaultArg>1' for module `Forwardable'
-# undefined method `def_instance_delegator<defaultArg>1' for module `Forwardable'
-# wrong constant name def_delegator<defaultArg>1
-# wrong constant name def_delegator
-# wrong constant name def_delegators
-# wrong constant name def_instance_delegator<defaultArg>1
-# wrong constant name def_instance_delegator
-# wrong constant name def_instance_delegators
-# wrong constant name delegate
-# wrong constant name instance_delegate
 # wrong constant name _compile_method
 # wrong constant name _delegator_method
 # wrong constant name _valid_method?
@@ -2958,9 +2863,6 @@
 # wrong constant name transform_keys!
 # wrong constant name transform_values!
 # wrong constant name update
-# undefined singleton method `from_xml<defaultArg>1' for `Hash'
-# wrong constant name from_xml<defaultArg>1
-# wrong constant name from_xml
 # wrong constant name <Class:Gettext>
 # wrong constant name <Class:Locale>
 # wrong constant name <Class:Middleware>
@@ -3742,14 +3644,13 @@
 # wrong constant name nobits?
 # wrong constant name pow
 # wrong constant name to_bn
-# wrong constant name to_d
 # wrong constant name sqrt
 # wrong constant name from_state
 # wrong constant name initialize
-# wrong constant name <Class:Error>
-# wrong constant name <Class:InvalidWeightError>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
+# uninitialized constant Jacobian
+# uninitialized constant Jacobian
+# uninitialized constant Kconv
+# uninitialized constant Kconv
 # wrong constant name gem
 # wrong constant name itself
 # wrong constant name object_id
@@ -3764,6 +3665,8 @@
 # wrong constant name require
 # wrong constant name key
 # wrong constant name receiver
+# uninitialized constant LUSolve
+# uninitialized constant LUSolve
 # wrong constant name path
 # wrong constant name exit_value
 # wrong constant name reason
@@ -5161,6 +5064,7 @@
 # uninitialized constant Money::Bank::OpenExchangeRatesBank::RATE_FORMATS
 # uninitialized constant Money::Bank::OpenExchangeRatesBank::SERIALIZER_SEPARATOR
 # uninitialized constant MoneyRails::ActiveModel::MoneyValidator::CHECKS
+# uninitialized constant MoneyRails::ActiveModel::MoneyValidator::HEXADECIMAL_REGEX
 # uninitialized constant MoneyRails::ActiveModel::MoneyValidator::INTEGER_REGEX
 # uninitialized constant MoneyRails::ActiveModel::MoneyValidator::RESERVED_OPTIONS
 # wrong constant name enter
@@ -5470,6 +5374,8 @@
 # wrong constant name initialize
 # wrong constant name io
 # wrong constant name <static-init>
+# uninitialized constant Newton
+# uninitialized constant Newton
 # wrong constant name to_d
 # wrong constant name to_i
 # wrong constant name args
@@ -5628,6 +5534,8 @@
 # wrong constant name fips_mode
 # uninitialized constant Opus
 # uninitialized constant Opus
+# uninitialized constant PTY
+# uninitialized constant PTY
 # uninitialized constant Parser::Ruby24::Racc_Main_Parsing_Routine
 # uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Id_C
 # uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Revision
@@ -5655,7 +5563,6 @@
 # undefined method `children<defaultArg>1' for class `Pathname'
 # undefined method `find<defaultArg>1' for class `Pathname'
 # wrong constant name children<defaultArg>1
-# wrong constant name empty?
 # wrong constant name find<defaultArg>1
 # wrong constant name fnmatch?
 # wrong constant name glob
@@ -6957,7 +6864,7 @@
 # uninitialized constant Rails::BacktraceCleaner::FORMATTED_GEMS_PATTERN
 # wrong constant name properties
 # wrong constant name properties=
-# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007f826c614f90>'
+# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fcfb6f3a5b0>'
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
@@ -7070,13 +6977,6 @@
 # uninitialized constant Range::RANGE_FORMATS
 # wrong constant name entries
 # wrong constant name to_a
-# uninitialized constant Rational::EXABYTE
-# uninitialized constant Rational::GIGABYTE
-# uninitialized constant Rational::KILOBYTE
-# uninitialized constant Rational::MEGABYTE
-# uninitialized constant Rational::PETABYTE
-# uninitialized constant Rational::TERABYTE
-# wrong constant name to_d
 # undefined singleton method `expand<defaultArg>1' for `RbConfig'
 # undefined singleton method `fire_update!<defaultArg>1' for `RbConfig'
 # undefined singleton method `fire_update!<defaultArg>2' for `RbConfig'
@@ -7125,268 +7025,36 @@
 # wrong constant name special_prefixes=
 # wrong constant name vi_editing_mode
 # wrong constant name vi_editing_mode?
-# wrong constant name <Class:Config>
-# wrong constant name <Class:Label>
-# wrong constant name <Class:Message>
-# wrong constant name <Class:OpCode>
-# wrong constant name <Class:RCode>
-# wrong constant name <Class:Requester>
 # wrong constant name extract_resources
-# wrong constant name fetch_resource
-# wrong constant name lazy_initialize
-# wrong constant name make_tcp_requester
-# wrong constant name make_udp_requester
 # undefined method `initialize<defaultArg>1' for class `Resolv::DNS::Config'
 # Did you mean?  initialize_dup
-# wrong constant name <Class:NXDomain>
-# wrong constant name <Class:OtherResolvError>
-# wrong constant name generate_candidates
-# wrong constant name generate_timeouts
 # wrong constant name initialize<defaultArg>1
 # wrong constant name initialize
-# wrong constant name lazy_initialize
-# wrong constant name nameserver_port
-# wrong constant name resolv
-# wrong constant name single?
-# wrong constant name timeouts=
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# undefined singleton method `default_config_hash<defaultArg>1' for `Resolv::DNS::Config'
-# wrong constant name <static-init>
-# wrong constant name default_config_hash<defaultArg>1
-# wrong constant name default_config_hash
-# wrong constant name parse_resolv_conf
-# wrong constant name <Class:Str>
-# wrong constant name ==
-# wrong constant name downcase
-# wrong constant name eql?
 # wrong constant name initialize
-# wrong constant name string
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name split
 # undefined method `initialize<defaultArg>1' for class `Resolv::DNS::Message'
 # Did you mean?  initialize_dup
-# wrong constant name ==
-# wrong constant name <Class:MessageDecoder>
-# wrong constant name <Class:MessageEncoder>
-# wrong constant name aa
-# wrong constant name aa=
-# wrong constant name add_additional
-# wrong constant name add_answer
-# wrong constant name add_authority
-# wrong constant name add_question
-# wrong constant name additional
-# wrong constant name answer
-# wrong constant name authority
-# wrong constant name each_additional
-# wrong constant name each_answer
-# wrong constant name each_authority
-# wrong constant name each_question
-# wrong constant name each_resource
-# wrong constant name encode
-# wrong constant name id
-# wrong constant name id=
 # wrong constant name initialize<defaultArg>1
 # wrong constant name initialize
-# wrong constant name opcode
-# wrong constant name opcode=
-# wrong constant name qr
-# wrong constant name qr=
-# wrong constant name question
-# wrong constant name ra
-# wrong constant name ra=
-# wrong constant name rcode
-# wrong constant name rcode=
-# wrong constant name rd
-# wrong constant name rd=
-# wrong constant name tc
-# wrong constant name tc=
-# undefined method `get_bytes<defaultArg>1' for class `Resolv::DNS::Message::MessageDecoder'
-# wrong constant name get_bytes<defaultArg>1
-# wrong constant name get_bytes
-# wrong constant name get_label
-# wrong constant name get_labels
-# wrong constant name get_length16
-# wrong constant name get_name
-# wrong constant name get_question
-# wrong constant name get_rr
-# wrong constant name get_string
-# wrong constant name get_string_list
-# wrong constant name get_unpack
 # wrong constant name initialize
-# wrong constant name <static-init>
-# wrong constant name put_bytes
-# wrong constant name put_label
-# wrong constant name put_labels
-# wrong constant name put_length16
-# wrong constant name put_name
-# wrong constant name put_pack
-# wrong constant name put_string
-# wrong constant name put_string_list
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name decode
-# wrong constant name ==
-# wrong constant name []
-# wrong constant name eql?
-# wrong constant name length
-# wrong constant name to_a
-# wrong constant name <static-init>
-# wrong constant name encode_rdata
-# wrong constant name decode_rdata
-# wrong constant name <static-init>
-# wrong constant name <Class:ConnectedUDP>
-# wrong constant name <Class:MDNSOneShot>
-# wrong constant name <Class:RequestError>
-# wrong constant name <Class:Sender>
-# wrong constant name <Class:TCP>
-# wrong constant name <Class:UnconnectedUDP>
-# wrong constant name close
-# wrong constant name request
-# wrong constant name sender_for
 # undefined method `initialize<defaultArg>1' for class `Resolv::DNS::Requester::ConnectedUDP'
 # Did you mean?  initialize_dup
-# undefined method `sender<defaultArg>1' for class `Resolv::DNS::Requester::ConnectedUDP'
-# undefined method `sender<defaultArg>2' for class `Resolv::DNS::Requester::ConnectedUDP'
-# wrong constant name <Class:Sender>
 # wrong constant name initialize<defaultArg>1
 # wrong constant name initialize
 # wrong constant name lazy_initialize
-# wrong constant name recv_reply
-# wrong constant name sender<defaultArg>1
-# wrong constant name sender<defaultArg>2
-# wrong constant name sender
-# wrong constant name data
-# wrong constant name send
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
 # wrong constant name initialize
-# wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for class `Resolv::DNS::Requester::TCP'
 # Did you mean?  initialize_dup
-# undefined method `sender<defaultArg>1' for class `Resolv::DNS::Requester::TCP'
-# undefined method `sender<defaultArg>2' for class `Resolv::DNS::Requester::TCP'
-# wrong constant name <Class:Sender>
 # wrong constant name initialize<defaultArg>1
 # wrong constant name initialize
-# wrong constant name recv_reply
-# wrong constant name sender<defaultArg>1
-# wrong constant name sender<defaultArg>2
-# wrong constant name sender
-# wrong constant name data
-# wrong constant name send
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# undefined method `sender<defaultArg>1' for class `Resolv::DNS::Requester::UnconnectedUDP'
-# wrong constant name <Class:Sender>
 # wrong constant name initialize
 # wrong constant name lazy_initialize
-# wrong constant name recv_reply
-# wrong constant name sender<defaultArg>1
-# wrong constant name sender
-# wrong constant name data
 # wrong constant name initialize
-# wrong constant name send
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name ==
-# wrong constant name eql?
-# uninitialized constant Resolv::DNS::Resource::CNAME::ClassHash
-# uninitialized constant Resolv::DNS::Resource::CNAME::ClassInsensitiveTypes
-# uninitialized constant Resolv::DNS::Resource::CNAME::ClassValue
-# wrong constant name create
-# uninitialized constant Resolv::DNS::Resource::HINFO::ClassHash
-# uninitialized constant Resolv::DNS::Resource::HINFO::ClassInsensitiveTypes
-# uninitialized constant Resolv::DNS::Resource::HINFO::ClassValue
-# wrong constant name <Class:ANY>
-# wrong constant name <Class:CNAME>
-# wrong constant name <Class:HINFO>
-# wrong constant name <Class:LOC>
-# wrong constant name <Class:MINFO>
-# wrong constant name <Class:MX>
-# wrong constant name <Class:NS>
-# wrong constant name <Class:PTR>
-# wrong constant name <Class:SOA>
-# wrong constant name <Class:TXT>
-# uninitialized constant Resolv::DNS::Resource::IN::A::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::A::ClassInsensitiveTypes
-# uninitialized constant Resolv::DNS::Resource::IN::AAAA::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::AAAA::ClassInsensitiveTypes
-# wrong constant name <static-init>
-# uninitialized constant Resolv::DNS::Resource::IN::CNAME::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::CNAME::ClassInsensitiveTypes
-# wrong constant name <static-init>
-# uninitialized constant Resolv::DNS::Resource::IN::HINFO::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::HINFO::ClassInsensitiveTypes
-# wrong constant name <static-init>
-# uninitialized constant Resolv::DNS::Resource::IN::LOC::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::LOC::ClassInsensitiveTypes
-# wrong constant name <static-init>
-# uninitialized constant Resolv::DNS::Resource::IN::MINFO::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::MINFO::ClassInsensitiveTypes
-# wrong constant name <static-init>
-# uninitialized constant Resolv::DNS::Resource::IN::MX::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::MX::ClassInsensitiveTypes
-# wrong constant name <static-init>
-# uninitialized constant Resolv::DNS::Resource::IN::NS::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::NS::ClassInsensitiveTypes
-# wrong constant name <static-init>
-# uninitialized constant Resolv::DNS::Resource::IN::PTR::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::PTR::ClassInsensitiveTypes
-# wrong constant name <static-init>
-# uninitialized constant Resolv::DNS::Resource::IN::SOA::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::SOA::ClassInsensitiveTypes
-# wrong constant name <static-init>
-# uninitialized constant Resolv::DNS::Resource::IN::SRV::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::SRV::ClassInsensitiveTypes
-# uninitialized constant Resolv::DNS::Resource::IN::TXT::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::TXT::ClassInsensitiveTypes
-# wrong constant name <static-init>
-# uninitialized constant Resolv::DNS::Resource::IN::WKS::ClassHash
-# uninitialized constant Resolv::DNS::Resource::IN::WKS::ClassInsensitiveTypes
-# uninitialized constant Resolv::DNS::Resource::LOC::ClassHash
-# uninitialized constant Resolv::DNS::Resource::LOC::ClassInsensitiveTypes
-# uninitialized constant Resolv::DNS::Resource::LOC::ClassValue
-# uninitialized constant Resolv::DNS::Resource::MINFO::ClassHash
-# uninitialized constant Resolv::DNS::Resource::MINFO::ClassInsensitiveTypes
-# uninitialized constant Resolv::DNS::Resource::MINFO::ClassValue
-# uninitialized constant Resolv::DNS::Resource::MX::ClassHash
-# uninitialized constant Resolv::DNS::Resource::MX::ClassInsensitiveTypes
-# uninitialized constant Resolv::DNS::Resource::MX::ClassValue
-# uninitialized constant Resolv::DNS::Resource::NS::ClassHash
-# uninitialized constant Resolv::DNS::Resource::NS::ClassInsensitiveTypes
-# uninitialized constant Resolv::DNS::Resource::NS::ClassValue
-# uninitialized constant Resolv::DNS::Resource::PTR::ClassHash
-# uninitialized constant Resolv::DNS::Resource::PTR::ClassInsensitiveTypes
-# uninitialized constant Resolv::DNS::Resource::PTR::ClassValue
-# uninitialized constant Resolv::DNS::Resource::SOA::ClassHash
-# uninitialized constant Resolv::DNS::Resource::SOA::ClassInsensitiveTypes
-# uninitialized constant Resolv::DNS::Resource::SOA::ClassValue
-# uninitialized constant Resolv::DNS::Resource::TXT::ClassHash
-# uninitialized constant Resolv::DNS::Resource::TXT::ClassInsensitiveTypes
-# uninitialized constant Resolv::DNS::Resource::TXT::ClassValue
-# wrong constant name get_class
 # undefined singleton method `bind_random_port<defaultArg>1' for `Resolv::DNS'
 # wrong constant name allocate_request_id
 # wrong constant name bind_random_port<defaultArg>1
 # wrong constant name bind_random_port
 # wrong constant name free_request_id
 # wrong constant name random
-# wrong constant name lazy_initialize
-# wrong constant name ==
-# wrong constant name eql?
-# wrong constant name ==
-# wrong constant name eql?
-# wrong constant name ==
-# wrong constant name eql?
-# wrong constant name ==
-# wrong constant name eql?
-# wrong constant name ==
-# wrong constant name eql?
 # uninitialized constant Ripper
 # uninitialized constant Ripper
 # uninitialized constant RuboCop::AST::ArrayNode::ASSIGNMENTS
@@ -7519,6 +7187,7 @@
 # uninitialized constant RuboCop::Cop::Layout::ClosingParenthesisIndentation::SPACE
 # uninitialized constant RuboCop::Cop::Layout::CommentIndentation::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::CommentIndentation::SPACE
+# uninitialized constant RuboCop::Cop::Layout::ConditionPosition::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Layout::ConditionPosition::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::DefEndAlignment::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Layout::DefEndAlignment::LITERAL_REGEX
@@ -7539,6 +7208,8 @@
 # uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundAccessModifier::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundArguments::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundArguments::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundAttributeAccessor::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundAttributeAccessor::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBeginBody::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBeginBody::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::EmptyLinesAroundBeginBody::MSG_DEFERRED
@@ -7699,6 +7370,7 @@
 # uninitialized constant RuboCop::Cop::Lint::EmptyExpression::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::EmptyInterpolation::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::EmptyWhen::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::EnsureReturn::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Lint::EnsureReturn::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::ErbNewArguments::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Lint::ErbNewArguments::LITERAL_REGEX
@@ -7739,7 +7411,6 @@
 # uninitialized constant RuboCop::Cop::Lint::RandOne::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::RedundantCopDisableDirective::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Lint::RedundantCopDisableDirective::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::RedundantCopDisableDirective::MINIMUM_SIMILARITY_TO_SUGGEST
 # uninitialized constant RuboCop::Cop::Lint::RedundantCopEnableDirective::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Lint::RedundantCopEnableDirective::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::RedundantCopEnableDirective::NO_SPACE_COMMAND
@@ -7778,9 +7449,9 @@
 # uninitialized constant RuboCop::Cop::Lint::UnreachableCode::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::UriEscapeUnescape::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::UriRegexp::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::UselessAccessModifier::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Lint::UselessAccessModifier::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::UselessAssignment::LITERAL_REGEX
-# uninitialized constant RuboCop::Cop::Lint::UselessAssignment::MINIMUM_SIMILARITY_TO_SUGGEST
 # uninitialized constant RuboCop::Cop::Lint::UselessComparison::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::UselessElseWithoutRescue::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::UselessSetterCall::LITERAL_REGEX
@@ -8013,6 +7684,7 @@
 # uninitialized constant RuboCop::Cop::Style::SingleLineBlockParams::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::SingleLineMethods::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::SingleLineMethods::SPACE
+# uninitialized constant RuboCop::Cop::Style::SlicingWithRange::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::SpecialGlobalVars::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::StabbyLambdaParentheses::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::StderrPuts::BYTE_ORDER_MARK
@@ -8478,6 +8150,10 @@
 # wrong constant name resume
 # wrong constant name resolve_feature_path
 # wrong constant name stat
+# uninitialized constant SDBM
+# uninitialized constant SDBM
+# uninitialized constant SDBMError
+# uninitialized constant SDBMError
 # wrong constant name <Class:Blob>
 # uninitialized constant SQLite3::Blob::BLANK_RE
 # uninitialized constant SQLite3::Blob::ENCODED_BLANKS
@@ -8490,6 +8166,8 @@
 # uninitialized constant SQLite3::Database::SYNCHRONOUS_MODES
 # uninitialized constant SQLite3::Database::TEMP_STORE_MODES
 # uninitialized constant SQLite3::Database::WAL_CHECKPOINTS
+# uninitialized constant Scanf
+# uninitialized constant Scanf
 # wrong constant name bytes
 # undefined method `flatten_merge<defaultArg>1' for class `Set'
 # undefined method `initialize<defaultArg>1' for class `Set'
@@ -8516,16 +8194,6 @@
 # wrong constant name split
 # wrong constant name signm
 # wrong constant name signo
-# undefined method `def_delegator<defaultArg>1' for module `SingleForwardable'
-# undefined method `def_single_delegator<defaultArg>1' for module `SingleForwardable'
-# wrong constant name def_delegator<defaultArg>1
-# wrong constant name def_delegator
-# wrong constant name def_delegators
-# wrong constant name def_single_delegator<defaultArg>1
-# wrong constant name def_single_delegator
-# wrong constant name def_single_delegators
-# wrong constant name delegate
-# wrong constant name single_delegate
 # undefined method `_dump<defaultArg>1' for module `Singleton'
 # wrong constant name _dump<defaultArg>1
 # wrong constant name _dump
@@ -8643,7 +8311,6 @@
 # wrong constant name shellescape
 # wrong constant name shellsplit
 # wrong constant name succ!
-# wrong constant name to_d
 # wrong constant name undump
 # wrong constant name unicode_normalize
 # wrong constant name unicode_normalize!
@@ -8651,50 +8318,8 @@
 # wrong constant name unpack1
 # wrong constant name length
 # wrong constant name truncate
-# wrong constant name <<
-# wrong constant name []
-# wrong constant name beginning_of_line?
 # wrong constant name bol?
-# wrong constant name captures
-# wrong constant name charpos
-# wrong constant name check
-# wrong constant name check_until
-# wrong constant name clear
-# wrong constant name concat
-# wrong constant name empty?
-# wrong constant name exist?
-# wrong constant name get_byte
-# wrong constant name getbyte
 # wrong constant name initialize
-# wrong constant name match?
-# wrong constant name matched
-# wrong constant name matched?
-# wrong constant name matched_size
-# wrong constant name peek
-# wrong constant name peep
-# wrong constant name pointer
-# wrong constant name pointer=
-# wrong constant name pos
-# wrong constant name pos=
-# wrong constant name post_match
-# wrong constant name pre_match
-# wrong constant name reset
-# wrong constant name rest
-# wrong constant name rest?
-# wrong constant name rest_size
-# wrong constant name restsize
-# wrong constant name scan_full
-# wrong constant name scan_until
-# wrong constant name search_full
-# wrong constant name size
-# wrong constant name skip
-# wrong constant name skip_until
-# wrong constant name string
-# wrong constant name string=
-# wrong constant name terminate
-# wrong constant name unscan
-# wrong constant name values_at
-# wrong constant name must_C_version
 # wrong constant name []
 # wrong constant name []=
 # wrong constant name dig
@@ -8774,25 +8399,20 @@
 # wrong constant name reload_parent_transaction
 # wrong constant name <static-init>
 # wrong constant name from_msgpack_ext
+# uninitialized constant Sync
+# uninitialized constant Sync
+# uninitialized constant Sync_m
+# uninitialized constant Sync_m
+# uninitialized constant Syslog
+# uninitialized constant Syslog
 # wrong constant name errno
 # wrong constant name status
 # wrong constant name success?
 # wrong constant name T.noreturn
 # wrong constant name T.noreturn
 # wrong constant name T.untyped
-# undefined method `close<defaultArg>1' for class `Tempfile'
-# undefined method `initialize<defaultArg>1' for class `Tempfile'
-# Did you mean?  initialize_dup
-# undefined method `initialize<defaultArg>2' for class `Tempfile'
-# Did you mean?  initialize_dup
-# undefined method `initialize<defaultArg>3' for class `Tempfile'
-# Did you mean?  initialize_dup
 # wrong constant name <Class:Remover>
 # wrong constant name _close
-# wrong constant name close<defaultArg>1
-# wrong constant name initialize<defaultArg>1
-# wrong constant name initialize<defaultArg>2
-# wrong constant name initialize<defaultArg>3
 # wrong constant name inspect
 # wrong constant name call
 # wrong constant name initialize
@@ -9066,6 +8686,8 @@
 # wrong constant name event
 # wrong constant name instruction_sequence
 # wrong constant name parameters
+# uninitialized constant Tracer
+# uninitialized constant Tracer
 # uninitialized constant Transaction::ACTIONS
 # uninitialized constant Transaction::CALLBACKS
 # uninitialized constant Transaction::CALLBACK_FILTER_TYPES
@@ -9473,130 +9095,7 @@
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name normalize_header
-# wrong constant name <Class:BufError>
-# wrong constant name <Class:DataError>
-# wrong constant name <Class:Deflate>
-# wrong constant name <Class:Error>
-# wrong constant name <Class:GzipFile>
-# wrong constant name <Class:GzipReader>
-# wrong constant name <Class:GzipWriter>
-# wrong constant name <Class:Inflate>
-# wrong constant name <Class:MemError>
-# wrong constant name <Class:NeedDict>
-# wrong constant name <Class:StreamEnd>
-# wrong constant name <Class:StreamError>
-# wrong constant name <Class:VersionError>
-# wrong constant name <Class:ZStream>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <<
-# wrong constant name deflate
-# wrong constant name flush
 # wrong constant name initialize
-# wrong constant name params
-# wrong constant name set_dictionary
-# wrong constant name <static-init>
-# wrong constant name deflate
-# wrong constant name <static-init>
-# wrong constant name <Class:CRCError>
-# wrong constant name <Class:Error>
-# wrong constant name <Class:LengthError>
-# wrong constant name <Class:NoFooter>
-# wrong constant name close
-# wrong constant name closed?
-# wrong constant name comment
-# wrong constant name crc
-# wrong constant name finish
-# wrong constant name level
-# wrong constant name mtime
-# wrong constant name orig_name
-# wrong constant name os_code
-# wrong constant name sync
-# wrong constant name sync=
-# wrong constant name to_io
-# wrong constant name <static-init>
-# wrong constant name input
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name wrap
-# uninitialized constant Zlib::GzipReader::Elem
-# wrong constant name bytes
-# wrong constant name each
-# wrong constant name each_byte
-# wrong constant name each_char
-# wrong constant name each_line
-# wrong constant name eof
-# wrong constant name eof?
-# wrong constant name external_encoding
-# wrong constant name getbyte
-# wrong constant name getc
 # wrong constant name initialize
-# wrong constant name lineno
-# wrong constant name lineno=
-# wrong constant name lines
-# wrong constant name pos
-# wrong constant name read
-# wrong constant name readbyte
-# wrong constant name readchar
-# wrong constant name readpartial
-# wrong constant name rewind
-# wrong constant name tell
-# wrong constant name ungetbyte
-# wrong constant name ungetc
-# wrong constant name unused
-# wrong constant name <static-init>
-# wrong constant name <<
-# wrong constant name comment=
-# wrong constant name flush
 # wrong constant name initialize
-# wrong constant name mtime=
-# wrong constant name orig_name=
-# wrong constant name pos
-# wrong constant name tell
-# wrong constant name write
-# wrong constant name <static-init>
-# wrong constant name <<
-# wrong constant name add_dictionary
-# wrong constant name inflate
 # wrong constant name initialize
-# wrong constant name set_dictionary
-# wrong constant name sync
-# wrong constant name sync_point?
-# wrong constant name <static-init>
-# wrong constant name inflate
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name adler
-# wrong constant name avail_in
-# wrong constant name avail_out
-# wrong constant name avail_out=
-# wrong constant name close
-# wrong constant name closed?
-# wrong constant name data_type
-# wrong constant name end
-# wrong constant name ended?
-# wrong constant name finish
-# wrong constant name finished?
-# wrong constant name flush_next_in
-# wrong constant name flush_next_out
-# wrong constant name reset
-# wrong constant name stream_end?
-# wrong constant name total_in
-# wrong constant name total_out
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name adler32
-# wrong constant name adler32_combine
-# wrong constant name crc32
-# wrong constant name crc32_combine
-# wrong constant name crc_table
-# wrong constant name deflate
-# wrong constant name gunzip
-# wrong constant name gzip
-# wrong constant name inflate
-# wrong constant name zlib_version

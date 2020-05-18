@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/activerecord/all/activerecord.rbi
 #
-# activerecord-6.0.2.2
+# activerecord-6.0.3.1
 
 module Arel
   def self.arel_node?(value); end
@@ -1523,6 +1523,7 @@ class ActiveRecord::ConnectionAdapters::AbstractAdapter
   def supports_multi_insert?(*args, &block); end
   def supports_optimizer_hints?; end
   def supports_partial_index?; end
+  def supports_partitioned_indexes?; end
   def supports_savepoints?; end
   def supports_transaction_isolation?; end
   def supports_validate_constraints?; end
@@ -1631,7 +1632,8 @@ module ActiveRecord::ConnectionAdapters::DatabaseStatements
   def begin_transaction(*args, &block); end
   def build_fixture_sql(fixtures, table_name); end
   def build_fixture_statements(fixture_set); end
-  def build_truncate_statements(*table_names); end
+  def build_truncate_statement(table_name); end
+  def build_truncate_statements(table_names); end
   def cacheable_query(klass, arel); end
   def combine_multi_statements(total_sql); end
   def commit_db_transaction; end
@@ -1651,7 +1653,7 @@ module ActiveRecord::ConnectionAdapters::DatabaseStatements
   def exec_rollback_db_transaction; end
   def exec_update(sql, name = nil, binds = nil); end
   def execute(sql, name = nil); end
-  def execute_batch(sql, name = nil); end
+  def execute_batch(statements, name = nil); end
   def initialize; end
   def insert(arel, name = nil, pk = nil, id_value = nil, sequence_name = nil, binds = nil); end
   def insert_fixture(fixture, table_name); end
@@ -1993,14 +1995,15 @@ end
 module ActiveRecord::ConnectionAdapters::SchemaStatements
   def add_belongs_to(table_name, ref_name, **options); end
   def add_column(table_name, column_name, type, **options); end
-  def add_column_for_alter(table_name, column_name, type, options = nil); end
-  def add_foreign_key(from_table, to_table, options = nil); end
+  def add_column_for_alter(table_name, column_name, type, **options); end
+  def add_foreign_key(from_table, to_table, **options); end
   def add_index(table_name, column_name, options = nil); end
   def add_index_options(table_name, column_name, comment: nil, **options); end
   def add_index_sort_order(quoted_columns, **options); end
   def add_options_for_index_columns(quoted_columns, **options); end
   def add_reference(table_name, ref_name, **options); end
-  def add_timestamps(table_name, options = nil); end
+  def add_timestamps(table_name, **options); end
+  def add_timestamps_for_alter(table_name, **options); end
   def assume_migrated_upto_version(version, migrations_paths = nil); end
   def bulk_change_table(table_name, operations); end
   def can_remove_index_by_name?(options); end
@@ -2008,7 +2011,7 @@ module ActiveRecord::ConnectionAdapters::SchemaStatements
   def change_column_comment(table_name, column_name, comment_or_changes); end
   def change_column_default(table_name, column_name, default_or_changes); end
   def change_column_null(table_name, column_name, null, default = nil); end
-  def change_table(table_name, options = nil); end
+  def change_table(table_name, **options); end
   def change_table_comment(table_name, comment_or_changes); end
   def column_exists?(table_name, column_name, type = nil, **options); end
   def column_options_keys; end
@@ -2018,12 +2021,12 @@ module ActiveRecord::ConnectionAdapters::SchemaStatements
   def create_join_table(table_1, table_2, column_options: nil, **options); end
   def create_schema_dumper(options); end
   def create_table(table_name, **options); end
-  def create_table_definition(*args); end
+  def create_table_definition(*args, **options); end
   def data_source_exists?(name); end
   def data_source_sql(name = nil, type: nil); end
   def data_sources; end
-  def drop_join_table(table_1, table_2, options = nil); end
-  def drop_table(table_name, options = nil); end
+  def drop_join_table(table_1, table_2, **options); end
+  def drop_table(table_name, **options); end
   def dump_schema_information; end
   def extract_foreign_key_action(specifier); end
   def extract_new_comment_value(default_or_changes); end
@@ -2052,14 +2055,15 @@ module ActiveRecord::ConnectionAdapters::SchemaStatements
   def quoted_columns_for_index(column_names, **options); end
   def quoted_scope(name = nil, type: nil); end
   def remove_belongs_to(table_name, ref_name, foreign_key: nil, polymorphic: nil, **options); end
-  def remove_column(table_name, column_name, type = nil, options = nil); end
-  def remove_column_for_alter(table_name, column_name, type = nil, options = nil); end
+  def remove_column(table_name, column_name, type = nil, **options); end
+  def remove_column_for_alter(table_name, column_name, type = nil, **options); end
   def remove_columns(table_name, *column_names); end
-  def remove_columns_for_alter(table_name, *column_names); end
+  def remove_columns_for_alter(table_name, *column_names, **options); end
   def remove_foreign_key(from_table, to_table = nil, **options); end
   def remove_index(table_name, options = nil); end
   def remove_reference(table_name, ref_name, foreign_key: nil, polymorphic: nil, **options); end
-  def remove_timestamps(table_name, options = nil); end
+  def remove_timestamps(table_name, **options); end
+  def remove_timestamps_for_alter(table_name, **options); end
   def rename_column(table_name, column_name, new_column_name); end
   def rename_column_indexes(table_name, column_name, new_column_name); end
   def rename_index(table_name, old_name, new_name); end
@@ -2516,7 +2520,7 @@ module ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
   def name; end
 end
 module ActiveRecord::Delegation::ClassMethods
-  def create(klass, *args); end
+  def create(klass, *args, **kwargs); end
   def relation_class_for(klass); end
 end
 module ActiveRecord::Attributes
@@ -2728,7 +2732,7 @@ class ActiveRecord::DynamicMatchers::Method
   def body; end
   def define; end
   def finder; end
-  def initialize(model, name); end
+  def initialize(model, method_name); end
   def model; end
   def name; end
   def self.match(model, name); end
@@ -2816,7 +2820,7 @@ class ActiveRecord::Type::Serialized < Anonymous_Delegator_14
 end
 class ActiveRecord::Type::AdapterSpecificRegistry < ActiveModel::Type::Registry
   def add_modifier(options, klass, **args); end
-  def find_registration(symbol, *args); end
+  def find_registration(symbol, *args, **kwargs); end
   def registration_klass; end
 end
 class ActiveRecord::Type::Registration
@@ -3133,8 +3137,8 @@ module ActiveRecord::Persistence
   def new_record?; end
   def persisted?; end
   def reload(options = nil); end
-  def save!(*args, &block); end
-  def save(*args, &block); end
+  def save!(*args, **options, &block); end
+  def save(*args, **options, &block); end
   def toggle!(attribute); end
   def toggle(attribute); end
   def touch(*names, time: nil); end
@@ -3313,8 +3317,8 @@ module ActiveRecord::Validations
   def default_validation_context; end
   def perform_validations(options = nil); end
   def raise_validation_error; end
-  def save!(options = nil); end
-  def save(options = nil); end
+  def save!(**options); end
+  def save(**options); end
   def valid?(context = nil); end
   def validate(context = nil); end
   extend ActiveSupport::Concern
@@ -3521,7 +3525,7 @@ module ActiveRecord::Callbacks
   def create_or_update(**arg0); end
   def destroy; end
   def increment!(attribute, by = nil, touch: nil); end
-  def touch(*arg0); end
+  def touch(*arg0, **arg1); end
   extend ActiveSupport::Concern
 end
 class ActiveRecord::AssociationNotFoundError < ActiveRecord::ConfigurationError
@@ -3684,10 +3688,10 @@ module ActiveRecord::Transactions
   def remember_transaction_record_state; end
   def restore_transaction_record_state(force_restore_state = nil); end
   def rolledback!(force_restore_state: nil, should_run_callbacks: nil); end
-  def save!(*arg0); end
-  def save(*arg0); end
+  def save!(*arg0, **arg1); end
+  def save(*arg0, **arg1); end
   def sync_with_transaction_state; end
-  def touch(*arg0); end
+  def touch(*arg0, **arg1); end
   def transaction(options = nil, &block); end
   def transaction_include_any_action?(actions); end
   def trigger_transactional_callbacks?; end
@@ -3707,7 +3711,7 @@ module ActiveRecord::Transactions::ClassMethods
   def before_commit(*args, &block); end
   def before_commit_without_transaction_enrollment(*args, &block); end
   def set_options_for_callbacks!(args, enforced_options = nil); end
-  def transaction(options = nil, &block); end
+  def transaction(**options, &block); end
 end
 module ActiveRecord::TouchLater
   def belongs_to_touch_method; end
@@ -3715,7 +3719,7 @@ module ActiveRecord::TouchLater
   def surreptitiously_touch(attrs); end
   def touch(*names, time: nil); end
   def touch_deferred_attributes; end
-  def touch_later(*names); end
+  def touch_later(*names, **arg1); end
   extend ActiveSupport::Concern
 end
 module ActiveRecord::NoTouching
@@ -3723,8 +3727,8 @@ module ActiveRecord::NoTouching
   def self.applied_to?(klass); end
   def self.apply_to(klass); end
   def self.klasses; end
-  def touch(*arg0); end
-  def touch_later(*arg0); end
+  def touch(*arg0, **arg1); end
+  def touch_later(*arg0, **arg1); end
   extend ActiveSupport::Concern
 end
 module ActiveRecord::NoTouching::ClassMethods
@@ -3773,8 +3777,8 @@ module ActiveRecord::SecureToken::ClassMethods
   def has_secure_token(attribute = nil); end
 end
 module ActiveRecord::Suppressor
-  def save!(*arg0); end
-  def save(*arg0); end
+  def save!(*arg0, **arg1); end
+  def save(*arg0, **arg1); end
   extend ActiveSupport::Concern
 end
 module ActiveRecord::Suppressor::ClassMethods
@@ -3849,14 +3853,14 @@ end
 module ActiveRecord::ConnectionAdapters::SQLite3::DatabaseStatements
   def begin_db_transaction; end
   def build_fixture_statements(fixture_set); end
-  def build_truncate_statements(*table_names); end
+  def build_truncate_statement(table_name); end
   def commit_db_transaction; end
   def exec_delete(sql, name = nil, binds = nil); end
   def exec_query(sql, name = nil, binds = nil, prepare: nil); end
   def exec_rollback_db_transaction; end
   def exec_update(sql, name = nil, binds = nil); end
   def execute(sql, name = nil); end
-  def execute_batch(sql, name = nil); end
+  def execute_batch(statements, name = nil); end
   def last_inserted_id(result); end
   def write_query?(sql); end
 end
@@ -3997,7 +4001,7 @@ class ActiveRecord::ConnectionAdapters::TableDefinition
   def datetime(*names, **options); end
   def decimal(*names, **options); end
   def float(*names, **options); end
-  def foreign_key(table_name, options = nil); end
+  def foreign_key(table_name, **options); end
   def foreign_keys; end
   def if_not_exists; end
   def index(column_name, options = nil); end
@@ -4026,7 +4030,7 @@ class ActiveRecord::ConnectionAdapters::TableDefinition
   include MoneyRails::ActiveRecord::MigrationExtensions::Table
 end
 class ActiveRecord::ConnectionAdapters::AlterTable
-  def add_column(name, type, options); end
+  def add_column(name, type, **options); end
   def add_foreign_key(to_table, options); end
   def adds; end
   def drop_foreign_key(name); end
@@ -4043,13 +4047,13 @@ class ActiveRecord::ConnectionAdapters::Table
   def change(column_name, type, options = nil); end
   def change_default(column_name, default_or_changes); end
   def column(column_name, type, **options); end
-  def column_exists?(column_name, type = nil, options = nil); end
+  def column_exists?(column_name, type = nil, **options); end
   def date(*names, **options); end
   def datetime(*names, **options); end
   def decimal(*names, **options); end
   def float(*names, **options); end
-  def foreign_key(*args); end
-  def foreign_key_exists?(*args); end
+  def foreign_key(*args, **options); end
+  def foreign_key_exists?(*args, **options); end
   def index(column_name, options = nil); end
   def index_exists?(column_name, options = nil); end
   def initialize(table_name, base); end
@@ -4060,17 +4064,17 @@ class ActiveRecord::ConnectionAdapters::Table
   def references(*args, **options); end
   def remove(*column_names); end
   def remove_belongs_to(*args, **options); end
-  def remove_foreign_key(*args); end
+  def remove_foreign_key(*args, **options); end
   def remove_index(options = nil); end
   def remove_references(*args, **options); end
-  def remove_timestamps(options = nil); end
+  def remove_timestamps(**options); end
   def rename(column_name, new_column_name); end
   def rename_index(index_name, new_index_name); end
   def string(*names, **options); end
   def text(*names, **options); end
   def time(*names, **options); end
   def timestamp(*names, **options); end
-  def timestamps(options = nil); end
+  def timestamps(**options); end
   def virtual(*names, **options); end
   extend ActiveRecord::ConnectionAdapters::ColumnMethods::ClassMethods
   include ActiveRecord::ConnectionAdapters::ColumnMethods
@@ -4088,7 +4092,7 @@ end
 module ActiveRecord::ConnectionAdapters::SQLite3::SchemaStatements
   def add_foreign_key(from_table, to_table, **options); end
   def create_schema_dumper(options); end
-  def create_table_definition(*args); end
+  def create_table_definition(*args, **options); end
   def data_source_sql(name = nil, type: nil); end
   def indexes(table_name); end
   def new_column_from_field(table_name, field); end
@@ -4099,7 +4103,7 @@ end
 class ActiveRecord::ConnectionAdapters::SQLite3Adapter < ActiveRecord::ConnectionAdapters::AbstractAdapter
   def active?; end
   def add_belongs_to(table_name, ref_name, **options); end
-  def add_column(table_name, column_name, type, options = nil); end
+  def add_column(table_name, column_name, type, **options); end
   def add_reference(table_name, ref_name, **options); end
   def allowed_index_name_length; end
   def alter_table(table_name, foreign_keys = nil, **options); end
@@ -4130,7 +4134,7 @@ class ActiveRecord::ConnectionAdapters::SQLite3Adapter < ActiveRecord::Connectio
   def native_database_types; end
   def primary_keys(table_name); end
   def reconnect!; end
-  def remove_column(table_name, column_name, type = nil, options = nil); end
+  def remove_column(table_name, column_name, type = nil, **options); end
   def remove_index(table_name, options = nil); end
   def rename_column(table_name, column_name, new_column_name); end
   def rename_table(table_name, new_name); end
@@ -4251,6 +4255,7 @@ class ActiveRecord::Relation
   def build(attributes = nil, &block); end
   def build_preloader; end
   def cache_key(timestamp_column = nil); end
+  def cache_key_with_version; end
   def cache_version(timestamp_column = nil); end
   def compute_cache_key(timestamp_column = nil); end
   def compute_cache_version(timestamp_column); end
@@ -4352,6 +4357,7 @@ module ActiveRecord::SpawnMethods
   def spawn; end
 end
 class ActiveRecord::Relation::FromClause
+  def ==(other); end
   def empty?; end
   def initialize(value, name); end
   def merge(other); end
@@ -5030,7 +5036,7 @@ class ActiveRecord::Associations::CollectionProxy < ActiveRecord::Relation
   def includes(*args, &block); end
   def includes_values(*args, &block); end
   def includes_values=(arg); end
-  def initialize(klass, association); end
+  def initialize(klass, association, **arg2); end
   def joins!(*args, &block); end
   def joins(*args, &block); end
   def joins_values(*args, &block); end
@@ -5132,7 +5138,7 @@ class ActiveRecord::AssociationRelation < ActiveRecord::Relation
   def create!(attributes = nil, &block); end
   def create(attributes = nil, &block); end
   def exec_queries; end
-  def initialize(klass, association); end
+  def initialize(klass, association, **arg2); end
   def new(attributes = nil, &block); end
   def proxy_association; end
 end
@@ -5191,15 +5197,15 @@ module ActiveRecord::Migration::Compatibility::V5_2::CommandRecorder
 end
 class ActiveRecord::Migration::Compatibility::V5_1 < ActiveRecord::Migration::Compatibility::V5_2
   def change_column(table_name, column_name, type, options = nil); end
-  def create_table(table_name, options = nil); end
+  def create_table(table_name, **options); end
 end
 class ActiveRecord::Migration::Compatibility::V5_0 < ActiveRecord::Migration::Compatibility::V5_1
   def add_belongs_to(table_name, ref_name, **options); end
-  def add_column(table_name, column_name, type, options = nil); end
+  def add_column(table_name, column_name, type, **options); end
   def add_reference(table_name, ref_name, **options); end
   def compatible_table_definition(t); end
   def create_join_table(table_1, table_2, column_options: nil, **options); end
-  def create_table(table_name, options = nil); end
+  def create_table(table_name, **options); end
 end
 module ActiveRecord::Migration::Compatibility::V5_0::TableDefinition
   def belongs_to(*args, **options); end
@@ -5221,7 +5227,6 @@ module ActiveRecord::Migration::Compatibility::V4_2::TableDefinition
   def timestamps(**options); end
 end
 class ActiveRecord::PredicateBuilder
-  def associated_predicate_builder(association_name); end
   def build(attribute, value); end
   def build_bind_attribute(column_name, value); end
   def build_from_hash(attributes); end
@@ -5294,6 +5299,7 @@ class ActiveRecord::TableMetadata
   def aggregated_with?(aggregation_name); end
   def arel_attribute(column_name); end
   def arel_table; end
+  def associated_predicate_builder(table_name); end
   def associated_table(table_name); end
   def associated_with?(association_name); end
   def association; end
@@ -5305,6 +5311,7 @@ class ActiveRecord::TableMetadata
   def initialize(klass, arel_table, association = nil, types = nil); end
   def klass; end
   def polymorphic_association?; end
+  def predicate_builder; end
   def reflect_on_aggregation(aggregation_name); end
   def resolve_column_aliases(hash); end
   def type(column_name); end
@@ -5355,7 +5362,7 @@ end
 class ActiveRecord::ConnectionAdapters::SavepointTransaction < ActiveRecord::ConnectionAdapters::Transaction
   def commit; end
   def full_rollback?; end
-  def initialize(connection, savepoint_name, parent_transaction, *args); end
+  def initialize(connection, savepoint_name, parent_transaction, *args, **options); end
   def materialize!; end
   def rollback; end
 end
