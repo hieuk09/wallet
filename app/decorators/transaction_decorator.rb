@@ -31,5 +31,6 @@ class TransactionDecorator
   private
 
   attr_reader :transaction
+
   delegate :category, :account, to: :transaction
 end
