@@ -13,9 +13,9 @@ gem 'sorbet-runtime'
 gem 'sqlite3'
 
 group :development do
-  gem 'rubocop'
-  gem 'sorbet'
-  gem 'sorbet-rails'
+  gem 'rubocop', require: false
+  gem 'sorbet', require: false
+  gem 'sorbet-rails', require: false
 end
 
 group :development, :test do
