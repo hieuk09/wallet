@@ -452,12 +452,15 @@ module RuboCop::AST::CollectionNode
   def grep(*args, &block); end
   def grep_v(*args, &block); end
   def group_by(*args, &block); end
+  def in_groups(*args, &block); end
+  def in_groups_of(*args, &block); end
   def include?(*args, &block); end
   def including(*args, &block); end
   def index(*args, &block); end
   def index_by(*args, &block); end
   def index_with(*args, &block); end
   def inject(*args, &block); end
+  def inquiry(*args, &block); end
   def insert(*args, &block); end
   def join(*args, &block); end
   def keep_if(*args, &block); end
@@ -516,6 +519,7 @@ module RuboCop::AST::CollectionNode
   def sort(*args, &block); end
   def sort_by!(*args, &block); end
   def sort_by(*args, &block); end
+  def split(*args, &block); end
   def sum(*args, &block); end
   def take(*args, &block); end
   def take_while(*args, &block); end

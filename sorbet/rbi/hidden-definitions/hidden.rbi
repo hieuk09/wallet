@@ -49,22 +49,6 @@ class Account
   def initial_balance_money_before_type_cast(); end
 
   def validate_associated_records_for_transactions(*args); end
-  RelationType = ::T.let(nil, ::T.untyped)
-end
-
-class Account::ActiveRecord_AssociationRelation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::Account::GeneratedRelationMethods
-end
-
-class Account::ActiveRecord_Associations_CollectionProxy
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::Account::GeneratedRelationMethods
-end
-
-class Account::ActiveRecord_Relation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::Account::GeneratedRelationMethods
 end
 
 module Account::GeneratedAssociationMethods
@@ -74,13 +58,6 @@ module Account::GeneratedAssociationMethods
 end
 
 module Account::GeneratedAttributeMethods
-  extend ::Mutex_m
-end
-
-module Account::GeneratedRelationMethods
-end
-
-module Account::GeneratedRelationMethods
   extend ::Mutex_m
 end
 
@@ -1638,31 +1615,6 @@ end
 class ActiveRecord::AdvisoryLockBase
   include ::ActiveRecord::AdvisoryLockBase::GeneratedAttributeMethods
   include ::ActiveRecord::AdvisoryLockBase::GeneratedAssociationMethods
-  RelationType = ::T.let(nil, ::T.untyped)
-end
-
-class ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ActiveRecord::AdvisoryLockBase::GeneratedRelationMethods
-end
-
-class ActiveRecord::AdvisoryLockBase::ActiveRecord_AssociationRelation
-end
-
-class ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ActiveRecord::AdvisoryLockBase::GeneratedRelationMethods
-end
-
-class ActiveRecord::AdvisoryLockBase::ActiveRecord_Associations_CollectionProxy
-end
-
-class ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ActiveRecord::AdvisoryLockBase::GeneratedRelationMethods
-end
-
-class ActiveRecord::AdvisoryLockBase::ActiveRecord_Relation
 end
 
 module ActiveRecord::AdvisoryLockBase::GeneratedAssociationMethods
@@ -1675,13 +1627,6 @@ module ActiveRecord::AdvisoryLockBase::GeneratedAttributeMethods
 end
 
 module ActiveRecord::AdvisoryLockBase::GeneratedAttributeMethods
-  extend ::Mutex_m
-end
-
-module ActiveRecord::AdvisoryLockBase::GeneratedRelationMethods
-end
-
-module ActiveRecord::AdvisoryLockBase::GeneratedRelationMethods
   extend ::Mutex_m
 end
 
@@ -1765,10 +1710,6 @@ module ActiveRecord::ConnectionHandling
   RAILS_ENV = ::T.let(nil, ::T.untyped)
 end
 
-module ActiveRecord::Enum
-  SR_ENUM_KEYWORDS = ::T.let(nil, ::T.untyped)
-end
-
 class ActiveRecord::ExplainRegistry
   def self.collect?(*args, &block); end
 end
@@ -1784,22 +1725,6 @@ end
 
 class ActiveRecord::InternalMetadata
   include ::ActiveRecord::InternalMetadata::GeneratedAssociationMethods
-  RelationType = ::T.let(nil, ::T.untyped)
-end
-
-class ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ActiveRecord::InternalMetadata::GeneratedRelationMethods
-end
-
-class ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ActiveRecord::InternalMetadata::GeneratedRelationMethods
-end
-
-class ActiveRecord::InternalMetadata::ActiveRecord_Relation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ActiveRecord::InternalMetadata::GeneratedRelationMethods
 end
 
 module ActiveRecord::InternalMetadata::GeneratedAssociationMethods
@@ -1809,13 +1734,6 @@ module ActiveRecord::InternalMetadata::GeneratedAssociationMethods
 end
 
 module ActiveRecord::InternalMetadata::GeneratedAttributeMethods
-  extend ::Mutex_m
-end
-
-module ActiveRecord::InternalMetadata::GeneratedRelationMethods
-end
-
-module ActiveRecord::InternalMetadata::GeneratedRelationMethods
   extend ::Mutex_m
 end
 
@@ -2119,25 +2037,17 @@ class ActiveRecord::Relation
   VALUE_METHODS = ::T.let(nil, ::T.untyped)
 end
 
+class ActiveRecord::Relation::Merger
+  NORMAL_VALUES = ::T.let(nil, ::T.untyped)
+end
+
+class ActiveRecord::Relation::WhereClause
+  ARRAY_WITH_EMPTY_STRING = ::T.let(nil, ::T.untyped)
+end
+
 class ActiveRecord::SchemaMigration
   include ::ActiveRecord::SchemaMigration::GeneratedAssociationMethods
   def version(); end
-  RelationType = ::T.let(nil, ::T.untyped)
-end
-
-class ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ActiveRecord::SchemaMigration::GeneratedRelationMethods
-end
-
-class ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ActiveRecord::SchemaMigration::GeneratedRelationMethods
-end
-
-class ActiveRecord::SchemaMigration::ActiveRecord_Relation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ActiveRecord::SchemaMigration::GeneratedRelationMethods
 end
 
 module ActiveRecord::SchemaMigration::GeneratedAssociationMethods
@@ -2147,13 +2057,6 @@ module ActiveRecord::SchemaMigration::GeneratedAssociationMethods
 end
 
 module ActiveRecord::SchemaMigration::GeneratedAttributeMethods
-  extend ::Mutex_m
-end
-
-module ActiveRecord::SchemaMigration::GeneratedRelationMethods
-end
-
-module ActiveRecord::SchemaMigration::GeneratedRelationMethods
   extend ::Mutex_m
 end
 
@@ -2694,31 +2597,6 @@ end
 class ApplicationRecord
   include ::ApplicationRecord::GeneratedAttributeMethods
   include ::ApplicationRecord::GeneratedAssociationMethods
-  RelationType = ::T.let(nil, ::T.untyped)
-end
-
-class ApplicationRecord::ActiveRecord_AssociationRelation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ApplicationRecord::GeneratedRelationMethods
-end
-
-class ApplicationRecord::ActiveRecord_AssociationRelation
-end
-
-class ApplicationRecord::ActiveRecord_Associations_CollectionProxy
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ApplicationRecord::GeneratedRelationMethods
-end
-
-class ApplicationRecord::ActiveRecord_Associations_CollectionProxy
-end
-
-class ApplicationRecord::ActiveRecord_Relation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ApplicationRecord::GeneratedRelationMethods
-end
-
-class ApplicationRecord::ActiveRecord_Relation
 end
 
 module ApplicationRecord::GeneratedAssociationMethods
@@ -2731,13 +2609,6 @@ module ApplicationRecord::GeneratedAttributeMethods
 end
 
 module ApplicationRecord::GeneratedAttributeMethods
-  extend ::Mutex_m
-end
-
-module ApplicationRecord::GeneratedRelationMethods
-end
-
-module ApplicationRecord::GeneratedRelationMethods
   extend ::Mutex_m
 end
 
@@ -3690,22 +3561,6 @@ class Category
   def before_remove_for_transactions?(); end
 
   def validate_associated_records_for_transactions(*args); end
-  RelationType = ::T.let(nil, ::T.untyped)
-end
-
-class Category::ActiveRecord_AssociationRelation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::Category::GeneratedRelationMethods
-end
-
-class Category::ActiveRecord_Associations_CollectionProxy
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::Category::GeneratedRelationMethods
-end
-
-class Category::ActiveRecord_Relation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::Category::GeneratedRelationMethods
 end
 
 module Category::GeneratedAssociationMethods
@@ -3861,18 +3716,6 @@ module Category::GeneratedAttributeMethods
 end
 
 module Category::GeneratedAttributeMethods
-  extend ::Mutex_m
-end
-
-module Category::GeneratedRelationMethods
-  def expense(*args, &block); end
-
-  def implicit_order_column(*args, &block); end
-
-  def income(*args, &block); end
-end
-
-module Category::GeneratedRelationMethods
   extend ::Mutex_m
 end
 
@@ -4820,22 +4663,6 @@ end
 
 class ExchangeRate
   include ::ExchangeRate::GeneratedAssociationMethods
-  RelationType = ::T.let(nil, ::T.untyped)
-end
-
-class ExchangeRate::ActiveRecord_AssociationRelation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ExchangeRate::GeneratedRelationMethods
-end
-
-class ExchangeRate::ActiveRecord_Associations_CollectionProxy
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ExchangeRate::GeneratedRelationMethods
-end
-
-class ExchangeRate::ActiveRecord_Relation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::ExchangeRate::GeneratedRelationMethods
 end
 
 module ExchangeRate::GeneratedAssociationMethods
@@ -4845,13 +4672,6 @@ module ExchangeRate::GeneratedAssociationMethods
 end
 
 module ExchangeRate::GeneratedAttributeMethods
-  extend ::Mutex_m
-end
-
-module ExchangeRate::GeneratedRelationMethods
-end
-
-module ExchangeRate::GeneratedRelationMethods
   extend ::Mutex_m
 end
 
@@ -5224,26 +5044,6 @@ end
 
 class Gem::Specification
   extend ::Enumerable
-end
-
-module GeneratedUrlHelpers
-  def _routes(); end
-
-  def rails_info_path(*args); end
-
-  def rails_info_properties_path(*args); end
-
-  def rails_info_properties_url(*args); end
-
-  def rails_info_routes_path(*args); end
-
-  def rails_info_routes_url(*args); end
-
-  def rails_info_url(*args); end
-
-  def rails_mailers_path(*args); end
-
-  def rails_mailers_url(*args); end
 end
 
 module GlobalID::Locator
@@ -7626,8 +7426,6 @@ end
 class Net::HTTPAlreadyReported
 end
 
-Net::HTTPClientError::EXCEPTION_TYPE = Net::HTTPServerException
-
 Net::HTTPClientErrorCode = Net::HTTPClientError
 
 Net::HTTPClientException = Net::HTTPServerException
@@ -7639,7 +7437,13 @@ end
 class Net::HTTPEarlyHints
 end
 
-Net::HTTPFatalErrorCode = Net::HTTPClientError
+class Net::HTTPClientError
+end
+
+Net::HTTPFatalErrorCode::EXCEPTION_TYPE = Net::HTTPServerException
+
+class Net::HTTPClientError
+end
 
 class Net::HTTPGatewayTimeout
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -7702,9 +7506,13 @@ end
 class Net::HTTPRangeNotSatisfiable
 end
 
-Net::HTTPRedirection::EXCEPTION_TYPE = Net::HTTPRetriableError
+class Net::HTTPRedirection
+end
 
-Net::HTTPRedirectionCode = Net::HTTPRedirection
+Net::HTTPRedirectionCode::EXCEPTION_TYPE = Net::HTTPRetriableError
+
+class Net::HTTPRedirection
+end
 
 class Net::HTTPRequestTimeout
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -7719,9 +7527,13 @@ Net::HTTPResponceReceiver = Net::HTTPResponse
 
 Net::HTTPRetriableCode = Net::HTTPRedirection
 
-Net::HTTPServerError::EXCEPTION_TYPE = Net::HTTPFatalError
+class Net::HTTPServerError
+end
 
-Net::HTTPServerErrorCode = Net::HTTPServerError
+Net::HTTPServerErrorCode::EXCEPTION_TYPE = Net::HTTPFatalError
+
+class Net::HTTPServerError
+end
 
 class Net::HTTP
 end
@@ -7733,9 +7545,13 @@ Net::HTTPSession::ProxyMod = Net::HTTP::ProxyDelta
 class Net::HTTP
 end
 
-Net::HTTPSuccess::EXCEPTION_TYPE = Net::HTTPError
+class Net::HTTPSuccess
+end
 
-Net::HTTPSuccessCode = Net::HTTPSuccess
+Net::HTTPSuccessCode::EXCEPTION_TYPE = Net::HTTPError
+
+class Net::HTTPSuccess
+end
 
 class Net::HTTPURITooLong
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -8379,12 +8195,6 @@ end
 
 class OpenSSL::PKey::EC::Point
   def to_octet_string(_); end
-end
-
-class OpenSSL::PKey::RSA
-  def sign_pss(*_); end
-
-  def verify_pss(*_); end
 end
 
 module OpenSSL::SSL
@@ -14721,10 +14531,6 @@ module SecureRandom
   BASE58_ALPHABET = ::T.let(nil, ::T.untyped)
 end
 
-module SecureRandom
-  def self.bytes(n); end
-end
-
 class Set
   def ==(other); end
 
@@ -15325,22 +15131,6 @@ class SubTransaction
   def autosave_associated_records_for_parent_transaction(*args); end
 
   def currency_for_amount(); end
-  RelationType = ::T.let(nil, ::T.untyped)
-end
-
-class SubTransaction::ActiveRecord_AssociationRelation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::SubTransaction::GeneratedRelationMethods
-end
-
-class SubTransaction::ActiveRecord_Associations_CollectionProxy
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::SubTransaction::GeneratedRelationMethods
-end
-
-class SubTransaction::ActiveRecord_Relation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::SubTransaction::GeneratedRelationMethods
 end
 
 module SubTransaction::GeneratedAssociationMethods
@@ -15362,13 +15152,6 @@ module SubTransaction::GeneratedAssociationMethods
 end
 
 module SubTransaction::GeneratedAttributeMethods
-  extend ::Mutex_m
-end
-
-module SubTransaction::GeneratedRelationMethods
-end
-
-module SubTransaction::GeneratedRelationMethods
   extend ::Mutex_m
 end
 
@@ -16074,22 +15857,6 @@ class Transaction
   def currency_for_amount(); end
 
   def validate_associated_records_for_sub_transactions(*args); end
-  RelationType = ::T.let(nil, ::T.untyped)
-end
-
-class Transaction::ActiveRecord_AssociationRelation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::Transaction::GeneratedRelationMethods
-end
-
-class Transaction::ActiveRecord_Associations_CollectionProxy
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::Transaction::GeneratedRelationMethods
-end
-
-class Transaction::ActiveRecord_Relation
-  include ::ActiveRecord::Delegation::ClassSpecificRelation
-  include ::Transaction::GeneratedRelationMethods
 end
 
 module Transaction::GeneratedAssociationMethods
@@ -16115,13 +15882,6 @@ module Transaction::GeneratedAssociationMethods
 end
 
 module Transaction::GeneratedAttributeMethods
-  extend ::Mutex_m
-end
-
-module Transaction::GeneratedRelationMethods
-end
-
-module Transaction::GeneratedRelationMethods
   extend ::Mutex_m
 end
 
@@ -16159,7 +15919,7 @@ module TypeCoerce::Configuration
   extend ::T::Private::Methods::SingletonMethodHooks
 end
 
-class TypeCoerce::Private::Converter
+class TypeCoerce::Converter
   PRIMITIVE_TYPES = ::T.let(nil, ::T.untyped)
 end
 
