@@ -18,8 +18,6 @@ module ActiveStorage::Blob::Identifiable; end
 module ActiveStorage::Variant; end
 module Anonymous_Module_19::Anonymous_Module_20; end
 module Anonymous_Module_19::Anonymous_Module_21; end
-module Anonymous_Module_29::Anonymous_Module_20; end
-module Anonymous_Module_29::Anonymous_Module_21; end
 module T::InterfaceWrapper::Helpers; end
 module T::Private::Abstract::Hooks; end
 module T::Private::Methods::MethodHooks; end
