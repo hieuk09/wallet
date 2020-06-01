@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/sorbet-rails/all/sorbet-rails.rbi
 #
-# sorbet-rails-0.6.5.1
+# sorbet-rails-0.7.0
 
 module SorbetRails
   def self.config(*args, &blk); end
@@ -198,26 +198,4 @@ class TA
   extend T::Private::Methods::SingletonMethodHooks
   extend T::Sig
   include ITypeAssert
-end
-module IntegerStringImpl
-  def _is_a_integer_string?; end
-  def instance_of?(type); end
-  def is_a?(type); end
-  def kind_of?(type); end
-end
-class String
-  include BooleanStringImpl
-  include IntegerStringImpl
-end
-class IntegerString < String
-  def self.===(other); end
-end
-module BooleanStringImpl
-  def _is_a_boolean_string?; end
-  def instance_of?(type); end
-  def is_a?(type); end
-  def kind_of?(type); end
-end
-class BooleanString < String
-  def self.===(other); end
 end
