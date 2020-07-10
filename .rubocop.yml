@@ -48,6 +48,10 @@ Metrics/CyclomaticComplexity:
 Metrics/MethodLength:
   Max: 30
 
+Style/AccessorGrouping:
+  Enabled: true
+Style/BisectedAttrAccessor:
+  Enabled: true
 Style/BlockDelimiters:
   Exclude:
     - spec/**/*
@@ -72,6 +76,8 @@ Style/MultilineBlockChain:
   Enabled: false
 Style/NumericLiterals:
   Enabled: false
+Style/RedundantAssignment:
+  Enabled: true
 Style/RedundantFetchBlock:
   Enabled: true
 Style/RedundantRegexpCharacterClass:
