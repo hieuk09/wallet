@@ -5468,6 +5468,10 @@ class Hash
   include ::JSON::Ext::Generator::GeneratorMethods::Hash
 end
 
+class Hash
+  def self.from_trusted_xml(xml); end
+end
+
 HashWithIndifferentAccess = ActiveSupport::HashWithIndifferentAccess
 
 module I18n
@@ -7170,8 +7174,6 @@ end
 class Net::HTTPAlreadyReported
 end
 
-Net::HTTPClientError::EXCEPTION_TYPE = Net::HTTPServerException
-
 Net::HTTPClientErrorCode = Net::HTTPClientError
 
 Net::HTTPClientException = Net::HTTPServerException
@@ -7246,8 +7248,6 @@ end
 class Net::HTTPRangeNotSatisfiable
 end
 
-Net::HTTPRedirection::EXCEPTION_TYPE = Net::HTTPRetriableError
-
 Net::HTTPRedirectionCode = Net::HTTPRedirection
 
 class Net::HTTPRequestTimeout
@@ -7262,8 +7262,6 @@ Net::HTTPRequestURITooLarge = Net::HTTPURITooLong
 Net::HTTPResponceReceiver = Net::HTTPResponse
 
 Net::HTTPRetriableCode = Net::HTTPRedirection
-
-Net::HTTPServerError::EXCEPTION_TYPE = Net::HTTPFatalError
 
 Net::HTTPServerErrorCode = Net::HTTPServerError
 
@@ -8017,6 +8015,42 @@ end
 
 module Polyfill
   VERSION = ::T.let(nil, ::T.untyped)
+end
+
+module Polyfill::Module::M70174783652760
+end
+
+module Polyfill::Module::M70174783652760
+end
+
+module Polyfill::Module::M70174795023980
+end
+
+module Polyfill::Module::M70174795023980
+end
+
+module Polyfill::Module::M70174814115540
+end
+
+module Polyfill::Module::M70174814115540
+end
+
+module Polyfill::Module::M70174814884500
+end
+
+module Polyfill::Module::M70174814884500
+end
+
+module Polyfill::Module::M70174815187840
+end
+
+module Polyfill::Module::M70174815187840
+end
+
+module Polyfill::Module::M70174815758280
+end
+
+module Polyfill::Module::M70174815758280
 end
 
 class Proc
@@ -9964,6 +9998,108 @@ class Resolv::DNS
   def self.random(arg); end
 end
 
+class RuboCop::AST::ArrayNode
+  PERCENT_LITERAL_TYPES = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::AST::BlockNode
+  VOID_CONTEXT_METHODS = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::AST::Builder
+  NODE_MAP = ::T.let(nil, ::T.untyped)
+end
+
+module RuboCop::AST::CollectionNode
+  ARRAY_METHODS = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::AST::KeywordSplatNode
+  DOUBLE_SPLAT = ::T.let(nil, ::T.untyped)
+end
+
+module RuboCop::AST::MethodDispatchNode
+  ARITHMETIC_OPERATORS = ::T.let(nil, ::T.untyped)
+  SPECIAL_MODIFIERS = ::T.let(nil, ::T.untyped)
+end
+
+module RuboCop::AST::MethodIdentifierPredicates
+  ENUMERABLE_METHODS = ::T.let(nil, ::T.untyped)
+  ENUMERATOR_METHODS = ::T.let(nil, ::T.untyped)
+  NONMUTATING_ARRAY_METHODS = ::T.let(nil, ::T.untyped)
+  NONMUTATING_BINARY_OPERATOR_METHODS = ::T.let(nil, ::T.untyped)
+  NONMUTATING_HASH_METHODS = ::T.let(nil, ::T.untyped)
+  NONMUTATING_OPERATOR_METHODS = ::T.let(nil, ::T.untyped)
+  NONMUTATING_STRING_METHODS = ::T.let(nil, ::T.untyped)
+  NONMUTATING_UNARY_OPERATOR_METHODS = ::T.let(nil, ::T.untyped)
+  OPERATOR_METHODS = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::AST::Node
+  ARGUMENT_TYPES = ::T.let(nil, ::T.untyped)
+  ASSIGNMENTS = ::T.let(nil, ::T.untyped)
+  BASIC_CONDITIONALS = ::T.let(nil, ::T.untyped)
+  BASIC_LITERALS = ::T.let(nil, ::T.untyped)
+  COMPARISON_OPERATORS = ::T.let(nil, ::T.untyped)
+  COMPOSITE_LITERALS = ::T.let(nil, ::T.untyped)
+  CONDITIONALS = ::T.let(nil, ::T.untyped)
+  EQUALS_ASSIGNMENTS = ::T.let(nil, ::T.untyped)
+  FALSEY_LITERALS = ::T.let(nil, ::T.untyped)
+  IMMUTABLE_LITERALS = ::T.let(nil, ::T.untyped)
+  KEYWORDS = ::T.let(nil, ::T.untyped)
+  LITERALS = ::T.let(nil, ::T.untyped)
+  LOOP_TYPES = ::T.let(nil, ::T.untyped)
+  MUTABLE_LITERALS = ::T.let(nil, ::T.untyped)
+  OPERATOR_KEYWORDS = ::T.let(nil, ::T.untyped)
+  POST_CONDITION_LOOP_TYPES = ::T.let(nil, ::T.untyped)
+  REFERENCES = ::T.let(nil, ::T.untyped)
+  SHORTHAND_ASSIGNMENTS = ::T.let(nil, ::T.untyped)
+  SPECIAL_KEYWORDS = ::T.let(nil, ::T.untyped)
+  TRUTHY_LITERALS = ::T.let(nil, ::T.untyped)
+  VARIABLES = ::T.let(nil, ::T.untyped)
+end
+
+module RuboCop::AST::NumericNode
+  SIGN_REGEX = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::AST::PairNode
+  COLON = ::T.let(nil, ::T.untyped)
+  HASH_ROCKET = ::T.let(nil, ::T.untyped)
+  SPACED_COLON = ::T.let(nil, ::T.untyped)
+  SPACED_HASH_ROCKET = ::T.let(nil, ::T.untyped)
+end
+
+module RuboCop::AST::PredicateOperatorNode
+  LOGICAL_AND = ::T.let(nil, ::T.untyped)
+  LOGICAL_OR = ::T.let(nil, ::T.untyped)
+  SEMANTIC_AND = ::T.let(nil, ::T.untyped)
+  SEMANTIC_OR = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::AST::ProcessedSource
+  STRING_SOURCE_NAME = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::AST::RegexpNode
+  OPTIONS = ::T.let(nil, ::T.untyped)
+end
+
+module RuboCop::AST::Traversal
+  MANY_CHILD_NODES = ::T.let(nil, ::T.untyped)
+  NO_CHILD_NODES = ::T.let(nil, ::T.untyped)
+  ONE_CHILD_NODE = ::T.let(nil, ::T.untyped)
+  SECOND_CHILD_ONLY = ::T.let(nil, ::T.untyped)
+end
+
+module RuboCop::AST::Version
+  STRING = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::CLI::Command::AutoGenerateConfig
+  AUTO_GENERATED_FILE = ::T.let(nil, ::T.untyped)
+end
+
 class RuboCop::Config
   DEFAULT_RAILS_VERSION = ::T.let(nil, ::T.untyped)
 end
@@ -9976,8 +10112,40 @@ class RuboCop::Cop::Lint::FormatParameterMismatch
   MSG_INVALID = ::T.let(nil, ::T.untyped)
 end
 
+class RuboCop::Cop::Metrics::Utils::CodeLengthCalculator
+  CLASSISH_TYPES = ::T.let(nil, ::T.untyped)
+  FOLDABLE_TYPES = ::T.let(nil, ::T.untyped)
+end
+
 module RuboCop::Cop::Metrics::Utils::IteratingBlock
   KNOWN_ITERATING_METHODS = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Naming::AsciiIdentifiers
+  CONSTANT_MSG = ::T.let(nil, ::T.untyped)
+  IDENTIFIER_MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Naming::BinaryOperatorParameterName
+  EXCLUDED = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Offense
+  NO_LOCATION = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::AccessorGrouping
+  ACCESSOR_METHODS = ::T.let(nil, ::T.untyped)
+  GROUPED_MSG = ::T.let(nil, ::T.untyped)
+  SEPARATED_MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::BisectedAttrAccessor
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::RedundantAssignment
+  MSG = ::T.let(nil, ::T.untyped)
 end
 
 class RuboCop::Cop::Style::RedundantConditional
@@ -9991,6 +10159,16 @@ end
 class RuboCop::Cop::Style::RedundantSelf
   KEYWORDS = ::T.let(nil, ::T.untyped)
 end
+
+module RuboCop::Cop::VisibilityHelp
+  VISIBILITY_SCOPES = ::T.let(nil, ::T.untyped)
+end
+
+RuboCop::NodePattern = RuboCop::AST::NodePattern
+
+RuboCop::ProcessedSource = RuboCop::AST::ProcessedSource
+
+RuboCop::Token = RuboCop::AST::Token
 
 class RubyLex
   include ::RubyToken

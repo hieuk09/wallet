@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/factory_bot/all/factory_bot.rbi
 #
-# factory_bot-6.0.1
+# factory_bot-6.1.0
 
 module FactoryBot
   def self.aliases; end
@@ -247,6 +247,7 @@ class FactoryBot::Evaluator
   def attribute_lists?; end
   def increment_sequence(sequence); end
   def initialize(build_strategy, overrides = nil); end
+  def instance; end
   def instance=(arg0); end
   def method_missing(method_name, *args, &block); end
   def respond_to_missing?(method_name, _include_private = nil); end
@@ -321,9 +322,12 @@ end
 class FactoryBot::Declaration::Association < FactoryBot::Declaration
   def ==(other); end
   def build; end
-  def ensure_factory_is_not_a_declaration!; end
+  def factory_name; end
   def initialize(name, *options); end
   def options; end
+  def overrides; end
+  def raise_if_arguments_are_declarations!; end
+  def traits; end
 end
 class FactoryBot::Declaration::Implicit < FactoryBot::Declaration
   def ==(other); end
