@@ -1409,7 +1409,7 @@
 # wrong constant name to_csv
 # wrong constant name to_h
 # wrong constant name to_s<defaultArg>1
-# wrong constant name wrap
+# wrong constant name try_convert
 # wrong constant name <Class:BasicObject>
 # wrong constant name initialize
 # undefined method `initialize<defaultArg>1' for class `Benchmark::Report'
@@ -1565,7 +1565,6 @@
 # wrong constant name install_tasks
 # wrong constant name instance
 # wrong constant name instance=
-# uninitialized constant Bundler::GemRemoteFetcher::BASE64_URI_TRANSLATE
 # wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for class `Bundler::GemVersionPromoter'
 # Did you mean?  initialize_dup
@@ -1718,7 +1717,11 @@
 # wrong constant name attempts
 # wrong constant name default_attempts
 # wrong constant name default_retries
+# undefined method `initialize<defaultArg>1' for class `Bundler::RubyGemsGemInstaller'
+# Did you mean?  initialize_dup
 # uninitialized constant Bundler::RubyGemsGemInstaller::ENV_PATHS
+# wrong constant name initialize<defaultArg>1
+# wrong constant name initialize
 # wrong constant name <static-init>
 # uninitialized constant Bundler::RubygemsIntegration::MoreFuture::EXT_LOCK
 # wrong constant name backport_ext_builder_monitor
@@ -2377,9 +2380,6 @@
 # wrong constant name current
 # uninitialized constant Fiddle
 # uninitialized constant Fiddle
-# undefined singleton method `atomic_write<defaultArg>1' for `File'
-# wrong constant name atomic_write<defaultArg>1
-# wrong constant name atomic_write
 # wrong constant name exists?
 # uninitialized constant FileUtils::DryRun::LN_SUPPORTED
 # uninitialized constant FileUtils::DryRun::RUBY
@@ -2480,6 +2480,7 @@
 # wrong constant name version
 # wrong constant name <static-init>
 # wrong constant name from
+# wrong constant name oct_or_256based
 # wrong constant name strict_oct
 # undefined method `read<defaultArg>1' for class `Gem::Package::TarReader::Entry'
 # undefined method `readpartial<defaultArg>1' for class `Gem::Package::TarReader::Entry'
@@ -2515,11 +2516,6 @@
 # wrong constant name initialize
 # wrong constant name path
 # wrong constant name spec_cache_dir
-# undefined method `sign_s3_url<defaultArg>1' for class `Gem::RemoteFetcher'
-# wrong constant name correct_for_windows_path
-# wrong constant name s3_expiration
-# wrong constant name sign_s3_url<defaultArg>1
-# wrong constant name sign_s3_url
 # undefined method `initialize<defaultArg>1' for class `Gem::Resolver::ActivationRequest'
 # Did you mean?  initialize_dup
 # wrong constant name initialize<defaultArg>1
@@ -2541,8 +2537,6 @@
 # wrong constant name suggestion
 # wrong constant name suggestion=
 # wrong constant name <static-init>
-# uninitialized constant Gem::S3URISigner
-# uninitialized constant Gem::S3URISigner
 # wrong constant name <static-init>
 # undefined method `initialize<defaultArg>1' for class `Gem::Security::Policy'
 # Did you mean?  initialize_dup
@@ -2766,7 +2760,7 @@
 # wrong constant name locate_signed
 # wrong constant name use<defaultArg>1
 # wrong constant name use
-# wrong constant name from_trusted_xml
+# wrong constant name try_convert
 # wrong constant name <Class:Gettext>
 # wrong constant name <Class:Locale>
 # wrong constant name <Class:Middleware>
@@ -5135,12 +5129,6 @@
 # wrong constant name fnmatch?
 # wrong constant name glob
 # wrong constant name make_symlink
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
 # uninitialized constant Prime
 # uninitialized constant Prime
 # wrong constant name <<
@@ -5800,7 +5788,7 @@
 # uninitialized constant Rails::BacktraceCleaner::FORMATTED_GEMS_PATTERN
 # wrong constant name properties
 # wrong constant name properties=
-# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fa5b38fb488>'
+# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fa0e2b45ae8>'
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
@@ -6076,7 +6064,10 @@
 # uninitialized constant RuboCop::AST::RegexpNode::SPECIAL_KEYWORDS
 # uninitialized constant RuboCop::AST::RegexpNode::TRUTHY_LITERALS
 # uninitialized constant RuboCop::AST::RegexpNode::VARIABLES
+# uninitialized constant RuboCop::Cop::Layout::SpaceAroundMethodCallOperator::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Layout::SpaceAroundMethodCallOperator::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::ConstantResolution::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::DuplicateElsifCondition::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::FormatParameterMismatch::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Metrics::Utils::CodeLengthCalculator::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Naming::AsciiIdentifiers::BYTE_ORDER_MARK
@@ -6084,8 +6075,15 @@
 # uninitialized constant RuboCop::Cop::Naming::BinaryOperatorParameterName::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::AccessorGrouping::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::AccessorGrouping::VISIBILITY_SCOPES
+# uninitialized constant RuboCop::Cop::Style::ArrayCoercion::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::BisectedAttrAccessor::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::BisectedAttrAccessor::VISIBILITY_SCOPES
+# uninitialized constant RuboCop::Cop::Style::CaseLikeIf::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::CaseLikeIf::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::CommentedKeyword::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::ExponentialNotation::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::FloatDivision::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::HashLikeCase::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RedundantAssignment::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RedundantConditional::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RedundantConditional::SPACE
@@ -6094,6 +6092,7 @@
 # uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::FROZEN_STRING_LITERAL_ENABLED
 # uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::FROZEN_STRING_LITERAL_TYPES
 # uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::RedundantFileExtensionInRequire::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RedundantSelf::LITERAL_REGEX
 # undefined method `Fail<defaultArg>1' for class `RubyLex'
 # undefined method `Raise<defaultArg>1' for class `RubyLex'

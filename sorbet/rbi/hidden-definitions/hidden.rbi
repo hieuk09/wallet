@@ -2639,7 +2639,7 @@ class Array
 end
 
 class Array
-  def self.wrap(object); end
+  def self.try_convert(_); end
 end
 
 BasicObject::BasicObject = BasicObject
@@ -3224,6 +3224,7 @@ class Bundler::Retry
 end
 
 class Bundler::RubyGemsGemInstaller
+  def initialize(gem, options=T.unsafe(nil)); end
 end
 
 class Bundler::RubyGemsGemInstaller
@@ -4775,8 +4776,6 @@ class Fiber
 end
 
 class File
-  def self.atomic_write(file_name, temp_dir=T.unsafe(nil)); end
-
   def self.exists?(_); end
 end
 
@@ -5011,6 +5010,8 @@ end
 class Gem::Package::TarHeader
   def self.from(stream); end
 
+  def self.oct_or_256based(str); end
+
   def self.strict_oct(str); end
 end
 
@@ -5075,15 +5076,6 @@ class Gem::PathSupport
   def path(); end
 
   def spec_cache_dir(); end
-end
-
-class Gem::RemoteFetcher
-  def correct_for_windows_path(path); end
-
-  def s3_expiration(); end
-
-  def sign_s3_url(uri, expiration=T.unsafe(nil)); end
-  BASE64_URI_TRANSLATE = ::T.let(nil, ::T.untyped)
 end
 
 class Gem::Request
@@ -5469,7 +5461,7 @@ class Hash
 end
 
 class Hash
-  def self.from_trusted_xml(xml); end
+  def self.try_convert(_); end
 end
 
 HashWithIndifferentAccess = ActiveSupport::HashWithIndifferentAccess
@@ -8017,42 +8009,6 @@ module Polyfill
   VERSION = ::T.let(nil, ::T.untyped)
 end
 
-module Polyfill::Module::M70174783652760
-end
-
-module Polyfill::Module::M70174783652760
-end
-
-module Polyfill::Module::M70174795023980
-end
-
-module Polyfill::Module::M70174795023980
-end
-
-module Polyfill::Module::M70174814115540
-end
-
-module Polyfill::Module::M70174814115540
-end
-
-module Polyfill::Module::M70174814884500
-end
-
-module Polyfill::Module::M70174814884500
-end
-
-module Polyfill::Module::M70174815187840
-end
-
-module Polyfill::Module::M70174815187840
-end
-
-module Polyfill::Module::M70174815758280
-end
-
-module Polyfill::Module::M70174815758280
-end
-
 class Proc
   def <<(_); end
 
@@ -10104,7 +10060,15 @@ class RuboCop::Config
   DEFAULT_RAILS_VERSION = ::T.let(nil, ::T.untyped)
 end
 
+class RuboCop::Cop::Layout::SpaceAroundMethodCallOperator
+  SPACES_REGEXP = ::T.let(nil, ::T.untyped)
+end
+
 class RuboCop::Cop::Lint::ConstantResolution
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Lint::DuplicateElsifCondition
   MSG = ::T.let(nil, ::T.untyped)
 end
 
@@ -10140,7 +10104,33 @@ class RuboCop::Cop::Style::AccessorGrouping
   SEPARATED_MSG = ::T.let(nil, ::T.untyped)
 end
 
+class RuboCop::Cop::Style::ArrayCoercion
+  CHECK_MSG = ::T.let(nil, ::T.untyped)
+  SPLAT_MSG = ::T.let(nil, ::T.untyped)
+end
+
 class RuboCop::Cop::Style::BisectedAttrAccessor
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::CaseLikeIf
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::CommentedKeyword
+  ALLOWED_COMMENT_REGEXES = ::T.let(nil, ::T.untyped)
+  KEYWORD_REGEXES = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::ExponentialNotation
+  MESSAGES = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::FloatDivision
+  MESSAGES = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::HashLikeCase
   MSG = ::T.let(nil, ::T.untyped)
 end
 
@@ -10153,6 +10143,10 @@ class RuboCop::Cop::Style::RedundantConditional
 end
 
 class RuboCop::Cop::Style::RedundantFetchBlock
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::RedundantFileExtensionInRequire
   MSG = ::T.let(nil, ::T.untyped)
 end
 
@@ -11556,6 +11550,10 @@ module Socket::Constants
   TCP_NOOPT = ::T.let(nil, ::T.untyped)
   TCP_NOPUSH = ::T.let(nil, ::T.untyped)
 end
+
+SorbetRails::JobRbiFormatter::Parameter = Parlour::RbiGenerator::Parameter
+
+SorbetRails::MailerRbiFormatter::Parameter = Parlour::RbiGenerator::Parameter
 
 SorbetRails::ModelPlugins::Base::Parameter = Parlour::RbiGenerator::Parameter
 
