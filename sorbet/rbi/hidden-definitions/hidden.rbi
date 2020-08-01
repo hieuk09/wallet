@@ -2716,7 +2716,6 @@ class Bootsnap::LoadPathCache::Path
 end
 
 module Bootsnap::LoadPathCache::PathScanner
-  ALL_FILES = ::T.let(nil, ::T.untyped)
   ALTERNATIVE_NATIVE_EXTENSIONS_PATTERN = ::T.let(nil, ::T.untyped)
   BUNDLE_PATH = ::T.let(nil, ::T.untyped)
   NORMALIZE_NATIVE_EXTENSIONS = ::T.let(nil, ::T.untyped)
@@ -5460,10 +5459,6 @@ class Hash
   include ::JSON::Ext::Generator::GeneratorMethods::Hash
 end
 
-class Hash
-  def self.try_convert(_); end
-end
-
 HashWithIndifferentAccess = ActiveSupport::HashWithIndifferentAccess
 
 module I18n
@@ -7166,6 +7161,8 @@ end
 class Net::HTTPAlreadyReported
 end
 
+Net::HTTPClientError::EXCEPTION_TYPE = Net::HTTPServerException
+
 Net::HTTPClientErrorCode = Net::HTTPClientError
 
 Net::HTTPClientException = Net::HTTPServerException
@@ -7240,6 +7237,8 @@ end
 class Net::HTTPRangeNotSatisfiable
 end
 
+Net::HTTPRedirection::EXCEPTION_TYPE = Net::HTTPRetriableError
+
 Net::HTTPRedirectionCode = Net::HTTPRedirection
 
 class Net::HTTPRequestTimeout
@@ -7254,6 +7253,8 @@ Net::HTTPRequestURITooLarge = Net::HTTPURITooLong
 Net::HTTPResponceReceiver = Net::HTTPResponse
 
 Net::HTTPRetriableCode = Net::HTTPRedirection
+
+Net::HTTPServerError::EXCEPTION_TYPE = Net::HTTPFatalError
 
 Net::HTTPServerErrorCode = Net::HTTPServerError
 

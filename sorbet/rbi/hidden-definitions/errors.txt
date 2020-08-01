@@ -9,6 +9,8 @@
 # wrong constant name <Magic>
 # wrong constant name <Magic>
 # wrong constant name <Class:<Magic>>
+# wrong constant name <PackageRegistry>
+# wrong constant name <PackageRegistry>
 # wrong constant name <RESERVED_0>
 # wrong constant name <RESERVED_10>
 # wrong constant name <RESERVED_11>
@@ -87,18 +89,7 @@
 # wrong constant name <RESERVED_78>
 # wrong constant name <RESERVED_79>
 # wrong constant name <RESERVED_7>
-# wrong constant name <RESERVED_80>
-# wrong constant name <RESERVED_81>
-# wrong constant name <RESERVED_82>
-# wrong constant name <RESERVED_83>
-# wrong constant name <RESERVED_84>
-# wrong constant name <RESERVED_85>
-# wrong constant name <RESERVED_86>
-# wrong constant name <RESERVED_87>
-# wrong constant name <RESERVED_88>
-# wrong constant name <RESERVED_89>
 # wrong constant name <RESERVED_8>
-# wrong constant name <RESERVED_90>
 # wrong constant name <RESERVED_9>
 # wrong constant name <TypeAlias>
 # wrong constant name <TypeAlias>
@@ -2760,7 +2751,6 @@
 # wrong constant name locate_signed
 # wrong constant name use<defaultArg>1
 # wrong constant name use
-# wrong constant name try_convert
 # wrong constant name <Class:Gettext>
 # wrong constant name <Class:Locale>
 # wrong constant name <Class:Middleware>
@@ -5098,6 +5088,9 @@
 # uninitialized constant PStore
 # uninitialized constant PTY
 # uninitialized constant PTY
+# uninitialized constant PackageSpec
+# uninitialized constant PackageSpec
+# wrong constant name <Class:PackageSpec>
 # uninitialized constant Parser::Ruby24::Racc_Main_Parsing_Routine
 # uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Id_C
 # uninitialized constant Parser::Ruby24::Racc_Runtime_Core_Revision
@@ -5788,7 +5781,7 @@
 # uninitialized constant Rails::BacktraceCleaner::FORMATTED_GEMS_PATTERN
 # wrong constant name properties
 # wrong constant name properties=
-# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fa0e2b45ae8>'
+# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007f9f23eac468>'
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
