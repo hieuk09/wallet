@@ -83,11 +83,6 @@
 # wrong constant name <RESERVED_72>
 # wrong constant name <RESERVED_73>
 # wrong constant name <RESERVED_74>
-# wrong constant name <RESERVED_75>
-# wrong constant name <RESERVED_76>
-# wrong constant name <RESERVED_77>
-# wrong constant name <RESERVED_78>
-# wrong constant name <RESERVED_79>
 # wrong constant name <RESERVED_7>
 # wrong constant name <RESERVED_8>
 # wrong constant name <RESERVED_9>
@@ -421,6 +416,8 @@
 # uninitialized constant ActionDispatch::Request::RESCUABLE_MIME_FORMAT_ERRORS
 # uninitialized constant ActionDispatch::Response::DATE
 # uninitialized constant ActionDispatch::Response::DEFAULT_CACHE_CONTROL
+# uninitialized constant ActionDispatch::Response::EXCEPTION_IMMEDIATE
+# uninitialized constant ActionDispatch::Response::EXCEPTION_NEVER
 # uninitialized constant ActionDispatch::Response::FILTERED
 # uninitialized constant ActionDispatch::Response::LAST_MODIFIED
 # uninitialized constant ActionDispatch::Response::MUST_REVALIDATE
@@ -519,6 +516,8 @@
 # uninitialized constant ActionDispatch::TestResponse::CONTENT_TYPE_PARSER
 # uninitialized constant ActionDispatch::TestResponse::DATE
 # uninitialized constant ActionDispatch::TestResponse::DEFAULT_CACHE_CONTROL
+# uninitialized constant ActionDispatch::TestResponse::EXCEPTION_IMMEDIATE
+# uninitialized constant ActionDispatch::TestResponse::EXCEPTION_NEVER
 # uninitialized constant ActionDispatch::TestResponse::FILTERED
 # uninitialized constant ActionDispatch::TestResponse::LAST_MODIFIED
 # uninitialized constant ActionDispatch::TestResponse::LOCATION
@@ -2371,7 +2370,11 @@
 # wrong constant name current
 # uninitialized constant Fiddle
 # uninitialized constant Fiddle
+# undefined singleton method `atomic_write<defaultArg>1' for `File'
+# wrong constant name atomic_write<defaultArg>1
+# wrong constant name atomic_write
 # wrong constant name exists?
+# wrong constant name probe_stat_in
 # uninitialized constant FileUtils::DryRun::LN_SUPPORTED
 # uninitialized constant FileUtils::DryRun::RUBY
 # uninitialized constant FileUtils::DryRun::VERSION
@@ -2751,6 +2754,7 @@
 # wrong constant name locate_signed
 # wrong constant name use<defaultArg>1
 # wrong constant name use
+# wrong constant name from_trusted_xml
 # wrong constant name <Class:Gettext>
 # wrong constant name <Class:Locale>
 # wrong constant name <Class:Middleware>
@@ -3264,6 +3268,8 @@
 # wrong constant name require
 # uninitialized constant LUSolve
 # uninitialized constant LUSolve
+# uninitialized constant Logger::LogDevice::EXCEPTION_IMMEDIATE
+# uninitialized constant Logger::LogDevice::EXCEPTION_NEVER
 # uninitialized constant Logger::LogDevice::SiD
 # wrong constant name <Class:AddressList>
 # wrong constant name <Class:ContentDispositionElement>
@@ -4659,6 +4665,8 @@
 # uninitialized constant MoneyRails::ActiveModel::MoneyValidator::HEXADECIMAL_REGEX
 # uninitialized constant MoneyRails::ActiveModel::MoneyValidator::INTEGER_REGEX
 # uninitialized constant MoneyRails::ActiveModel::MoneyValidator::RESERVED_OPTIONS
+# uninitialized constant Monitor::EXCEPTION_IMMEDIATE
+# uninitialized constant Monitor::EXCEPTION_NEVER
 # wrong constant name enter
 # wrong constant name exit
 # wrong constant name try_enter
@@ -4744,6 +4752,8 @@
 # wrong constant name <static-init>
 # undefined method `fetch<defaultArg>1' for class `Net::IMAP'
 # undefined method `uid_fetch<defaultArg>1' for class `Net::IMAP'
+# uninitialized constant Net::IMAP::EXCEPTION_IMMEDIATE
+# uninitialized constant Net::IMAP::EXCEPTION_NEVER
 # uninitialized constant Net::IMAP::OPENSSL_FIPS
 # uninitialized constant Net::IMAP::OPENSSL_LIBRARY_VERSION
 # uninitialized constant Net::IMAP::OPENSSL_VERSION
@@ -5781,7 +5791,7 @@
 # uninitialized constant Rails::BacktraceCleaner::FORMATTED_GEMS_PATTERN
 # wrong constant name properties
 # wrong constant name properties=
-# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007f9f23eac468>'
+# undefined singleton method `property<defaultArg>1' for `#<Module:0x00007fa7bbc602e0>'
 # wrong constant name <static-init>
 # wrong constant name properties
 # wrong constant name properties=
@@ -6057,15 +6067,32 @@
 # uninitialized constant RuboCop::AST::RegexpNode::SPECIAL_KEYWORDS
 # uninitialized constant RuboCop::AST::RegexpNode::TRUTHY_LITERALS
 # uninitialized constant RuboCop::AST::RegexpNode::VARIABLES
+# uninitialized constant RuboCop::Cop::Gemspec::RequiredRubyVersion::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Gemspec::RequiredRubyVersion::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Layout::SpaceAroundMethodCallOperator::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Layout::SpaceAroundMethodCallOperator::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::BinaryOperatorWithIdenticalOperands::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::ConstantResolution::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::Debugger::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::DeprecatedClassMethods::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::DuplicateElsifCondition::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::DuplicateMethods::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::DuplicateRescueException::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::EmptyConditionalBody::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::FloatComparison::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Lint::FormatParameterMismatch::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::MissingSuper::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::OutOfRangeRegexpRef::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::SelfAssignment::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::TopLevelReturnWithArgument::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Lint::UnreachableLoop::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Metrics::Utils::AbcSizeCalculator::KNOWN_ITERATING_METHODS
 # uninitialized constant RuboCop::Cop::Metrics::Utils::CodeLengthCalculator::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Naming::AsciiIdentifiers::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Naming::AsciiIdentifiers::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Naming::BinaryOperatorParameterName::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::AccessModifierDeclarations::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::AccessorGrouping::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::AccessorGrouping::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::AccessorGrouping::VISIBILITY_SCOPES
 # uninitialized constant RuboCop::Cop::Style::ArrayCoercion::LITERAL_REGEX
@@ -6074,12 +6101,20 @@
 # uninitialized constant RuboCop::Cop::Style::CaseLikeIf::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::CaseLikeIf::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::CommentedKeyword::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::EvalWithLocation::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::ExplicitBlockArgument::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::ExplicitBlockArgument::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::ExponentialNotation::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::FloatDivision::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::FormatString::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::GlobalStdStream::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::HashLikeCase::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::NumericPredicate::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::OptionalBooleanParameter::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RedundantAssignment::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RedundantConditional::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RedundantConditional::SPACE
+# uninitialized constant RuboCop::Cop::Style::RedundantException::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::BYTE_ORDER_MARK
 # uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::FROZEN_STRING_LITERAL
 # uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::FROZEN_STRING_LITERAL_ENABLED
@@ -6087,6 +6122,11 @@
 # uninitialized constant RuboCop::Cop::Style::RedundantFetchBlock::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RedundantFileExtensionInRequire::LITERAL_REGEX
 # uninitialized constant RuboCop::Cop::Style::RedundantSelf::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::RedundantSort::BYTE_ORDER_MARK
+# uninitialized constant RuboCop::Cop::Style::RedundantSort::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::SingleArgumentDig::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::StringConcatenation::LITERAL_REGEX
+# uninitialized constant RuboCop::Cop::Style::ZeroLengthPredicate::LITERAL_REGEX
 # undefined method `Fail<defaultArg>1' for class `RubyLex'
 # undefined method `Raise<defaultArg>1' for class `RubyLex'
 # undefined method `identify_string<defaultArg>1' for class `RubyLex'

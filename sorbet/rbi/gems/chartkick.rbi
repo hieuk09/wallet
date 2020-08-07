@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/chartkick/all/chartkick.rbi
 #
-# chartkick-3.3.2
+# chartkick-3.4.0
 
 module Chartkick
   def self.content_for; end

@@ -4775,7 +4775,11 @@ class Fiber
 end
 
 class File
+  def self.atomic_write(file_name, temp_dir=T.unsafe(nil)); end
+
   def self.exists?(_); end
+
+  def self.probe_stat_in(dir); end
 end
 
 module FileUtils
@@ -5457,6 +5461,10 @@ end
 
 class Hash
   include ::JSON::Ext::Generator::GeneratorMethods::Hash
+end
+
+class Hash
+  def self.from_trusted_xml(xml); end
 end
 
 HashWithIndifferentAccess = ActiveSupport::HashWithIndifferentAccess
@@ -7080,6 +7088,8 @@ end
 
 module MonitorMixin
   def initialize(*args); end
+  EXCEPTION_IMMEDIATE = ::T.let(nil, ::T.untyped)
+  EXCEPTION_NEVER = ::T.let(nil, ::T.untyped)
 end
 
 class MonitorMixin::ConditionVariable
@@ -7260,13 +7270,9 @@ Net::HTTPServerErrorCode = Net::HTTPServerError
 
 Net::HTTPSession = Net::HTTP
 
-class Net::HTTPSuccess
-end
+Net::HTTPSuccess::EXCEPTION_TYPE = Net::HTTPError
 
-Net::HTTPSuccessCode::EXCEPTION_TYPE = Net::HTTPError
-
-class Net::HTTPSuccess
-end
+Net::HTTPSuccessCode = Net::HTTPSuccess
 
 class Net::HTTPURITooLong
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -10061,24 +10067,95 @@ class RuboCop::Config
   DEFAULT_RAILS_VERSION = ::T.let(nil, ::T.untyped)
 end
 
+module RuboCop::Cop::CodeLength
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Gemspec::RequiredRubyVersion
+  MISSING_MSG = ::T.let(nil, ::T.untyped)
+  NOT_EQUAL_MSG = ::T.let(nil, ::T.untyped)
+end
+
 class RuboCop::Cop::Layout::SpaceAroundMethodCallOperator
   SPACES_REGEXP = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Lint::BinaryOperatorWithIdenticalOperands
+  MSG = ::T.let(nil, ::T.untyped)
 end
 
 class RuboCop::Cop::Lint::ConstantResolution
   MSG = ::T.let(nil, ::T.untyped)
 end
 
+class RuboCop::Cop::Lint::Debugger
+  DEBUGGER_METHODS = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Lint::DeprecatedClassMethods
+  DEPRECATED_METHODS = ::T.let(nil, ::T.untyped)
+end
+
 class RuboCop::Cop::Lint::DuplicateElsifCondition
   MSG = ::T.let(nil, ::T.untyped)
 end
 
+class RuboCop::Cop::Lint::DuplicateMethods
+  METHOD_DEF_METHODS = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Lint::DuplicateRescueException
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Lint::EmptyConditionalBody
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Lint::FloatComparison
+  EQUALITY_METHODS = ::T.let(nil, ::T.untyped)
+  FLOAT_INSTANCE_METHODS = ::T.let(nil, ::T.untyped)
+  FLOAT_RETURNING_METHODS = ::T.let(nil, ::T.untyped)
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
 class RuboCop::Cop::Lint::FormatParameterMismatch
+  FORMAT_METHODS = ::T.let(nil, ::T.untyped)
   MSG_INVALID = ::T.let(nil, ::T.untyped)
 end
 
+class RuboCop::Cop::Lint::MissingSuper
+  CALLBACK_MSG = ::T.let(nil, ::T.untyped)
+  CLASS_LIFECYCLE_CALLBACKS = ::T.let(nil, ::T.untyped)
+  CONSTRUCTOR_MSG = ::T.let(nil, ::T.untyped)
+  MODULE_LIFECYCLE_CALLBACKS = ::T.let(nil, ::T.untyped)
+  OBJECT_LIFECYCLE_CALLBACKS = ::T.let(nil, ::T.untyped)
+  STATELESS_CLASSES = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Lint::OutOfRangeRegexpRef
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Lint::SelfAssignment
+  ASSIGNMENT_TYPE_TO_RHS_TYPE = ::T.let(nil, ::T.untyped)
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Lint::TopLevelReturnWithArgument
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Lint::UnreachableLoop
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Metrics::Utils::AbcSizeCalculator
+  ARGUMENT_TYPES = ::T.let(nil, ::T.untyped)
+end
+
 class RuboCop::Cop::Metrics::Utils::CodeLengthCalculator
-  CLASSISH_TYPES = ::T.let(nil, ::T.untyped)
+  CLASSLIKE_TYPES = ::T.let(nil, ::T.untyped)
   FOLDABLE_TYPES = ::T.let(nil, ::T.untyped)
 end
 
@@ -10097,6 +10174,10 @@ end
 
 class RuboCop::Cop::Offense
   NO_LOCATION = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::AccessModifierDeclarations
+  ACCESS_MODIFIERS = ::T.let(nil, ::T.untyped)
 end
 
 class RuboCop::Cop::Style::AccessorGrouping
@@ -10123,6 +10204,14 @@ class RuboCop::Cop::Style::CommentedKeyword
   KEYWORD_REGEXES = ::T.let(nil, ::T.untyped)
 end
 
+class RuboCop::Cop::Style::EvalWithLocation
+  EVAL_METHODS = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::ExplicitBlockArgument
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
 class RuboCop::Cop::Style::ExponentialNotation
   MESSAGES = ::T.let(nil, ::T.untyped)
 end
@@ -10131,7 +10220,25 @@ class RuboCop::Cop::Style::FloatDivision
   MESSAGES = ::T.let(nil, ::T.untyped)
 end
 
+class RuboCop::Cop::Style::FormatString
+  FORMAT_METHODS = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::GlobalStdStream
+  MSG = ::T.let(nil, ::T.untyped)
+  STD_STREAMS = ::T.let(nil, ::T.untyped)
+end
+
 class RuboCop::Cop::Style::HashLikeCase
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::NumericPredicate
+  COMPARISON_METHODS = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::OptionalBooleanParameter
+  BOOLEAN_TYPES = ::T.let(nil, ::T.untyped)
   MSG = ::T.let(nil, ::T.untyped)
 end
 
@@ -10141,6 +10248,10 @@ end
 
 class RuboCop::Cop::Style::RedundantConditional
   COMPARISON_OPERATOR_MATCHER = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::RedundantException
+  RAISE_METHODS = ::T.let(nil, ::T.untyped)
 end
 
 class RuboCop::Cop::Style::RedundantFetchBlock
@@ -10153,6 +10264,22 @@ end
 
 class RuboCop::Cop::Style::RedundantSelf
   KEYWORDS = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::RedundantSort
+  SORT_METHODS = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::SingleArgumentDig
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::StringConcatenation
+  MSG = ::T.let(nil, ::T.untyped)
+end
+
+class RuboCop::Cop::Style::ZeroLengthPredicate
+  LENGTH_METHODS = ::T.let(nil, ::T.untyped)
 end
 
 module RuboCop::Cop::VisibilityHelp
