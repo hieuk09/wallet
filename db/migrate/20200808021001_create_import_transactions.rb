@@ -5,8 +5,7 @@ class CreateImportTransactions < ActiveRecord::Migration[6.0]
       t.references :category, null: false, foreign_key: true, on_delete: :cascade, index: true
       t.references :import, null: false, foreign_key: true, on_delete: :cascade, index: true
       t.string :description, null: false
-      t.string :category, null: false
-      t.datetime :transaction_date, null: false
+      t.datetime :paid_at, null: false
       t.money :amount, null: false
 
       t.timestamps null: false

@@ -39,8 +39,7 @@ ActiveRecord::Schema.define(version: 2020_08_08_021001) do
     t.integer "category_id", null: false
     t.integer "import_id", null: false
     t.string "description", null: false
-    t.string "category", null: false
-    t.datetime "transaction_date", null: false
+    t.datetime "paid_at", null: false
     t.integer "amount_cents", default: 0, null: false
     t.string "amount_currency", default: "VND", null: false
     t.datetime "created_at", precision: 6, null: false

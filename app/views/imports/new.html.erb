@@ -6,6 +6,11 @@
     <%= f.file_field :file %>
   </div>
 
+  <div class='field'>
+    <%= f.label :account_id %><br>
+    <%= f.select :account_id, Account.pluck(:name, :id) %>
+  </div>
+
   <div class='actions'>
     <%= f.submit %>
   </div>
