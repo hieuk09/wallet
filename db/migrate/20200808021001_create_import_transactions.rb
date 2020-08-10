@@ -1,13 +1,15 @@
 class CreateImportTransactions < ActiveRecord::Migration[6.0]
   def change
     create_table :import_transactions do |t|
-      t.references :import, null: false, foreign_key: true
+      t.references :account, null: false, foreign_key: true, on_delete: :cascade, index: true
+      t.references :category, null: false, foreign_key: true, on_delete: :cascade, index: true
+      t.references :import, null: false, foreign_key: true, on_delete: :cascade, index: true
       t.string :description, null: false
       t.string :category, null: false
       t.datetime :transaction_date, null: false
       t.money :amount, null: false
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

@@ -35,6 +35,8 @@ ActiveRecord::Schema.define(version: 2020_08_08_021001) do
   end
 
   create_table "import_transactions", force: :cascade do |t|
+    t.integer "account_id", null: false
+    t.integer "category_id", null: false
     t.integer "import_id", null: false
     t.string "description", null: false
     t.string "category", null: false
@@ -43,13 +45,17 @@ ActiveRecord::Schema.define(version: 2020_08_08_021001) do
     t.string "amount_currency", default: "VND", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["account_id"], name: "index_import_transactions_on_account_id"
+    t.index ["category_id"], name: "index_import_transactions_on_category_id"
     t.index ["import_id"], name: "index_import_transactions_on_import_id"
   end
 
   create_table "imports", force: :cascade do |t|
     t.string "name", null: false
+    t.integer "account_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["account_id"], name: "index_imports_on_account_id"
   end
 
   create_table "sub_transactions", force: :cascade do |t|
@@ -79,5 +85,8 @@ ActiveRecord::Schema.define(version: 2020_08_08_021001) do
     t.index ["paid_at"], name: "index_transactions_on_paid_at"
   end
 
+  add_foreign_key "import_transactions", "accounts"
+  add_foreign_key "import_transactions", "categories"
   add_foreign_key "import_transactions", "imports"
+  add_foreign_key "imports", "accounts"
 end
