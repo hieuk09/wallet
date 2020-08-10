@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PdfExtractor
   MONTH_REGEX = %w(
     Jan
@@ -16,10 +18,11 @@ class PdfExtractor
   PAID_AT_REGEX = /\d{1,2}(#{ MONTH_REGEX.upcase })/
   TRANSACTION_DATE_REGEX = /\d\d (#{ MONTH_REGEX })/
   START_TRANSACTION = /\A {7,8}#{ TRANSACTION_DATE_REGEX } /
-  NUMERIC = ('0'..'9').to_a + %w(. ,)
+  ATM_CASH_WITHDRAWAL = 'ATM Cash Withdrawal'
+  NUMERIC = ('0'..'9').to_a + ['.', ',', ' ']
   TRANSACTION_ROW_LENGTH = 4 # number of rows for a single transaction
-  WITHDRAWAL_POSITION_OFFSET = 73
-  DEPOSIT_POSITION_OFFSET = 96
+  WITHDRAWAL_POSITION = [70, 20]
+  DEPOSIT_POSITION = [95, 20]
 
   def extract(io)
     reader = PDF::Reader.new(io)
@@ -29,11 +32,8 @@ class PdfExtractor
     result.map do |rows|
       main_row = rows.shift
 
-      match = main_row.match(TRANSACTION_DATE_REGEX)
-      start_position = match.offset(0).first
-
-      withdrawal = extract_amount(main_row, start_position + WITHDRAWAL_POSITION_OFFSET)
-      deposit = extract_amount(main_row, start_position + DEPOSIT_POSITION_OFFSET)
+      withdrawal = extract_amount(main_row, WITHDRAWAL_POSITION)
+      deposit = extract_amount(main_row, DEPOSIT_POSITION)
 
       next if deposit.nil? && withdrawal.nil?
 
@@ -44,7 +44,7 @@ class PdfExtractor
         paid_at: paid_at,
         withdrawal: withdrawal,
         deposit: deposit,
-        description: description,
+        description: description
       }
     end.compact
   end
@@ -58,9 +58,9 @@ class PdfExtractor
 
     while (i < rows.length)
       if rows[i].match?(START_TRANSACTION)
-        result += [rows.slice(i, TRANSACTION_ROW_LENGTH)]
-
-        i += TRANSACTION_ROW_LENGTH
+        row_length = rows[i].include?(ATM_CASH_WITHDRAWAL) ? TRANSACTION_ROW_LENGTH - 1 : TRANSACTION_ROW_LENGTH
+        result += [rows.slice(i, row_length)]
+        i += row_length
       else
         i += 1
       end
@@ -70,19 +70,10 @@ class PdfExtractor
   end
 
   def extract_amount(row, position)
-    amount = nil
+    amount = row.slice(*position)
 
-    while position.positive? do
-      if NUMERIC.include?(row[position])
-        amount = "#{row[position]}#{amount}"
-        position -= 1
-      else
-        break
-      end
-    end
-
-    if amount
-      BigDecimal(amount.gsub(',', ''))
+    if amount.present?
+      BigDecimal(amount.strip.gsub(',', ''))
     end
   end
 

@@ -21,11 +21,17 @@ class TransactionsController < ApplicationController
 
   # GET /transactions/new
   def new
-    @transaction = if params[:id]
-      Transaction.find(params[:id]).dup
-    else
-      Transaction.new
-    end
+    @transaction =
+      if params[:id]
+        Transaction.find(params[:id]).dup
+      elsif params[:import_transaction_id]
+        import_transaction = ImportTransaction.find(params[:import_transaction_id])
+        attributes = import_transaction.dup.attributes
+        attributes.delete('import_id')
+        Transaction.new(attributes)
+      else
+        Transaction.new
+      end
   end
 
   # GET /transactions/1/edit

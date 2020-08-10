@@ -12,6 +12,8 @@
 <br/>
 <h2> Transactions </h2>
 
+<strong> Total: <%= @import.import_transactions.count %> </strong>
+
 <div>
   <table class='transaction-list'>
     <thead>
@@ -21,6 +23,7 @@
         <th>Account</th>
         <th>Amount</th>
         <th>Description</th>
+        <th colspan="1"></th>
       </tr>
     </thead>
 
@@ -32,6 +35,7 @@
           <td><%= link_to(transaction.account.name, account_path(id: transaction.account.id)) %></td>
           <td><%= transaction.amount.format %></td>
           <td><%= transaction.description %></td>
+          <td><%= link_to "Import", new_transaction_path(import_transaction_id: transaction.id)  %></td>
         </tr>
       <% end %>
     </tbody>
