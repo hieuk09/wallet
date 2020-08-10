@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class PdfExtractor
-  MONTH_REGEX = %w(
+  MONTH_REGEX = %w[
     Jan
     Feb
     Mar
@@ -14,15 +14,15 @@ class PdfExtractor
     Oct
     Nov
     Dec
-  ).join('|')
-  PAID_AT_REGEX = /\d{1,2}(#{ MONTH_REGEX.upcase })/
-  TRANSACTION_DATE_REGEX = /\d\d (#{ MONTH_REGEX })/
-  START_TRANSACTION = /\A {7,8}#{ TRANSACTION_DATE_REGEX } /
+  ].join('|')
+  PAID_AT_REGEX = /\d{1,2}(#{MONTH_REGEX.upcase})/.freeze
+  TRANSACTION_DATE_REGEX = /\d\d (#{MONTH_REGEX})/.freeze
+  START_TRANSACTION = /\A {7,8}#{TRANSACTION_DATE_REGEX} /.freeze
   ATM_CASH_WITHDRAWAL = 'ATM Cash Withdrawal'
   NUMERIC = ('0'..'9').to_a + ['.', ',', ' ']
   TRANSACTION_ROW_LENGTH = 4 # number of rows for a single transaction
-  WITHDRAWAL_POSITION = [70, 20]
-  DEPOSIT_POSITION = [95, 20]
+  WITHDRAWAL_POSITION = [70, 20].freeze
+  DEPOSIT_POSITION = [95, 20].freeze
 
   def extract(io)
     reader = PDF::Reader.new(io)
@@ -56,7 +56,7 @@ class PdfExtractor
     i = 0
     result = []
 
-    while (i < rows.length)
+    while i < rows.length
       if rows[i].match?(START_TRANSACTION)
         row_length = rows[i].include?(ATM_CASH_WITHDRAWAL) ? TRANSACTION_ROW_LENGTH - 1 : TRANSACTION_ROW_LENGTH
         result += [rows.slice(i, row_length)]
@@ -87,7 +87,7 @@ class PdfExtractor
     if match_data
       year = DateTime.current.year
       full_date = "#{match_data.to_a.first}-#{year}"
-      DateTime.strptime(full_date, "%d%b-%y")
+      DateTime.strptime(full_date, '%d%b-%y')
     else
       main_row.match(TRANSACTION_DATE_REGEX).to_a.first.to_datetime
     end
