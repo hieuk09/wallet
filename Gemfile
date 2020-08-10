@@ -11,6 +11,7 @@ gem 'money-open-exchange-rates'
 gem 'money-rails'
 
 gem 'pdf-reader'
+gem 'activerecord-import'
 
 gem 'sorbet-runtime'
 
