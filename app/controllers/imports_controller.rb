@@ -19,4 +19,10 @@ class ImportsController < ApplicationController
   def index
     @imports = Import.all.includes(:account)
   end
+
+  def destroy
+    Import.where(id: params[:id]).destroy_all
+
+    redirect_to imports_path
+  end
 end

@@ -14,7 +14,7 @@
       <th>Name</th>
       <th>Account</th>
       <th>Created At</th>
-      <th colspan="3"></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
@@ -25,6 +25,7 @@
         <td><%= import.account.name %></td>
         <td><%= import.created_at %></td>
         <td><%= link_to 'Show', import %></td>
+        <td><%= link_to 'Destroy', import_path(id: import.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
