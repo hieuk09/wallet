@@ -9,7 +9,11 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'money-open-exchange-rates'
 gem 'money-rails'
+
+gem 'pdf-reader'
+
 gem 'sorbet-runtime'
+
 gem 'sqlite3'
 
 group :development do
