@@ -22,7 +22,6 @@ class ImportsController < ApplicationController
 
   def destroy
     Import.where(id: params[:id]).destroy_all
-
     redirect_to imports_path
   end
 end
