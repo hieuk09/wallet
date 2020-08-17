@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :accounts
   resources :transfer_transactions, only: %i[new create]
+  resources :imports, only: %i[new create show index destroy]
 
   resources :reports, only: [] do
     collection do

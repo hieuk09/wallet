@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Imports</h1>
+
+<br>
+
+<%= link_to 'New Import', new_import_path %>
+
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Account</th>
+      <th>Created At</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @imports.each do |import| %>
+      <tr>
+        <td><%= import.name %></td>
+        <td><%= import.account.name %></td>
+        <td><%= import.created_at %></td>
+        <td><%= link_to 'Show', import %></td>
+        <td><%= link_to 'Destroy', import_path(id: import.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

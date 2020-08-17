@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>
+    Import
+    <%= @import.name %>
+  </strong>
+</p>
+
+<%= link_to 'Back', imports_path %>
+
+<br/>
+<h2> Transactions </h2>
+
+<strong> Total: <%= @import.import_transactions.count %> </strong>
+
+<div>
+  <table class='transaction-list'>
+    <thead>
+      <tr>
+        <th>Paid At</th>
+        <th>Category</th>
+        <th>Account</th>
+        <th>Amount</th>
+        <th>Description</th>
+        <th colspan="1"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @import.import_transactions.includes(:category, :account).order(:paid_at).each do |transaction| %>
+        <tr class="<%= transaction.category.category_type %>">
+          <td><%= transaction.paid_at.to_date %></td>
+          <td><%= transaction.category.name %></td>
+          <td><%= link_to(transaction.account.name, account_path(id: transaction.account.id)) %></td>
+          <td><%= transaction.amount.format %></td>
+          <td><%= transaction.description %></td>
+          <td><%= link_to "Import", new_transaction_path(import_transaction_id: transaction.id)  %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
