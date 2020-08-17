@@ -53,6 +53,15 @@ RSpec.describe TransactionsController do
       end
     end
 
+    context 'when import transaction id is specified' do
+      let(:import_transaction) { create(:import_transaction) }
+
+      it 'renders copied transaction' do
+        get :new, params: { import_transaction_id: import_transaction.id }
+        expect(response).to be_successful
+      end
+    end
+
     context 'when id is not specified' do
       it 'renders new transaction' do
         get :new
