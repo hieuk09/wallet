@@ -71,10 +71,9 @@ class PdfExtractor
 
   def extract_amount(row, position)
     amount = row.slice(*position)
+    return if amount.blank?
 
-    if amount.present?
-      BigDecimal(amount.strip.gsub(',', ''))
-    end
+    BigDecimal(amount.strip.gsub(',', ''))
   end
 
   def extract_description(rows)
