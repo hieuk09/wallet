@@ -218,7 +218,7 @@ GEM
       parser (>= 2.7)
       sorbet-coerce (>= 0.2.6)
       sorbet-runtime (>= 0.5)
-    sorbet-runtime (0.5.5877)
+    sorbet-runtime (0.5.5881)
     sorbet-static (0.5.5881-universal-darwin-14)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
