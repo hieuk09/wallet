@@ -22,7 +22,7 @@ class PdfExtractor
     'ATM Cash Withdrawal',
     'Advice Funds Transfer',
     'Advice Bill Payment'
-  ]
+  ].freeze
   NUMERIC = ('0'..'9').to_a + ['.', ',', ' ']
   TRANSACTION_ROW_LENGTH = 4 # number of rows for a single transaction
   WITHDRAWAL_POSITION = [70, 20].freeze
