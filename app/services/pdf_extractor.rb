@@ -15,7 +15,7 @@ class PdfExtractor
     Nov
     Dec
   ].join('|')
-  PAID_AT_REGEX = /\d{1,2}(#{MONTH_REGEX.upcase})/.freeze
+  PAID_AT_REGEX = /\d{2}(#{MONTH_REGEX.upcase})/.freeze
   TRANSACTION_DATE_REGEX = /\d\d (#{MONTH_REGEX})/.freeze
   START_TRANSACTION = /\A {7,8}#{TRANSACTION_DATE_REGEX} /.freeze
   SHORT_DESCRIPTION = [
