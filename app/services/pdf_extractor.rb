@@ -18,7 +18,11 @@ class PdfExtractor
   PAID_AT_REGEX = /\d{1,2}(#{MONTH_REGEX.upcase})/.freeze
   TRANSACTION_DATE_REGEX = /\d\d (#{MONTH_REGEX})/.freeze
   START_TRANSACTION = /\A {7,8}#{TRANSACTION_DATE_REGEX} /.freeze
-  ATM_CASH_WITHDRAWAL = 'ATM Cash Withdrawal'
+  SHORT_DESCRIPTION = [
+    'ATM Cash Withdrawal',
+    'Advice Funds Transfer',
+    'Advice Bill Payment'
+  ]
   NUMERIC = ('0'..'9').to_a + ['.', ',', ' ']
   TRANSACTION_ROW_LENGTH = 4 # number of rows for a single transaction
   WITHDRAWAL_POSITION = [70, 20].freeze
@@ -58,7 +62,7 @@ class PdfExtractor
 
     while i < rows.length
       if rows[i].match?(START_TRANSACTION)
-        row_length = rows[i].include?(ATM_CASH_WITHDRAWAL) ? TRANSACTION_ROW_LENGTH - 1 : TRANSACTION_ROW_LENGTH
+        row_length = short_description?(rows[i]) ? TRANSACTION_ROW_LENGTH - 1 : TRANSACTION_ROW_LENGTH
         result += [rows.slice(i, row_length)]
         i += row_length
       else
@@ -90,5 +94,9 @@ class PdfExtractor
     else
       main_row.match(TRANSACTION_DATE_REGEX).to_a.first.to_datetime
     end
+  end
+
+  def short_description?(row)
+    SHORT_DESCRIPTION.any? { |text| row.include?(text) }
   end
 end
