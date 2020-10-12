@@ -25,7 +25,7 @@ end
 
 group :development, :test do
   gem 'bootsnap', require: false
-  gem 'byebug'
+  gem 'ruby_jard', github: 'nguyenquangminh0711/ruby_jard', branch: 'master'
   gem 'factory_bot_rails'
   gem 'rspec-rails', '4.0.1'
 end
