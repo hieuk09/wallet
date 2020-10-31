@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/nguyenquangminh0711/ruby_jard.git
-  revision: 798dc83a5166b50ae5a4e1f9e2cfc27a60bc0bac
+  revision: f6244b5ec49a87b7d756f2077666f9edbf535f1c
   branch: master
   specs:
     ruby_jard (0.3.1)
