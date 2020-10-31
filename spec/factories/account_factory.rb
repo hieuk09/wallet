@@ -1,5 +1,4 @@
 # typed: false
 FactoryBot.define do
-  factory :account do
-  end
+  factory :account
 end
