@@ -26,7 +26,7 @@ class PdfExtractor
   NUMERIC = ('0'..'9').to_a + ['.', ',', ' ']
   TRANSACTION_ROW_LENGTH = 4 # number of rows for a single transaction
   WITHDRAWAL_POSITION = [70, 20].freeze
-  DEPOSIT_POSITION = [95, 20].freeze
+  DEPOSIT_POSITION = [95, 15].freeze
 
   def extract(io)
     reader = PDF::Reader.new(io)
