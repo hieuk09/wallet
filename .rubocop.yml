@@ -49,6 +49,9 @@ Metrics/CyclomaticComplexity:
 Metrics/MethodLength:
   Max: 30
 
+Naming/VariableNumber:
+  Enabled: false
+
 Style/AccessorGrouping:
   Enabled: true
 Style/BisectedAttrAccessor:
