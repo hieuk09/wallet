@@ -3,7 +3,7 @@
 #
 # If you would like to make changes to this file, great! Please upstream any changes you make here:
 #
-#   https://github.com/sorbet/sorbet-typed/edit/master/lib/activestorage/<=6.1/activestorage.rbi
+#   https://github.com/sorbet/sorbet-typed/edit/master/lib/activestorage/~>6.1.0.rc1/activestorage.rbi
 #
 # typed: strong
 
@@ -36,13 +36,23 @@ module ActiveStorage::Attached::Model::ClassMethods
   #
   # If the `:dependent` option isn't set, the attachment will be purged
   # (i.e. destroyed) whenever the record is destroyed.
+  #
+  # If you need the attachment to use a service which differs from the globally configured one,
+  # pass the `:service` option. For instance:
+  #
+  # ```ruby
+  # class User < ActiveRecord::Base
+  #   has_one_attached :avatar, service: :s3
+  # end
+  # ```
   sig do
     params(
       name: Symbol,
-      dependent: Symbol
+      dependent: Symbol,
+      service: T.untyped
     ).void
   end
-  def has_one_attached(name, dependent: :purge_later); end
+  def has_one_attached(name, dependent: :purge_later, service: nil); end
 
   # Specifies the relation between multiple attachments and the model.
   #
@@ -72,11 +82,42 @@ module ActiveStorage::Attached::Model::ClassMethods
   #
   # If the `:dependent` option isn't set, all the attachments will be purged
   # (i.e. destroyed) whenever the record is destroyed.
+  #
+  # If you need the attachment to use a service which differs from the globally configured one,
+  # pass the `:service` option. For instance:
+  #
+  # ```ruby
+  # class Gallery < ActiveRecord::Base
+  #   has_many_attached :photos, service: :s3
+  # end
+  # ```
   sig do
     params(
       name: Symbol,
-      dependent: Symbol
+      dependent: Symbol,
+      service: T.untyped
     ).void
   end
-  def has_many_attached(name, dependent: :purge_later); end
+  def has_many_attached(name, dependent: :purge_later, service: nil); end
+end
+
+module ActiveStorage::Attached::Model
+  mixes_in_class_methods(ActiveStorage::Attached::Model::ClassMethods)
+end
+
+class ActiveStorage::Attachment < ActiveStorage::Record
+  # These aren't technically included, but Attachment delegates any missing
+  # methods to Blob, which means it effectively inherits methods from Blob.
+  # This is essentially a hack to make it easier to maintain the
+  # ActiveStorage signatures. We can't include Blob directly because
+  # it's a class, so `include`ing it doesn't work.
+  include ActiveStorage::Blob::Analyzable
+  include ActiveStorage::Blob::Identifiable
+  include ActiveStorage::Blob::Representable
+end
+
+class ActiveStorage::Blob < ActiveStorage::Record
+  include ActiveStorage::Blob::Analyzable
+  include ActiveStorage::Blob::Identifiable
+  include ActiveStorage::Blob::Representable
 end

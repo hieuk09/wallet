@@ -1,4 +1,4 @@
-# typed: strong
+# typed: ignore
 
 module SorbetRails::CustomParamsMethods
   extend T::Sig

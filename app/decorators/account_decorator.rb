@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 class AccountDecorator
   delegate :name, :id, to: :account
 

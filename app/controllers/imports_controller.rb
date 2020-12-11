@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 class ImportsController < ApplicationController
   def new
     @import = Import.new

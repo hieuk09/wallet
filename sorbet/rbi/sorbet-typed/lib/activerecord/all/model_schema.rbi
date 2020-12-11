@@ -5,7 +5,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/edit/master/lib/activerecord/all/model_schema.rbi
 #
-# typed: strong
+# typed: ignore
 
 # https://github.com/rails/rails/blob/5-2-stable/activerecord/lib/active_record/model_schema.rb
 module ActiveRecord::ModelSchema::ClassMethods
@@ -13,7 +13,7 @@ module ActiveRecord::ModelSchema::ClassMethods
   def table_name
   end
 
-  sig { params(value: String).void }
+  sig { params(value: T.any(Symbol, String)).void }
   def table_name=(value)
   end
 
@@ -33,7 +33,7 @@ module ActiveRecord::ModelSchema::ClassMethods
   def inheritance_column
   end
 
-  sig { params(value: T.nilable(String)).void }
+  sig { params(value: T.nilable(T.any(Symbol, String))).void }
   def inheritance_column=(value)
   end
 
@@ -41,7 +41,7 @@ module ActiveRecord::ModelSchema::ClassMethods
   def ignored_columns
   end
 
-  sig { params(columns: T::Array[String]).void }
+  sig { params(columns: T::Array[T.any(Symbol, String)]).void }
   def ignored_columns=(columns)
   end
 

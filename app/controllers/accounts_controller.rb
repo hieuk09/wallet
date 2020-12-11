@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 class AccountsController < ApplicationController
   before_action :set_account, only: %i[edit update destroy]
 
