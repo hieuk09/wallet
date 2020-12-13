@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 class ExchangeRatesController < ApplicationController
   before_action :set_exchange_rate, only: %i[show edit update destroy]
 

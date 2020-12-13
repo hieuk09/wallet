@@ -5,7 +5,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/edit/master/lib/activerecord/all/activerecord.rbi
 #
-# typed: strong
+# typed: false
 
 VariadicUntypedFunction = T.type_alias { Proc }
 AssociationCallback = T.type_alias do
@@ -805,11 +805,9 @@ class ActiveRecord::Enum::EnumType < ::ActiveModel::Type::Value
 end
 
 class ActiveRecord::Generators::Base < ::Rails::Generators::NamedBase
-  extend T::Sig
   include ActiveRecord::Generators::Migration
 
   class << self
-    sig {returns(T.nilable(String))}
     def base_root; end
   end
 end
@@ -1756,19 +1754,15 @@ end
 class ActiveRecord::Coders::JSON
   class << self
     def dump(obj); end
-    sig {params(json: String).returns(T.untyped)}
     def load(json); end
   end
 end
 
 class ActiveRecord::Coders::YAMLColumn
-  extend T::Sig
   def initialize(attr_name, object_class = T.unsafe(nil)); end
 
-  sig {params(obj: T.untyped, action: T.untyped).returns(NilClass)}
   def assert_valid_value(obj, action:); end
   def dump(obj); end
-  sig {params(yaml: T.any(StringIO, String, IO)).returns(T.untyped)}
   def load(yaml); end
   def object_class; end
   def object_class=(_); end
@@ -2357,7 +2351,6 @@ class ActiveRecord::InternalMetadata < ::ActiveRecord::Base
   class << self
     def [](key); end
     def []=(key, value); end
-    sig {returns(TrueClass)}
     def _internal?; end
     def _validators; end
     def attribute_type_decorations; end
@@ -2365,10 +2358,8 @@ class ActiveRecord::InternalMetadata < ::ActiveRecord::Base
     def defined_enums; end
     def drop_table; end
     def page(num = T.unsafe(nil)); end
-    sig {returns(String)}
     def primary_key; end
     def table_exists?; end
-    sig {returns(String)}
     def table_name; end
   end
 end
@@ -2416,22 +2407,15 @@ end
 ActiveRecord::LogSubscriber::IGNORE_PAYLOAD_NAMES = T.let(T.unsafe(nil), T::Array[T.untyped])
 
 class ActiveRecord::Associations::Preloader
-  extend T::Sig
-  sig {params(records: T.untyped, associations: T.untyped, preload_scope: T.untyped).returns(T::Array[T.untyped])}
   def preload(records, associations, preload_scope = T.unsafe(nil)); end
 
   private
 
-  sig {params(association: T.untyped, records: T.untyped, polymorphic_parent: T.untyped).returns(T::Hash[T.untyped, T.untyped])}
   def grouped_records(association, records, polymorphic_parent); end
-  sig {params(reflection: T.untyped, owners: T.untyped).returns(T.any(T.class_of(ActiveRecord::Associations::Preloader::Association), T.class_of(ActiveRecord::Associations::Preloader::AlreadyLoaded)))}
   def preloader_for(reflection, owners); end
-  sig {params(association: T.untyped, records: T.untyped, scope: T.untyped, polymorphic_parent: T.untyped).returns(T::Array[T.untyped])}
   def preloaders_for_hash(association, records, scope, polymorphic_parent); end
-  sig {params(association: T.untyped, records: T.untyped, scope: T.untyped, polymorphic_parent: T.untyped).returns(T::Array[T.untyped])}
   def preloaders_for_one(association, records, scope, polymorphic_parent); end
   def preloaders_for_reflection(reflection, records, scope); end
-  sig {params(association: BasicObject, records: T.untyped, scope: T.untyped, polymorphic_parent: T.untyped).returns(T.untyped)}
   def preloaders_on(association, records, scope, polymorphic_parent = T.unsafe(nil)); end
 end
 

@@ -5,7 +5,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/edit/master/lib/activesupport/all/activesupport.rbi
 #
-# typed: ignore
+# typed: strong
 
 module ActiveSupport
   sig { params(kind: Symbol, blk: T.proc.bind(T.untyped).void).void }
@@ -2875,4 +2875,10 @@ module ActiveSupport::TaggedLogging::Formatter
   def push_tags(*tags); end
   def tagged(*tags); end
   def tags_text; end
+end
+
+class TZInfo::Timezone
+end
+
+class TZInfo::TimezonePeriod
 end

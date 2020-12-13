@@ -1,4 +1,4 @@
-# typed: true
+# typed: ignore
 # encoding : utf-8
 require 'money/bank/open_exchange_rates_bank'
 

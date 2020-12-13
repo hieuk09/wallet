@@ -137,9 +137,7 @@ end
 ActionView::Base::NULL = T.let(T.unsafe(nil), Object)
 
 module ActionView::Context
-  extend T::Sig
   def _layout_for(name = T.unsafe(nil)); end
-  sig {returns(NilClass)}
   def _prepare_context; end
   def output_buffer; end
   def output_buffer=(_); end
@@ -187,7 +185,6 @@ module ActionView::Helpers::ActiveModelHelper
 end
 
 module ActionView::Helpers::ActiveModelInstanceTag
-  extend T::Sig
   def content_tag(type, options, *_); end
   def error_message; end
   def error_wrapping(html_tag); end
@@ -197,7 +194,6 @@ module ActionView::Helpers::ActiveModelInstanceTag
   private
 
   def object_has_errors?; end
-  sig {params(type: T.untyped).returns(T::Boolean)}
   def select_markup_helper?(type); end
   def tag_generate_errors?(options); end
 end
@@ -441,12 +437,10 @@ ActionView::Helpers::DateTimeSelector::DEFAULT_PREFIX = T.let(T.unsafe(nil), Str
 ActionView::Helpers::DateTimeSelector::POSITION = T.let(T.unsafe(nil), T::Hash[T.untyped, T.untyped])
 
 module ActionView::Helpers::DebugHelper
-  extend T::Sig
   include(::ActionView::Helpers::CaptureHelper)
   include(::ActionView::Helpers::OutputSafetyHelper)
   include(::ActionView::Helpers::TagHelper)
 
-  sig {params(object: Object).returns(T.untyped)}
   def debug(object); end
 end
 
@@ -871,7 +865,6 @@ module ActionView::Helpers::Tags::Checkable
 end
 
 class ActionView::Helpers::Tags::CheckBox < ::ActionView::Helpers::Tags::Base
-  extend T::Sig
   include(::ActionView::Helpers::Tags::Checkable)
 
   def initialize(object_name, method_name, template_object, checked_value, unchecked_value, options); end
@@ -880,7 +873,6 @@ class ActionView::Helpers::Tags::CheckBox < ::ActionView::Helpers::Tags::Base
 
   private
 
-  sig {params(value: BasicObject).returns(T.untyped)}
   def checked?(value); end
   def hidden_field_for_checkbox(options); end
 end
@@ -944,21 +936,17 @@ class ActionView::Helpers::Tags::CollectionSelect < ::ActionView::Helpers::Tags:
 end
 
 class ActionView::Helpers::Tags::ColorField < ::ActionView::Helpers::Tags::TextField
-  extend T::Sig
   def render; end
 
   private
 
-  sig {params(string: T.nilable(T.any(String, Symbol))).returns(T.untyped)}
   def validate_color_string(string); end
 end
 
 class ActionView::Helpers::Tags::DateField < ::ActionView::Helpers::Tags::DatetimeField
-  extend T::Sig
 
   private
 
-  sig {params(value: BasicObject).returns(T.untyped)}
   def format_date(value); end
 end
 
@@ -979,22 +967,18 @@ class ActionView::Helpers::Tags::DateSelect < ::ActionView::Helpers::Tags::Base
 end
 
 class ActionView::Helpers::Tags::DatetimeField < ::ActionView::Helpers::Tags::TextField
-  extend T::Sig
   def render; end
 
   private
 
   def datetime_value(value); end
-  sig {params(value: T.untyped).void}
   def format_date(value); end
 end
 
 class ActionView::Helpers::Tags::DatetimeLocalField < ::ActionView::Helpers::Tags::DatetimeField
-  extend T::Sig
 
   private
 
-  sig {params(value: BasicObject).returns(T.untyped)}
   def format_date(value); end
 
   class << self
@@ -1125,7 +1109,6 @@ class ActionView::Helpers::Tags::TimeZoneSelect < ::ActionView::Helpers::Tags::B
 end
 
 class ActionView::Helpers::Tags::Translator
-  extend T::Sig
   def initialize(object, object_name, method_and_value, scope:); end
 
   def translate; end
@@ -1133,7 +1116,6 @@ class ActionView::Helpers::Tags::Translator
   private
 
   def human_attribute_name; end
-  sig {returns(T.any(T::Array[T.any(Symbol, String)], String))}
   def i18n_default; end
   def method_and_value; end
   def model; end
@@ -1145,11 +1127,9 @@ class ActionView::Helpers::Tags::UrlField < ::ActionView::Helpers::Tags::TextFie
 end
 
 class ActionView::Helpers::Tags::WeekField < ::ActionView::Helpers::Tags::DatetimeField
-  extend T::Sig
 
   private
 
-  sig {params(value: BasicObject).returns(T.untyped)}
   def format_date(value); end
 end
 

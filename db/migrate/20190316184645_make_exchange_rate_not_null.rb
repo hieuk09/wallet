@@ -1,4 +1,4 @@
-# typed: false
+# typed: true
 class MakeExchangeRateNotNull < ActiveRecord::Migration[5.2]
   def change
     change_column_null :exchange_rates, :from_code, false

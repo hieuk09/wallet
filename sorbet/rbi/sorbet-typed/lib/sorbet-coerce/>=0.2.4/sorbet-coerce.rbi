@@ -5,7 +5,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/edit/master/lib/sorbet-coerce/>=0.2.4/sorbet-coerce.rbi
 #
-# typed: true
+# typed: false
 module SafeType
   class CoercionError < StandardError; end
 end

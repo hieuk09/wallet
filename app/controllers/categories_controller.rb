@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 class CategoriesController < ApplicationController
   before_action :set_category, only: %i[edit update destroy]
 

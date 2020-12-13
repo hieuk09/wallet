@@ -1,4 +1,4 @@
-# typed: true
+# typed: false
 class CreateImportTransactions < ActiveRecord::Migration[6.0]
   def change
     create_table :import_transactions do |t|

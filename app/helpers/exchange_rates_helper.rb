@@ -1,4 +1,4 @@
-# typed: true
+# typed: ignore
 module ExchangeRatesHelper
   def all_currencies
     Money::Currency.all.map(&:iso_code)
