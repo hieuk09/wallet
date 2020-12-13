@@ -28,6 +28,11 @@ jobs:
             bundle exec rubocop
 
       - run:
+          name: type check
+          command: |
+            bundle exec srb tc --progress --ignore vendor/bundle
+
+      - run:
           name: unit test
           command: |
             bundle exec rspec --order random
