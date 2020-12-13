@@ -74,7 +74,7 @@ class ReportsController < ApplicationController
 
   def runway
     scope = Transaction.all.joins(:category)
-      .where(ignored: false)
+      .where(ignored: false).order(:paid_at)
 
     @data = {
       paid_month: [],
