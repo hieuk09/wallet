@@ -19,6 +19,8 @@ Layout/IndentationWidth:
 
 Layout/LineLength:
   Max: 120
+  Exclude:
+    - bin/*
 
 Layout/MultilineMethodCallIndentation:
   Enabled: false
@@ -48,6 +50,9 @@ Metrics/CyclomaticComplexity:
   Max: 10
 Metrics/MethodLength:
   Max: 30
+Metrics/PerceivedComplexity:
+  Exclude:
+    - bin/*
 
 Naming/VariableNumber:
   Enabled: false
