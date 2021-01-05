@@ -91,7 +91,7 @@ class PdfExtractor
     if match_data
       year = DateTime.current.year
       full_date = "#{match_data.to_a.first}-#{year}"
-      DateTime.strptime(full_date, '%d%b-%y')
+      DateTime.strptime(full_date, '%d%b-%Y')
     else
       main_row.match(TRANSACTION_DATE_REGEX).to_a.first.to_datetime
     end
