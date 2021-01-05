@@ -26,13 +26,13 @@ RSpec.describe PdfExtractor do
         {
           deposit: nil,
           description: 'THE GREN PARTY SI NG x-x-x-x',
-          paid_at: DateTime.new(2020, 7, 21),
+          paid_at: DateTime.new(Date.current.year, 7, 21),
           withdrawal: BigDecimal('14.80')
         },
         {
           deposit: BigDecimal('60'),
           description: "TOYS'R'US (S) PL - SUN SI NG 19JUL x-x-x-x",
-          paid_at: DateTime.new(2020, 7, 19),
+          paid_at: DateTime.new(Date.current.year, 7, 19),
           withdrawal: nil
         }
       ]

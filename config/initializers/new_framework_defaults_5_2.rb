@@ -14,4 +14,3 @@
 Rails.application.config.action_dispatch.use_authenticated_cookie_encryption = true
 Rails.application.config.active_support.use_authenticated_message_encryption = true
 Rails.application.config.action_controller.default_protect_from_forgery = true
-Rails.application.config.active_support.use_sha1_digests = true
