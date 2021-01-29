@@ -11,7 +11,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    Ascii85 (1.0.3)
+    Ascii85 (1.1.0)
     actioncable (6.1.1)
       actionpack (= 6.1.1)
       activesupport (= 6.1.1)
@@ -140,8 +140,8 @@ GEM
       sorbet-runtime (>= 0.5)
     parser (3.0.0.0)
       ast (~> 2.4.1)
-    pdf-reader (2.4.1)
-      Ascii85 (~> 1.0.0)
+    pdf-reader (2.4.2)
+      Ascii85 (~> 1.0)
       afm (~> 0.2.1)
       hashery (~> 2.0)
       ruby-rc4
@@ -250,7 +250,7 @@ GEM
     sqlite3 (1.4.2)
     thor (1.0.1)
     tilt (2.0.10)
-    ttfunk (1.6.2.1)
+    ttfunk (1.7.0)
     tty-screen (0.8.1)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
