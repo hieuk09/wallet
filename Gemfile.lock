@@ -225,8 +225,8 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    sorbet (0.5.6341)
-      sorbet-static (= 0.5.6341)
+    sorbet (0.5.6352)
+      sorbet-static (= 0.5.6352)
     sorbet-coerce (0.3.0)
       polyfill (~> 1.8)
       safe_type (~> 1.1, >= 1.1.1)
@@ -239,7 +239,7 @@ GEM
       sorbet-coerce (>= 0.2.6)
       sorbet-runtime (>= 0.5)
     sorbet-runtime (0.5.6341)
-    sorbet-static (0.5.6341-universal-darwin-14)
+    sorbet-static (0.5.6352-universal-darwin-14)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
