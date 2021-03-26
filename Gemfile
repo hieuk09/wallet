@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '6.1.3'
+gem 'activemodel', '6.1.3'
+gem 'activerecord', '6.1.3'
+gem 'sprockets-rails'
 
 gem 'chartkick'
 gem 'jquery-rails'
