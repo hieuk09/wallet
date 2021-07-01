@@ -55,7 +55,6 @@ class AccountsController < ApplicationController
     @account = Account.find(params[:id])
   end
 
-  # Only allow a trusted parameter "white list" through.
   def account_params
     safe_params_require(params, :account).permit(:initial_balance_cents, :initial_balance_currency, :name)
   end

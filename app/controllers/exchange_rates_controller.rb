@@ -51,7 +51,6 @@ class ExchangeRatesController < ApplicationController
     @exchange_rate = ExchangeRate.find(params[:id])
   end
 
-  # Only allow a trusted parameter "white list" through.
   def exchange_rate_params
     safe_params_require(params, :category).permit(:from_code, :to_code)
   end
