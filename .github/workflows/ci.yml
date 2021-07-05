@@ -8,6 +8,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: test
 
     steps:
       - uses: actions/checkout@v2
@@ -40,5 +42,4 @@ jobs:
         run: bundle exec srb tc --progress --ignore vendor/bundle
 
       - name: Unit tests
-        run: bundle exec rspec
-
+        run: bundle exec rspec --order random
