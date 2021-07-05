@@ -142,7 +142,7 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.10.2)
-    rubocop (1.17.0)
+    rubocop (1.18.2)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
@@ -153,6 +153,9 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.7.0)
       parser (>= 3.0.1.1)
+    rubocop-rspec (2.4.0)
+      rubocop (~> 1.0)
+      rubocop-ast (>= 1.1.0)
     ruby-progressbar (1.11.0)
     ruby-rc4 (0.1.5)
     safe_type (1.1.1)
@@ -215,6 +218,7 @@ DEPENDENCIES
   pdf-reader
   rspec-rails (= 5.0.1)
   rubocop
+  rubocop-rspec
   ruby_jard!
   sass-rails (~> 6.0)
   sorbet
