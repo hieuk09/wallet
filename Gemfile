@@ -18,6 +18,7 @@ gem 'pdf-reader'
 gem 'sorbet-runtime'
 
 gem 'sqlite3'
+gem 'thin'
 
 group :development do
   gem 'rubocop', require: false
