@@ -8,7 +8,7 @@ module Reports
     def execute(params)
       data = scope
 
-      unless params.all?
+      unless params.all_time?
         data = data.where(paid_at: params.from..params.to)
       end
 

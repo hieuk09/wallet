@@ -6,18 +6,18 @@ class ExportParams
   end
 
   def from
-    all? ? nil : date_by_month_year.beginning_of_month
+    all_time? ? nil : date_by_month_year.beginning_of_month
   end
 
   def to
-    all? ? nil : date_by_month_year.end_of_month
+    all_time? ? nil : date_by_month_year.end_of_month
   end
 
   def account_id
     params[:account_id]
   end
 
-  def all?
+  def all_time?
     year.zero? || month.zero?
   end
 
