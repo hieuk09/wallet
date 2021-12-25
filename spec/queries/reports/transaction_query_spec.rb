@@ -12,7 +12,7 @@ RSpec.describe Reports::TransactionQuery do
     subject { query.execute(params).pluck(:id) }
 
     context 'when params is all' do
-      let(:params) { double('Params', all?: true, account_id: nil) }
+      let(:params) { double('Params', all_time?: true, account_id: nil) }
       it { is_expected.to match_array([transaction_1.id, transaction_2.id, transaction_3.id]) }
     end
 
@@ -22,7 +22,7 @@ RSpec.describe Reports::TransactionQuery do
       let(:params) do
         double(
           'Params',
-          all?: false,
+          all_time?: false,
           from: date_from,
           to: date_to,
           account_id: ''
@@ -32,7 +32,7 @@ RSpec.describe Reports::TransactionQuery do
     end
 
     context 'when params is filtered by account' do
-      let(:params) { double('Params', all?: true, account_id: account_id) }
+      let(:params) { double('Params', all_time?: true, account_id: account_id) }
       it { is_expected.to match_array([transaction_1.id]) }
     end
   end

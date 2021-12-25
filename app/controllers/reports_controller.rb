@@ -1,5 +1,7 @@
 # typed: false
 class ReportsController < ApplicationController
+  DateQuery = Struct.new(:all_time?, :from, :to, keyword_init: true)
+
   def transactions
     report_params = params[:report] || {}
     @report_params = ExportParams.new(report_params)
@@ -49,7 +51,7 @@ class ReportsController < ApplicationController
     6.downto(1) do |x|
       start_date = start_of_month - x.months
       end_date = start_date.end_of_month
-      query_params = OpenStruct.new(all?: false, from: start_date, to: end_date)
+      query_params = DateQuery.new(all_time?: false, from: start_date, to: end_date)
       monthly_data << query.execute(query_params).sum(&:amount)
     end
 

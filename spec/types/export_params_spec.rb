@@ -54,8 +54,8 @@ RSpec.describe ExportParams do
     end
   end
 
-  describe '#all?' do
-    subject { described_class.new(params).all? }
+  describe '#all_time?' do
+    subject { described_class.new(params).all_time? }
 
     context 'when params is empty' do
       let(:params) { {} }
