@@ -62,7 +62,7 @@ GEM
     ffi (1.15.3)
     hashery (2.1.2)
     highline (2.0.3)
-    i18n (1.9.0)
+    i18n (1.9.1)
       concurrent-ruby (~> 1.0)
     jquery-rails (4.4.0)
       rails-dom-testing (>= 1, < 3)
