@@ -38,8 +38,5 @@ jobs:
       - name: Linter
         run: bundle exec rubocop
 
-      - name: Type check
-        run: bundle exec srb tc --progress --ignore vendor/bundle
-
       - name: Unit tests
         run: bundle exec rspec --order random
