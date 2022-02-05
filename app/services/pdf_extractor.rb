@@ -16,9 +16,9 @@ class PdfExtractor
     Nov
     Dec
   ].join('|')
-  PAID_AT_REGEX = /\d{2}(#{MONTH_REGEX.upcase})/.freeze
-  TRANSACTION_DATE_REGEX = /\d\d (#{MONTH_REGEX})/.freeze
-  START_TRANSACTION = /\A {7,8}#{TRANSACTION_DATE_REGEX} /.freeze
+  PAID_AT_REGEX = /\d{2}(#{MONTH_REGEX.upcase})/
+  TRANSACTION_DATE_REGEX = /\d\d (#{MONTH_REGEX})/
+  START_TRANSACTION = /\A {7,8}#{TRANSACTION_DATE_REGEX} /
   SHORT_DESCRIPTION = [
     'ATM Cash Withdrawal',
     'Advice Funds Transfer',
@@ -46,10 +46,10 @@ class PdfExtractor
       paid_at = extract_transaction_date(main_row, description)
 
       {
-        paid_at: paid_at,
-        withdrawal: withdrawal,
-        deposit: deposit,
-        description: description
+        paid_at:,
+        withdrawal:,
+        deposit:,
+        description:
       }
     end.compact
   end

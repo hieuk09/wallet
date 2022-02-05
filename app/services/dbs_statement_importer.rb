@@ -9,7 +9,7 @@ class DbsStatementImporter
     expense_category = Category.expense.first
     transactions = pdf_extractor.extract(StringIO.new(file.read))
 
-    import = Import.create(name: file.original_filename, account_id: account_id)
+    import = Import.create(name: file.original_filename, account_id:)
 
     transactions = transactions.map do |transaction|
       withdrawal = transaction.delete(:withdrawal)
@@ -28,8 +28,8 @@ class DbsStatementImporter
       end
 
       transaction.merge(
-        account_id: account_id,
-        category_id: category_id,
+        account_id:,
+        category_id:,
         amount_cents: amount * 100,
         amount_currency: 'SGD',
         import_id: import.id

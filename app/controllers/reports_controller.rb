@@ -34,7 +34,7 @@ class ReportsController < ApplicationController
 
       {
         name: category_name,
-        data: data
+        data:
       }
     end
   end

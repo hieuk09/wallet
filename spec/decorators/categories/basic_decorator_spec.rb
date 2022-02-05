@@ -5,7 +5,7 @@ RSpec.describe Categories::BasicDecorator do
   describe '#total_usd' do
     let(:exchanged_total) { 12 }
     let(:total) { double('Amount') }
-    let(:category) { double('Category', total: total) }
+    let(:category) { double('Category', total:) }
     let(:decorator) { described_class.new(category) }
     subject { decorator.total_usd }
 
@@ -39,7 +39,7 @@ RSpec.describe Categories::BasicDecorator do
   end
 
   describe '#income?' do
-    let(:category) { double('Category', category_type: category_type) }
+    let(:category) { double('Category', category_type:) }
     let(:decorator) { described_class.new(category) }
     subject { decorator.income? }
 
@@ -55,7 +55,7 @@ RSpec.describe Categories::BasicDecorator do
   end
 
   describe '#expense?' do
-    let(:category) { double('Category', category_type: category_type) }
+    let(:category) { double('Category', category_type:) }
     let(:decorator) { described_class.new(category) }
     subject { decorator.expense? }
 

@@ -3,7 +3,7 @@ require 'rails_helper'
 
 RSpec.describe DbsStatementImporter do
   let(:pdf_extractor) { instance_double(PdfExtractor) }
-  let(:importer) { described_class.new(pdf_extractor: pdf_extractor) }
+  let(:importer) { described_class.new(pdf_extractor:) }
 
   describe '#import' do
     let(:file) { double(read: 'data', original_filename: 'file.pdf') }

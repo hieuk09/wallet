@@ -5,7 +5,7 @@ RSpec.describe Reports::TransactionQuery do
   describe '#execute' do
     let(:account) { create(:account) }
     let(:account_id) { account.id }
-    let!(:transaction_1) { create(:transaction, paid_at: Date.new(2018, 2, 3), account_id: account_id) }
+    let!(:transaction_1) { create(:transaction, paid_at: Date.new(2018, 2, 3), account_id:) }
     let!(:transaction_2) { create(:transaction, paid_at: Date.new(2018, 2, 4)) }
     let!(:transaction_3) { create(:transaction, paid_at: Date.new(2018, 2, 5)) }
     let(:query) { described_class.new }
@@ -32,7 +32,7 @@ RSpec.describe Reports::TransactionQuery do
     end
 
     context 'when params is filtered by account' do
-      let(:params) { double('Params', all_time?: true, account_id: account_id) }
+      let(:params) { double('Params', all_time?: true, account_id:) }
       it { is_expected.to match_array([transaction_1.id]) }
     end
   end

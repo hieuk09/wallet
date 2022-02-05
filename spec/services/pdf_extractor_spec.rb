@@ -17,8 +17,8 @@ RSpec.describe PdfExtractor do
 
       TEXT
     end
-    let(:pages) { [double(text: text)] }
-    let(:reader) { instance_double(PDF::Reader, pages: pages) }
+    let(:pages) { [double(text:)] }
+    let(:reader) { instance_double(PDF::Reader, pages:) }
     let(:io) { double }
     let(:extractor) { described_class.new }
     let(:expected_transactions) do

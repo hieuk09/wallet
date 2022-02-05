@@ -17,8 +17,8 @@ RSpec.describe Account do
         create(
           :transaction,
           amount: Money.new(-2000, :vnd),
-          account: account,
-          category: category
+          account:,
+          category:
         )
       end
       let(:category) { create(:category, category_type: Category::INCOME) }
@@ -36,8 +36,8 @@ RSpec.describe Account do
         create(
           :transaction,
           amount: Money.new(1000, :vnd),
-          account: account,
-          category: category
+          account:,
+          category:
         )
       end
       let(:category) { create(:category, category_type: Category::INCOME) }
@@ -62,8 +62,8 @@ RSpec.describe Account do
         create(
           :transaction,
           amount: Money.new(-2000, :vnd),
-          account: account,
-          category: category
+          account:,
+          category:
         )
       end
       let(:category) { create(:category, category_type: Category::INCOME) }
@@ -77,8 +77,8 @@ RSpec.describe Account do
         create(
           :transaction,
           amount: Money.new(1000, :vnd),
-          account: account,
-          category: category
+          account:,
+          category:
         )
       end
       let(:category) { create(:category, category_type: Category::INCOME) }

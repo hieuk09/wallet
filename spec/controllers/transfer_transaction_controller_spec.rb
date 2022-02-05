@@ -17,12 +17,12 @@ RSpec.describe TransferTransactionsController do
     let(:params) do
       {
         transaction: {
-          amount_currency: amount_currency,
-          amount_cents: amount_cents,
-          paid_at: paid_at,
-          description: description,
-          from_account_id: from_account_id,
-          to_account_id: to_account_id
+          amount_currency:,
+          amount_cents:,
+          paid_at:,
+          description:,
+          from_account_id:,
+          to_account_id:
         }
       }
     end
@@ -34,7 +34,7 @@ RSpec.describe TransferTransactionsController do
 
       it 'treats it as empty' do
         expect {
-          post :create, params: params
+          post :create, params:
         }.to change { Transaction.count }.by(0)
 
         expect(response).to redirect_to(new_transfer_transaction_path)
@@ -48,7 +48,7 @@ RSpec.describe TransferTransactionsController do
 
       it 'redirects to transactions page' do
         expect {
-          post :create, params: params
+          post :create, params:
         }.to change { Transaction.count }.by(2)
 
         income_transaction = Transaction.find_by(account_id: to_account_id)
@@ -76,7 +76,7 @@ RSpec.describe TransferTransactionsController do
 
       it 'redirects to transfer page' do
         expect {
-          post :create, params: params
+          post :create, params:
         }.not_to change { Transaction.count }
         expect(response).to redirect_to(new_transfer_transaction_path)
         expect(flash[:notice]).to eq 'Validation failed: Account must exist'

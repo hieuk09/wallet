@@ -14,7 +14,7 @@ RSpec.describe CategoryDecorator do
     let(:transaction_decorators) { [double('TransactionDecorator')] }
     let(:list_decorator) { double('TransactionsByDateDecorator', decorate: transaction_decorators) }
     let(:transactions) { [double('Transaction')] }
-    let(:category) { double('Category', transactions: transactions) }
+    let(:category) { double('Category', transactions:) }
     let(:decorator) { described_class.new(category) }
     subject { decorator.transactions }
 
