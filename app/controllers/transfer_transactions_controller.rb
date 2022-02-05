@@ -13,8 +13,8 @@ class TransferTransactionsController < ApplicationController
       :description
     ).merge(ignored: true)
 
-    from_account_id = transaction_params[:from_account_id]
-    to_account_id = transaction_params[:to_account_id]
+    from_account_id = transaction_params.permit(:from_account_id)[:from_account_id]
+    to_account_id = transaction_params.permit(:to_account_id)[:to_account_id]
 
     Transaction.transaction do
       Transaction.create!(data.merge(account_id: from_account_id, category_id: Category.expense_transfer_category.id))

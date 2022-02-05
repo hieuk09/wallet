@@ -14,7 +14,7 @@ Bundler.require(*Rails.groups)
 
 module Wallet
   class Application < Rails::Application
-    config.load_defaults 5.0
+    config.load_defaults 7.0
     config.autoload_paths += %w[app/decorators app/services/ app/types app/queries]
   end
 end

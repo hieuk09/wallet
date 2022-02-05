@@ -10,8 +10,8 @@ class TransactionsController < ApplicationController
       .order(paid_at: :desc).includes(:account, :category)
     @total_count = scope.count
     @transactions = TransactionsByDateDecorator.new(scope).decorate
-    @total_income = BalanceCalculator.new(@transactions.map(&:income)).sum
-    @total_expense = BalanceCalculator.new(@transactions.map(&:expense)).sum
+    @total_income = @transactions.sum(DEFAULT_AMOUNT, &:income)
+    @total_expense = @transactions.sum(DEFAULT_AMOUNT, &:expense)
   end
 
   # GET /transactions/1

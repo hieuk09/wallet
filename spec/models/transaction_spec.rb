@@ -10,7 +10,7 @@ RSpec.describe Transaction do
         :sub_transaction,
         transaction_id: transaction.id,
         category: income_category,
-        amount: Money.new(1000, :usd)
+        amount: Money.new(1000, :vnd)
       )
     end
     let!(:expense_transaction) do
@@ -18,7 +18,7 @@ RSpec.describe Transaction do
         :sub_transaction,
         transaction_id: transaction.id,
         category: expense_category,
-        amount: Money.new(1500, :usd)
+        amount: Money.new(1500, :vnd)
       )
     end
 
@@ -29,7 +29,7 @@ RSpec.describe Transaction do
         expect {
           transaction.recalculate_amount
         }.to change { transaction.reload.amount.to_i }
-          .from(0).to(5)
+          .from(0).to(500)
       end
     end
 
@@ -40,7 +40,7 @@ RSpec.describe Transaction do
         expect {
           transaction.recalculate_amount
         }.to change { transaction.reload.amount.to_i }
-          .from(0).to(-5)
+          .from(0).to(-500)
       end
     end
   end

@@ -24,7 +24,6 @@ class Category < ApplicationRecord
   end
 
   def total
-    amounts = transactions.where(ignored: false).to_a.map(&:amount)
-    BalanceCalculator.new(amounts).sum
+    transactions.where(ignored: false).to_a.sum(DEFAULT_AMOUNT, &:amount)
   end
 end

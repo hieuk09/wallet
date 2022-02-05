@@ -10,10 +10,10 @@ class Transaction < ApplicationRecord
   def recalculate_amount
     expense = sub_transactions.joins(:category)
       .where('categories.category_type' => Category::EXPENSE)
-      .to_a.sum(&:amount)
+      .to_a.sum(DEFAULT_AMOUNT, &:amount)
     income = sub_transactions.joins(:category)
       .where('categories.category_type' => Category::INCOME)
-      .to_a.sum(&:amount)
+      .to_a.sum(DEFAULT_AMOUNT, &:amount)
 
     self.amount = if category.category_type == Category::EXPENSE
       expense - income

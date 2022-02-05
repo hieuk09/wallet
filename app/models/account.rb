@@ -4,22 +4,22 @@ class Account < ApplicationRecord
   has_many :transactions, dependent: :destroy
 
   def self.assets
-    balances = all.map(&:current_balance).select(&:positive?)
-    BalanceCalculator.new(balances).sum
+    all.map(&:current_balance).select(&:positive?)
+      .sum(DEFAULT_AMOUNT)
   end
 
   def self.liabilities
-    balances = all.map(&:current_balance).select(&:negative?)
-    BalanceCalculator.new(balances).sum
+    all.map(&:current_balance).select(&:negative?)
+      .sum(DEFAULT_AMOUNT)
   end
 
   def current_balance
     expense = transactions.joins(:category)
       .where('categories.category_type' => Category::EXPENSE)
-      .to_a.sum(&:amount)
+      .to_a.sum(DEFAULT_AMOUNT, &:amount)
     income = transactions.joins(:category)
       .where('categories.category_type' => Category::INCOME)
-      .to_a.sum(&:amount)
+      .to_a.sum(DEFAULT_AMOUNT, &:amount)
 
     initial_balance - expense + income
   end

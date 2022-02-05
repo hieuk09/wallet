@@ -23,3 +23,5 @@ end
 
 Money.locale_backend = :i18n
 Money.rounding_mode = BigDecimal::ROUND_HALF_UP
+
+DEFAULT_AMOUNT = Money.new(0, :vnd)

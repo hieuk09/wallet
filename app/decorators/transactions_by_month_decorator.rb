@@ -23,10 +23,9 @@ class TransactionsByMonthDecorator
     private
 
     def total_amount(category_type)
-      amounts = transactions.select do |transaction|
+      transactions.select do |transaction|
         transaction.category_type == category_type
-      end.map(&:amount)
-      BalanceCalculator.new(amounts).sum
+      end.sum(DEFAULT_AMOUNT, &:amount)
     end
   end
 

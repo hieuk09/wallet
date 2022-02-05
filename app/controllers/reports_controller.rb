@@ -1,6 +1,6 @@
 # typed: false
 class ReportsController < ApplicationController
-  DateQuery = Struct.new(:all_time?, :from, :to, keyword_init: true)
+  DateQuery = Struct.new(:all_time?, :from, :to, :account_id, keyword_init: true)
 
   def transactions
     report_params = params[:report] || {}

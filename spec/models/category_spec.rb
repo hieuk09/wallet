@@ -27,11 +27,11 @@ RSpec.describe Category do
         create(
           :transaction,
           category_id: category.id,
-          amount_cents: 12,
-          amount_currency: :usd
+          amount_cents: 12_000,
+          amount_currency: :vnd
         )
       end
-      let(:amount) { Money.new(12, :usd) }
+      let(:amount) { Money.new(12_000, :vnd) }
       it { is_expected.to eq amount }
     end
 
