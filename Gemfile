@@ -30,6 +30,6 @@ end
 group :development, :test do
   gem 'bootsnap', require: false
   gem 'factory_bot_rails'
-  gem 'rspec-rails', '5.1.0'
+  gem 'rspec-rails', '5.1.1'
   gem 'ruby_jard', github: 'nguyenquangminh0711/ruby_jard', branch: 'master'
 end
