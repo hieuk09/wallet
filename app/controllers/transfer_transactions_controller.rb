@@ -1,4 +1,5 @@
 # typed: false
+
 class TransferTransactionsController < ApplicationController
   # GET /transactions/new
   def new; end

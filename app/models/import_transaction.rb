@@ -1,4 +1,5 @@
 # typed: false
+
 class ImportTransaction < ApplicationRecord
   belongs_to :import
   belongs_to :account

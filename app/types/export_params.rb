@@ -1,4 +1,5 @@
 # typed: true
+
 class ExportParams
   def initialize(params, current = Date.current)
     @params = params

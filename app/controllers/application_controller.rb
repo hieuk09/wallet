@@ -1,4 +1,5 @@
 # typed: false
+
 class ApplicationController < ActionController::Base
   extend T::Sig
   # Prevent CSRF attacks by raising an exception.

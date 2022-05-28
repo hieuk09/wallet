@@ -1,4 +1,5 @@
 # typed: false
+
 class ReportsController < ApplicationController
   DateQuery = Struct.new(:all_time?, :from, :to, :account_id, keyword_init: true)
 

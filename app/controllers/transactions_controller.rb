@@ -1,4 +1,5 @@
 # typed: true
+
 class TransactionsController < ApplicationController
   before_action :set_transaction, only: %i[show edit update destroy]
 
