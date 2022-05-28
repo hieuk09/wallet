@@ -1,4 +1,5 @@
 # typed: true
+
 module Categories
   class SummaryDecorator
     def initialize(scope)

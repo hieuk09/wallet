@@ -1,4 +1,5 @@
 # typed: false
+
 class CreateSubTransactions < ActiveRecord::Migration
   def change
     create_table :sub_transactions do |t|

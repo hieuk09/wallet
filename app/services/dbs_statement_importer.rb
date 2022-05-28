@@ -1,4 +1,5 @@
 # typed: false
+
 class DbsStatementImporter
   def initialize(pdf_extractor: PdfExtractor.new)
     @pdf_extractor = pdf_extractor

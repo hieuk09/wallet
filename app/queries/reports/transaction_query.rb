@@ -1,4 +1,5 @@
 # typed: true
+
 module Reports
   class TransactionQuery
     def initialize(scope = Transaction.all)
