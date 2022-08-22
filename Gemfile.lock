@@ -184,7 +184,7 @@ GEM
       parser (>= 2.7)
       sorbet-coerce (>= 0.2.6)
       sorbet-runtime (>= 0.5.9892)
-    sorbet-runtime (0.5.10324)
+    sorbet-runtime (0.5.10354)
     sorbet-static (0.5.10346-universal-darwin-14)
     sorbet-static (0.5.10346-universal-darwin-15)
     sorbet-static (0.5.10346-universal-darwin-16)
