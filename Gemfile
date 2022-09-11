@@ -15,16 +15,12 @@ gem 'money-rails'
 gem 'activerecord-import'
 gem 'pdf-reader'
 
-gem 'sorbet-runtime'
-
 gem 'sqlite3'
 gem 'thin'
 
 group :development do
   gem 'rubocop', require: false
   gem 'rubocop-rspec', require: false
-  gem 'sorbet', require: false
-  gem 'sorbet-rails', require: false
 end
 
 group :development, :test do
