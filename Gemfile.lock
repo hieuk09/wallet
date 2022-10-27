@@ -127,7 +127,7 @@ GEM
     rspec-mocks (3.11.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.11.0)
-    rspec-rails (6.0.0)
+    rspec-rails (6.0.1)
       actionpack (>= 6.1)
       activesupport (>= 6.1)
       railties (>= 6.1)
@@ -200,7 +200,7 @@ DEPENDENCIES
   money-open-exchange-rates
   money-rails
   pdf-reader
-  rspec-rails (= 6.0.0)
+  rspec-rails (= 6.0.1)
   rubocop
   rubocop-rspec
   ruby_jard!
