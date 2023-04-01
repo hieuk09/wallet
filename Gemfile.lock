@@ -174,7 +174,7 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.6.2)
       mini_portile2 (~> 2.8.0)
-    thin (1.8.1)
+    thin (1.8.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
