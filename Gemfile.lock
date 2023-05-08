@@ -76,7 +76,7 @@ GEM
       money (~> 6.12)
     money (6.16.0)
       i18n (>= 0.6.4, <= 2)
-    money-open-exchange-rates (1.4.0)
+    money-open-exchange-rates (1.4.1)
       money (~> 6.12)
     money-rails (1.15.0)
       activesupport (>= 3.0)
