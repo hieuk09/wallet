@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'activemodel', '7.0.6'
-gem 'activerecord', '7.0.6'
+gem 'activemodel', '7.0.7'
+gem 'activerecord', '7.0.7'
 gem 'sprockets-rails'
 
 gem 'chartkick'
