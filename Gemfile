@@ -27,5 +27,5 @@ group :development, :test do
   gem 'bootsnap', require: false
   gem 'factory_bot_rails'
   gem 'rspec-rails', '6.1.1'
-  gem 'ruby_jard', github: 'nguyenquangminh0711/ruby_jard', branch: 'master'
+  gem 'debug'
 end
