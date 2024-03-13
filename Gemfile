@@ -25,7 +25,7 @@ end
 
 group :development, :test do
   gem 'bootsnap', require: false
+  gem 'debug'
   gem 'factory_bot_rails'
   gem 'rspec-rails', '6.1.1'
-  gem 'debug'
 end
