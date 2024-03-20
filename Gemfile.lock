@@ -93,7 +93,7 @@ GEM
       railties (>= 3.0)
     msgpack (1.7.2)
     mutex_m (0.2.0)
-    nokogiri (1.16.2)
+    nokogiri (1.16.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     parallel (1.24.0)
@@ -148,14 +148,14 @@ GEM
     rspec-mocks (3.13.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
-    rspec-rails (6.1.1)
+    rspec-rails (6.1.2)
       actionpack (>= 6.1)
       activesupport (>= 6.1)
       railties (>= 6.1)
-      rspec-core (~> 3.12)
-      rspec-expectations (~> 3.12)
-      rspec-mocks (~> 3.12)
-      rspec-support (~> 3.12)
+      rspec-core (~> 3.13)
+      rspec-expectations (~> 3.13)
+      rspec-mocks (~> 3.13)
+      rspec-support (~> 3.13)
     rspec-support (3.13.1)
     rubocop (1.62.1)
       json (~> 2.3)
@@ -232,7 +232,7 @@ DEPENDENCIES
   money-open-exchange-rates
   money-rails
   pdf-reader
-  rspec-rails (= 6.1.1)
+  rspec-rails (= 6.1.2)
   rubocop
   rubocop-rspec
   sass-rails (~> 6.0)
