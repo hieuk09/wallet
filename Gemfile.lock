@@ -43,7 +43,7 @@ GEM
     bootsnap (1.18.3)
       msgpack (~> 1.2)
     builder (3.2.4)
-    chartkick (5.0.6)
+    chartkick (5.0.7)
     concurrent-ruby (1.2.3)
     connection_pool (2.4.1)
     crass (1.0.6)
