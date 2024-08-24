@@ -6,7 +6,7 @@ require 'money/bank/open_exchange_rates_bank'
 def new_bank
   Money::Bank::OpenExchangeRatesBank.new.tap do |oxr|
     oxr.cache = 'tmp/exchange_rates.json'
-    oxr.app_id = Rails.application.secrets.open_exchange_rate_app_id
+    oxr.app_id = Rails.application.credentials.open_exchange_rate_app_id
     oxr.ttl_in_seconds = 86400
     oxr.update_rates
   end

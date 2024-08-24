@@ -32,4 +32,5 @@ Rails.application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+  config.active_support.to_time_preserves_timezone = :zone
 end

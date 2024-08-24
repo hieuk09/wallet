@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'activemodel'
-gem 'activerecord'
+gem 'activemodel', github: 'rails/rails', branch: 'main'
+gem 'activerecord', github: 'rails/rails', branch: 'main'
 gem 'sprockets-rails'
 
 gem 'chartkick'
 gem 'jquery-rails'
-gem 'sass-rails', '~> 6.0'
+gem 'sass-rails'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'money-open-exchange-rates'
@@ -27,5 +27,5 @@ group :development, :test do
   gem 'bootsnap', require: false
   gem 'debug'
   gem 'factory_bot_rails'
-  gem 'rspec-rails', '6.1.4'
+  gem 'rspec-rails'
 end
