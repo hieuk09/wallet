@@ -49,7 +49,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     Ascii85 (1.1.0)
-    activerecord-import (1.8.0)
+    activerecord-import (1.8.1)
       activerecord (>= 4.2)
     afm (0.2.2)
     ast (2.4.2)
