@@ -4,7 +4,7 @@ module Categories
   class BasicDecorator
     include Comparable
 
-    delegate :name, :category_type, :id, :name, to: :category
+    delegate :name, :category_type, :id, to: :category
 
     def initialize(category)
       @category = category
